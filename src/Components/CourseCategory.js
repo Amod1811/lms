@@ -17,7 +17,7 @@ const CourseCategory = () => {
           <div className="row align-items-center">
             {/* Image */}
             <div className="col-6 col-md-3 text-center order-1">
-              <img src="assets/images/element/category-1.svg" alt />
+              <img src="assets/images/element/cat1.png" alt />
             </div>
             {/* Content */}
             <div className="col-md-6 px-md-5 text-center position-relative order-md-2 mb-5 mb-md-0">
@@ -45,8 +45,8 @@ const CourseCategory = () => {
               </form>
             </div>
             {/* Image */}
-            <div className="col-6 col-md-3 text-center order-3">
-              <img src="assets/images/element/category-2.svg" alt />
+            <div className="col-6 col-md-3 text-center order-3" >
+            <img src="/assets/images/element/cat2.png"  alt="Cat" />
             </div>
           </div> {/* Row END */}
         </div>
@@ -72,11 +72,11 @@ Categories START */}
           <div className="card card-body bg-success bg-opacity-10 text-center position-relative btn-transition p-4">
             {/* Image */}
             <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-              <img src="assets/images/element/data-science.svg" alt />
+              <img src="assets/images/element/networking.webp" alt />
             </div>
             {/* Title */}
-            <h5 className="mb-2"><a href="#" className="stretched-link">Data Science</a></h5>
-            <h6 className="mb-0">15 Courses</h6>
+            <h5 className="mb-2"><a href="#" className="stretched-link">Networking</a></h5>
+            <h6 className="mb-0">6 Courses</h6>
           </div>
         </div>
         {/* Item */}
@@ -87,8 +87,8 @@ Categories START */}
               <img src="assets/images/element/online.svg" alt />
             </div>
             {/* Title */}
-            <h5 className="mb-2"><a href="#" className="stretched-link">IT &amp; Software</a></h5>
-            <h6 className="mb-0">22 Courses</h6>
+            <h5 className="mb-2"><a href="#" className="stretched-link">FrontEnd</a></h5>
+            <h6 className="mb-0">6 Courses</h6>
           </div>
         </div>
         {/* Item */}
@@ -99,8 +99,8 @@ Categories START */}
               <img src="assets/images/element/engineering.svg" alt />
             </div>
             {/* Title */}
-            <h5 className="mb-2"><a href="#" className="stretched-link">Engineering</a></h5>
-            <h6 className="mb-0">53 Courses</h6>
+            <h5 className="mb-2"><a href="#" className="stretched-link">Backend</a></h5>
+            <h6 className="mb-0">6 Courses</h6>
           </div>
         </div>
         {/* Item */}
@@ -111,7 +111,7 @@ Categories START */}
               <img src="assets/images/element/coding.svg" alt />
             </div>
             {/* Title */}
-            <h5 className="mb-2"><a href="#" className="stretched-link">Web Development</a></h5>
+            <h5 className="mb-2"><a href="#" className="stretched-link">Graphics</a></h5>
             <h6 className="mb-0">25 Courses</h6>
           </div>
         </div>
@@ -123,7 +123,7 @@ Categories START */}
               <img src="assets/images/element/profit.svg" alt />
             </div>
             {/* Title */}
-            <h5 className="mb-2"><a href="#" className="stretched-link">Finance</a></h5>
+            <h5 className="mb-2"><a href="#" className="stretched-link">Digital Marketing</a></h5>
             <h6 className="mb-0">20 Courses</h6>
           </div>
         </div>
@@ -217,77 +217,7 @@ Categories START */}
   {/* =======================
 Categories END */}
   {/* =======================
-Language START */}
-  <section>
-    <div className="container">
-      {/* Title */}
-      <div className="row mb-4 mx-auto text-center">
-        <div className="col-12">
-          <h2 className="mb-0">Choose Languages</h2>
-        </div>
-      </div>
-      <div className="row g-4">
-        {/* Language item */}
-        <div className="col-sm-6 col-md-4 col-lg-3">
-          <div className="bg-light rounded-2 p-3 d-flex align-items-center position-relative justify-content-center">
-            <img src="assets/images/flags/fr.svg" className="me-3 h-40px" alt />
-            <h5 className="mb-0"><a href="#" className="stretched-link text-primary-hover" />French</h5>
-          </div>
-        </div>
-        {/* Language item */}
-        <div className="col-sm-6 col-md-4 col-lg-3">
-          <div className="bg-light rounded-2 p-3 d-flex align-items-center position-relative justify-content-center">
-            <img src="assets/images/flags/gr.svg" className="me-3 h-40px" alt />
-            <h5 className="mb-0"><a href="#" className="stretched-link text-primary-hover" />German</h5>
-          </div>
-        </div>
-        {/* Language item */}
-        <div className="col-sm-6 col-md-4 col-lg-3">
-          <div className="bg-light rounded-2 p-3 d-flex align-items-center position-relative justify-content-center">
-            <img src="assets/images/flags/sp.svg" className="me-3 h-40px" alt />
-            <h5 className="mb-0"><a href="#" className="stretched-link text-primary-hover" />Español</h5>
-          </div>
-        </div>
-        {/* Language item */}
-        <div className="col-sm-6 col-md-4 col-lg-3">
-          <div className="bg-light rounded-2 p-3 d-flex align-items-center position-relative justify-content-center">
-            <img src="assets/images/flags/uk.svg" className="me-3 h-40px" alt />
-            <h5 className="mb-0"><a href="#" className="stretched-link text-primary-hover" />English</h5>
-          </div>
-        </div>
-        {/* Language item */}
-        <div className="col-sm-6 col-md-4 col-lg-3">
-          <div className="bg-light rounded-2 p-3 d-flex align-items-center position-relative justify-content-center">
-            <img src="assets/images/flags/in.svg" className="me-3 h-40px" alt />
-            <h5 className="mb-0"><a href="#" className="stretched-link text-primary-hover" />Hindi</h5>
-          </div>
-        </div>
-        {/* Language item */}
-        <div className="col-sm-6 col-md-4 col-lg-3">
-          <div className="bg-light rounded-2 p-3 d-flex align-items-center position-relative justify-content-center">
-            <img src="assets/images/flags/it.svg" className="me-3 h-40px" alt />
-            <h5 className="mb-0"><a href="#" className="stretched-link text-primary-hover" />Italian</h5>
-          </div>
-        </div>
-        {/* Language item */}
-        <div className="col-sm-6 col-md-4 col-lg-3">
-          <div className="bg-light rounded-2 p-3 d-flex align-items-center position-relative justify-content-center">
-            <img src="assets/images/flags/ar.svg" className="me-3 h-40px" alt />
-            <h5 className="mb-0"><a href="#" className="stretched-link text-primary-hover" />Arabic</h5>
-          </div>
-        </div>
-        {/* Language item */}
-        <div className="col-sm-6 col-md-4 col-lg-3">
-          <div className="bg-light rounded-2 p-3 d-flex align-items-center position-relative justify-content-center">
-            <img src="assets/images/flags/uk.svg" className="me-3 h-40px" alt />
-            <h5 className="mb-0"><a href="#" className="stretched-link text-primary-hover" />English</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  {/* =======================
-Language END */}
+
   {/* =======================
 Action box START */}
   <section>

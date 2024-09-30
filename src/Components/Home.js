@@ -289,8 +289,9 @@ Main Banner END */}
   <CourseCategory/>
  <Counter/>
  <PopularCourses/>
- <Review/>
  <TrendingCourses/>
+ <Review/>
+ 
 </>
   )
 }

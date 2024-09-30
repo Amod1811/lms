@@ -8666,6 +8666,8 @@ textarea.form-control-lg {
 }
 
 .shadow-lg {
+  margin-top: 60px;
+  margin-right: 50px;
   -webkit-box-shadow: var(--bs-box-shadow-lg) !important;
           box-shadow: var(--bs-box-shadow-lg) !important;
 }
@@ -19431,7 +19433,7 @@ textarea.form-control-lg {
     z-index: 1100 !important;
   }
   .navbar-expand-xl .navbar-brand .navbar-brand-item {
-    height: 100px;
+    height: 120px;
     display: block;
     width: auto;
     margin-top: -40px;

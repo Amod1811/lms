@@ -1,5 +1,5 @@
 import React from 'react'
-import CourseCategory from './CourseCategory'
+
 import Counter from './Counter'
 import PopularCourses from './PopularCourses'
 import Review from './Review'
@@ -286,11 +286,12 @@ Main Banner END */}
 {/* Action Box */}
 
 {/* Action Box */}
-  <CourseCategory/>
+ 
  <Counter/>
  <PopularCourses/>
- <Review/>
  <TrendingCourses/>
+ <Review/>
+ 
 </>
   )
 }

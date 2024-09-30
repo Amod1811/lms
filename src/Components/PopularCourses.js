@@ -117,7 +117,29 @@ const PopularCourses = () => {
         time: '11h 20m',
         lectures: 28
       }
-    ]
+    ],
+    'Marketing' :
+    [
+      {
+        img: 'assets/images/courses/4by3/01.jpg',
+        badge: 'Beginner',
+        title: 'Digital Marketing Masterclass',
+        description: 'Delivered dejection necessary objection do Mr prevailed.',
+        rating: 4.5,
+        time: '6h 56m',
+        lectures: 82
+      },
+      {
+        img: 'assets/images/courses/4by3/08.jpg',
+        badge: 'All level',
+        title: 'Sketch from A to Z:for app designer',
+        description: 'Proposal indulged no do sociable he throwing settling.',
+        rating: 4.0,
+        time: '12h 56m',
+        lectures: 15
+      }
+   ]
+    
   };
 
   const handleTabChange = (tabName) => {

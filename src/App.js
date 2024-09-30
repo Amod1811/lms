@@ -5,6 +5,8 @@ import CourseCategory from './Components/CourseCategory';
 import Home from './Components/Home';
 import Nav from './Components/Nav';
 import Nav1 from './Components/Nav1';
+import Login from './Components/Login';
+import SignUp from './Components/SignUp';
 
 function App() {
   return (
@@ -12,7 +14,8 @@ function App() {
     <Nav/>
     {/* <Nav1/> */}
     <Home/>
-
+     {/* <Login/>
+     <SignUp/> */}
     <CourseCategory/>
     
     </>

@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Login = () => {
-  return (
+  return ( 
     <div>
   <form action="/action_page.php">
     <div className="mb-3 mt-3">

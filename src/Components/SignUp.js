@@ -4,7 +4,7 @@ const SignUp = () => {
   return (
     <div>
    <form action="/action_page.php">
-   <div className="mb-3 mt-3">
+   <div className="mb-3 mt-3"> 
     <label htmlFor="name" className="form-label">Name:</label>
     <input type="name" className="form-control" id="name" placeholder="Enter name" name="name" />
   </div>

@@ -4,7 +4,7 @@ const Home = () => {
 
 
 
-  return (
+  return ( 
 
 <>
 {/* **************** MAIN CONTENT START **************** */}
@@ -267,13 +267,13 @@ Main Banner START */}
   </section>
   {/* =======================
 Main Banner END */}
-<Counter/>
+{/* <Counter/> */}
 </main>
 {/* **************** MAIN CONTENT END **************** */}
 
 
 {/* <!-- ======================= Popular course START --> */}
-<PopulerCources/>
+{/* <PopulerCources/> */}
 {/* <!-- ======================= Popular course END --> */}
 
 

@@ -3,7 +3,7 @@ import { IoMdCart } from "react-icons/io";
 import { FaCircleUser } from "react-icons/fa6";
 
 const Nav1 = () => {
-  return (
+  return ( 
     <div>
    {/* Header START */}
    <header className="navbar-light navbar-sticky header-static">

@@ -127,7 +127,7 @@ Categories START */}
             <h6 className="mb-0">20 Courses</h6>
           </div>
         </div>
-        {/* Item */}
+        Item
         <div className="col-sm-6 col-md-4 col-xl-3">
           <div className="card card-body bg-blue bg-opacity-10 text-center position-relative btn-transition p-4">
             {/* Image */}
@@ -245,7 +245,7 @@ Action box START */}
           <div className="bg-secondary rounded-3 bg-opacity-10 p-5 h-100">
             {/* Image */}
             <div className="position-absolute bottom-0 end-0 me-3">
-              <img src="assets/images/element/15.svg" className="h-100px h-sm-200px" alt />
+              <img src="assets/images/element/15.svg" className="h-100px h-sm-300px" alt />
             </div>	
             {/* Content */}
             <div className="row">

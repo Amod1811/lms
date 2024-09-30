@@ -144,7 +144,7 @@ Reviews START */}
                 <path d="m99.9 13.2c-1.2 0-2.1-1-2.1-2.2s1-2.2 2.1-2.2c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2z" />
               </svg>
             </figure>
-            <div className="p-3 bg-primary d-inline-block rounded-4 shadow-lg text-center" style={{background: 'url(assets/images/pattern/02.png) no-repeat center center', backgroundSize: 'cover'}}>
+            <div className="p-5 bg-primary d-inline-block rounded-4 shadow-lg text-center" style={{background: 'url(assets/images/pattern/02.png) no-repeat center center', backgroundSize: 'cover'}}>
               {/* Info */}
               <h5 className="text-white mb-0">4.5/5.0</h5>
               {/* Rating */}

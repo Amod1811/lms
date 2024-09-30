@@ -2,6 +2,8 @@ import React from 'react'
 import CourseCategory from './CourseCategory'
 import Counter from './Counter'
 import PopularCourses from './PopularCourses'
+import Review from './Review'
+import TrendingCourses from './TrendingCourses '
 
 const Home = () => {
 
@@ -287,6 +289,8 @@ Main Banner END */}
   <CourseCategory/>
  <Counter/>
  <PopularCourses/>
+ <Review/>
+ <TrendingCourses/>
 </>
   )
 }

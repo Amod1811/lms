@@ -127,7 +127,7 @@ Categories START */}
             <h6 className="mb-0">20 Courses</h6>
           </div>
         </div>
-        Item
+    
         <div className="col-sm-6 col-md-4 col-xl-3">
           <div className="card card-body bg-blue bg-opacity-10 text-center position-relative btn-transition p-4">
             {/* Image */}

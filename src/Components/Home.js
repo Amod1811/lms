@@ -1,4 +1,5 @@
 import React from 'react'
+import CourseCategory from './CourseCategory'
 
 const Home = () => {
 
@@ -281,6 +282,7 @@ Main Banner END */}
 {/* Action Box */}
 
 {/* Action Box */}
+  <CourseCategory/>
 </>
   )
 }

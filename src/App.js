@@ -17,6 +17,7 @@ function App() {
         {/* <Nav1/> */}
           <Routes>
               <Route path='/' element={ <Home/> }/>
+            
               <Route path='/coursecategory' element={<CourseCategory/>}/>
               <Route path='/login' element={<Login/>} />
               <Route path='/signup' element={<SignUp/>} />

@@ -1,28 +1,28 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-router-dom';
 import CourseCategory from './Components/CourseCategory';
 import Nav from './Components/Nav';
 import Home from './Components/Home';
+import Login from './Components/Login';
+import SignUp from './Components/SignUp';
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 97315a1acb2cbfd596d4ab150bff45d7978d0ce7
 
 
 function App() {
   return (
     <>
-    <Nav/>
-
-
-    {/* <Nav1/> */}
-    <Home/>
-
-    <CourseCategory/>
-    
-    </>
+    <BrowserRouter>
+       <Nav/>
+        {/* <Nav1/> */}
+          <Routes>
+              <Route path='/' element={ <Home/> }/>
+              <Route path='/coursecategory' element={<CourseCategory/>}/>
+              <Route path='/login' element={<Login/>} />
+              <Route path='/signup' element={<SignUp/>} />
+          </Routes>
+        
+    </BrowserRouter>
+      </>
   );
 }
 

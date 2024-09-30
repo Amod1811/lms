@@ -1,4 +1,7 @@
 import React from 'react'
+import Counter from './Counter'
+import CourseCard from './CourseCard'
+
 
 const Home = () => {
 
@@ -269,6 +272,10 @@ Main Banner START */}
 Main Banner END */}
 </main>
 {/* **************** MAIN CONTENT END **************** */}
+<Counter/>
+
+
+
 
 
 {/* <!-- ======================= Popular course START --> */}

@@ -5,14 +5,16 @@ import CourseCategory from './Components/CourseCategory';
 
 import Nav from './Components/Nav';
 import Home from './Components/Home';
-import CourseList from './Components/CourseList';
+
+import SignUp from './Components/SignUp';
+import Login from './Components/Login';
 
 
 function App() {
   return (
     <>
 
-    <BrowserRouter>
+    <Router>
        <Nav/>
         {/* <Nav1/> */}
           <Routes>
@@ -21,8 +23,8 @@ function App() {
               <Route path='/login' element={<Login/>} />
               <Route path='/signup' element={<SignUp/>} />
           </Routes>
-        
-    </BrowserRouter>
+       
+    </Router>
    </>
     
  

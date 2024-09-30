@@ -1,5 +1,6 @@
 import React from 'react'
 import CourseCategory from './CourseCategory'
+import Counter from './Counter'
 
 const Home = () => {
 
@@ -283,6 +284,7 @@ Main Banner END */}
 
 {/* Action Box */}
   <CourseCategory/>
+ <Counter/>
 </>
   )
 }

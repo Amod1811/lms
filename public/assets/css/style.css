@@ -620,7 +620,7 @@ progress {
 }
 
 .lead {
-  font-size: 1.171875rem;
+  font-size: 14px;
   font-weight: 400;
 }
 
@@ -9108,6 +9108,10 @@ textarea.form-control-lg {
 }
 
 .flex-nowrap {
+
+  margin-right: 250px;
+
+
   -ms-flex-wrap: nowrap !important;
       flex-wrap: nowrap !important;
 }
@@ -9117,6 +9121,10 @@ textarea.form-control-lg {
       flex-wrap: wrap-reverse !important;
 }
 
+
+.sign{
+  margin-left: -250px;
+}
 .justify-content-start {
   -webkit-box-pack: start !important;
       -ms-flex-pack: start !important;

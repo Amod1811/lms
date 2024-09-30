@@ -267,13 +267,11 @@ Main Banner START */}
   </section>
   {/* =======================
 Main Banner END */}
-<Counter/>
 </main>
 {/* **************** MAIN CONTENT END **************** */}
 
 
 {/* <!-- ======================= Popular course START --> */}
-<PopulerCources/>
 {/* <!-- ======================= Popular course END --> */}
 
 

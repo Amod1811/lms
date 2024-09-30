@@ -221,6 +221,17 @@ hr {
   opacity: 0.25;
 }
 
+.dropdown-menu>li>a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  color: #333;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -19411,9 +19422,10 @@ textarea.form-control-lg {
     z-index: 1100 !important;
   }
   .navbar-expand-xl .navbar-brand .navbar-brand-item {
-    height: 36px;
+    height: 100px;
     display: block;
     width: auto;
+    margin-top: -40px;
   }
   .navbar-expand-xl .navbar-nav .dropdown > .dropdown-menu {
     top: 120%;

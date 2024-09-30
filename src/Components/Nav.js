@@ -10,8 +10,8 @@ const Nav = () => {
       <div className="container-fluid px-3 px-xl-5">
 
         {/* Logo START */}
-        <a className="navbar-brand" href="index-2.html">
-          <img className="light-mode-item logo navbar-brand-item" src="assets/images/logo_new.jpg" alt="logo" />
+        <a className="navbar-brand" href="#">
+          <img className="light-mode-item logo navbar-brand-item" src="assets/images/logo1new.png" alt="logo" />
           {/* <img className="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo" /> */}
         </a>
         {/* Logo END */}

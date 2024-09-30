@@ -5,19 +5,17 @@ import CourseCategory from './Components/CourseCategory';
 
 import Nav from './Components/Nav';
 import Home from './Components/Home';
-import Nav from './Components/Nav';
-import Nav1 from './Components/Nav1';
+import CourseList from './Components/CourseList';
 
 
 function App() {
   return (
     <>
     <Nav/>
-
-
-    {/* <Nav1/> */}
+   
     <Home/>
     <CourseCategory/>
+    <CourseList/>
     
     </>
   );

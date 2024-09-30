@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
   return (
@@ -8,10 +9,11 @@ const Nav = () => {
     {/* Nav START */}
     <nav className="navbar navbar-expand-xl">
       <div className="container-fluid px-3 px-xl-5">
+
         {/* Logo START */}
-        <a className="navbar-brand" href="index-2.html">
-          <img className="light-mode-item navbar-brand-item" src="assets/images/logo_new.jpg" alt="logo" />
-          <img className="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo" />
+        <a className="navbar-brand" href="#">
+          <img className="light-mode-item logo navbar-brand-item" src="assets/images/logo1new.png" alt="logo" />
+          {/* <img className="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo" /> */}
         </a>
         {/* Logo END */}
         {/* Responsive navbar toggler */}
@@ -31,12 +33,13 @@ const Nav = () => {
           <ul className="navbar-nav navbar-nav-scroll me-auto">
             {/* Nav item 1 Demos */}
             <li className="nav-item ">
-              <a className="nav-link  active" href="#" id="demoMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+              <Link className="nav-link  active" to="/" id="demoMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</Link>
              
             </li>
             {/* Nav item 2 Pages */}
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses</a>
+            <Link className="nav-link" to="/coursecategory">Courses</Link>
+              {/* <Link className="nav-link dropdown-toggle" to="/coursecategory" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses</Link> */}
               <ul className="dropdown-menu" aria-labelledby="pagesMenu">
                 {/* Dropdown submenu */}
                 <li className="dropdown-submenu dropend">
@@ -145,7 +148,8 @@ const Nav = () => {
           {/* Packages */}
 
           <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Packages</a>
+          <Link className="nav-link" to="/coursecategory">Packages</Link>
+              {/* <a className="nav-link dropdown-toggle" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Packages</a> */}
               <ul className="dropdown-menu" aria-labelledby="pagesMenu">
                 {/* Dropdown submenu */}
                 <li className="dropdown-submenu dropend">
@@ -272,12 +276,15 @@ const Nav = () => {
         <div className="dropdown ms-1 ms-lg-0">
           <a className="avatar avatar-sm p-0" href="#" id="profileDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
         
-          <ul className="navbar-nav">
-          <li className="nav-item">Login</li>&nbsp;
-          <li className="nav-item">SignUp</li>    
+          <ul className="navbar-nav sign">
+              <li className="nav-item">
+                 <Link to="/login">Login</Link>
+              </li>&nbsp;&nbsp;&nbsp;
+              <li className="nav-item">
+                 <Link to="/signup">SignUp</Link>
+              </li>
           </ul>
-         
-          </a>
+        </a>
          
         </div>
         {/* Profile START */}

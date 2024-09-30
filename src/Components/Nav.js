@@ -8,10 +8,11 @@ const Nav = () => {
     {/* Nav START */}
     <nav className="navbar navbar-expand-xl">
       <div className="container-fluid px-3 px-xl-5">
+
         {/* Logo START */}
         <a className="navbar-brand" href="index-2.html">
-          <img className="light-mode-item navbar-brand-item" src="assets/images/logo_new.jpg" alt="logo" />
-          <img className="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo" />
+          <img className="light-mode-item logo navbar-brand-item" src="assets/images/logo_new.jpg" alt="logo" />
+          {/* <img className="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo" /> */}
         </a>
         {/* Logo END */}
         {/* Responsive navbar toggler */}
@@ -272,8 +273,8 @@ const Nav = () => {
         <div className="dropdown ms-1 ms-lg-0">
           <a className="avatar avatar-sm p-0" href="#" id="profileDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
         
-          <ul className="navbar-nav">
-          <li className="nav-item">Login</li>&nbsp;
+          <ul className="navbar-nav sign">
+          <li className="nav-item">Login</li>&nbsp;&nbsp;&nbsp;
           <li className="nav-item">SignUp</li>    
           </ul>
          

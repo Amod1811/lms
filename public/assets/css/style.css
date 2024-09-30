@@ -203,7 +203,7 @@
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
-  font-size: var(--bs-body-font-size);
+  font-size:14px;
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
@@ -9097,6 +9097,7 @@ textarea.form-control-lg {
 }
 
 .flex-nowrap {
+  margin-right: 60px;
   -ms-flex-wrap: nowrap !important;
       flex-wrap: nowrap !important;
 }
@@ -9106,6 +9107,9 @@ textarea.form-control-lg {
       flex-wrap: wrap-reverse !important;
 }
 
+.sign{
+  margin-left: -70px;
+}
 .justify-content-start {
   -webkit-box-pack: start !important;
       -ms-flex-pack: start !important;

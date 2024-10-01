@@ -5,6 +5,7 @@ import PopularCourses from './PopularCourses'
 import Review from './Review'
 import TrendingCourses from './TrendingCourses '
 
+
 const Home = () => {
  return ( 
 
@@ -288,7 +289,7 @@ Main Banner END */}
  <PopularCourses/>
  <TrendingCourses/>
  <Review/>
- 
+
 </>
   )
 }

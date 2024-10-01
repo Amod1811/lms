@@ -53,6 +53,7 @@ import StudentSetting from './Components/StudentSetting';
 import StudentDeleteAccount from './Components/StudentDeleteAccount';
 import StudentSubscription from './Components/StudentSubscription';
 import AdminDashboard from './Components/AdminDashboard';
+import CourseList1 from './Components/CourseList1';
 
 
 
@@ -87,7 +88,7 @@ function App() {
               <Route path='/login' element={<Login/>} />
               <Route path='/signup' element={<SignUp/>} />
           </Routes>
-          <AdminDashboard/>
+          {/* <AdminDashboard/> */}
            {/* <StudentDashboard/>
          <StudentSubscription/>
            <StudentCourseList/>
@@ -121,7 +122,7 @@ function App() {
               <Route path='/instructordelete' element={<Instructor_Deleteprofile />} />
               <Route path='/signout' element={<Sign_in />} />
               <Route path='/course' element={<CourseCategory1/>}/>
-              <Route path='/courselist' element={<CourseList/>}/>
+              <Route path='/courselist' element={<CourseList1/>}/>
               <Route path='/frontendcourse' element={<FrontEndCourseList/>}/>
               <Route path='/backendcourse' element={<BackEndCourseList/>}/>
               <Route path='/graphicscourse' element={<GraphicsCourseList/>}/>

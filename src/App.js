@@ -6,7 +6,7 @@ import CourseCategory from './Components/CourseCategory';
 import Nav from './Components/Nav';
 import Home from './Components/Home';
 
-import CourseList from './Components/CourseList';
+
 import Login from './Components/Login';
 import SignUp from './Components/SignUp';
 import Footer from './Components/Footer';
@@ -27,6 +27,7 @@ import Sign_in from './Components/Sign_in';
 import Instructor_createCourse from './Components/Instructor_createCourse';
 import Instructor_Single from './Components/Instructor_Single';
 import Instructor_List from './Components/Instructor_List';
+
 import StudentDashboard from './Components/StudentDashboard';
 import CourseCategory1 from './Components/CourseCategory1';
 import FrontEndCourseList from './Components/FrontEndCourseList';
@@ -39,6 +40,20 @@ import FrontEndVideo from './Components/FrontEndVideo';
 import GraphicsVideo from './Components/GraphicsVideo';
 import MarketingVideo from './Components/MarketingVideo';
 import VideoPlayer1 from './Components/VideoPlayer1';
+import CourseList1 from './Components/CourseList1';
+
+
+import StudentCourseList from './Components/StudentCourseList';
+import StudentCourseResume from './Components/StudentCourseResume';
+
+import StudentPaymentInfo from './Components/StudentPaymentInfo';
+import StudentBookmark from './Components/StudentBookmark';
+import StudentEditProfile from './Components/StudentEditProfile';
+
+import StudentSetting from './Components/StudentSetting';
+import StudentDeleteAccount from './Components/StudentDeleteAccount';
+import StudentSubscription from './Components/StudentSubscription';
+import AdminDashboard from './Components/AdminDashboard';
 import CourseList1 from './Components/CourseList1';
 
 
@@ -67,6 +82,29 @@ function App() {
        <Instructor_Single/>
        <Instructor_List/> */}
         {/* <Nav1/> */}
+
+          <Routes>
+              {/* <Route path='/' element={ <Home/> }/> */}
+              <Route path='/coursecategory' element={<CourseCategory/>}/>
+              <Route path='/login' element={<Login/>} />
+              <Route path='/signup' element={<SignUp/>} />
+          </Routes>
+          {/* <AdminDashboard/> */}
+           {/* <StudentDashboard/>
+         <StudentSubscription/>
+           <StudentCourseList/>
+           <StudentCourseResume/>
+            
+           <StudentPaymentInfo/>
+           <StudentBookmark/>
+           <StudentEditProfile/>
+       
+          <StudentSetting/>
+          <StudentDeleteAccount/> */}
+
+          
+      
+
           <Routes> 
               <Route path='/' element={ <Home/> }/>
               <Route path='/coursecategory' element={<CourseCategory/>}/>
@@ -97,6 +135,7 @@ function App() {
               <Route path='/DMvideo' element={<MarketingVideo/>}/>
               <Route path='/videoplayer1' element={<VideoPlayer1/>}/>
           </Routes> 
+
         <Footer/>
     </Router>
    </>

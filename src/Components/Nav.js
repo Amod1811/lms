@@ -39,7 +39,7 @@ const Nav = () => {
             </li>
             {/* Nav item 2 Pages */}
             <li className="nav-item dropdown">
-            <Link className="nav-link" to="/CourseCategory">Courses</Link>
+            <Link className="nav-link" to="/Course">Courses</Link>
               {/* <Link className="nav-link dropdown-toggle" to="/coursecategory" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses</Link> */}
               <ul className="dropdown-menu" aria-labelledby="pagesMenu">
                 {/* Dropdown submenu */}

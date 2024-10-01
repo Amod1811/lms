@@ -10,8 +10,37 @@ import Home from './Components/Home';
 import Login from './Components/Login';
 import SignUp from './Components/SignUp';
 import Footer from './Components/Footer';
+import Nav1 from './Components/Nav1';
+
+import Instructor_Dashboard from './Components/Instructor_Dashboard';
+import Instructor_Courses from './Components/Instructor_Courses';
+import Instructor_Quiz from './Components/Instructor_Quiz';
+import Instructor_earning from './Components/Instructor_earning';
+import Instructor_studentlist from './Components/Instructor_studentlist';
+import Instructor_order from './Components/Instructor_order';
+import Instructor_Reviews from './Components/Instructor_Reviews';
+import Instructor_Editprofile from './Components/Instructor_Editprofile';
+import Instructor_PayOuts from './Components/Instructor_PayOuts';
+import Instructor_setting from './Components/Instructor_setting';
+import Instructor_Deleteprofile from './Components/Instructor_Deleteprofile';
+import Sign_in from './Components/Sign_in';
+import Instructor_createCourse from './Components/Instructor_createCourse';
+import Instructor_Single from './Components/Instructor_Single';
+import Instructor_List from './Components/Instructor_List';
 
 import StudentDashboard from './Components/StudentDashboard';
+import CourseCategory1 from './Components/CourseCategory1';
+import FrontEndCourseList from './Components/FrontEndCourseList';
+import BackEndCourseList from './Components/BackEndCourseList';
+import GraphicsCourseList from './Components/GraphicsCourseList';
+import DigitalMarketingCourse from './Components/DigitalMarketingCourse';
+import NetworkingVideo from './Components/NetworkingVideo';
+import BackEndVideo from './Components/BackEndVideo';
+import FrontEndVideo from './Components/FrontEndVideo';
+import GraphicsVideo from './Components/GraphicsVideo';
+import MarketingVideo from './Components/MarketingVideo';
+import VideoPlayer1 from './Components/VideoPlayer1';
+
 
 import StudentCourseList from './Components/StudentCourseList';
 import StudentCourseResume from './Components/StudentCourseResume';
@@ -34,7 +63,24 @@ function App() {
 
     <Router>
        <Nav/>
+       {/* <Instructor_Dashboard/> */}
+       {/* <Instructor_Courses/>
+       <Instructor_Quiz/>
+       <Instructor_earning/>
+       <Instructor_studentlist/>
+       <Instructor_order/>
+       <Instructor_Reviews/>
+       <Instructor_Editprofile/>
+       <Instructor_PayOuts/>
+       <Instructor_setting/>
+       <Instructor_Deleteprofile/>
+       <Sign_in/>
+       <Sign_UP/>
+       <Instructor_createCourse/>
+       <Instructor_Single/>
+       <Instructor_List/> */}
         {/* <Nav1/> */}
+
           <Routes>
               {/* <Route path='/' element={ <Home/> }/> */}
               <Route path='/coursecategory' element={<CourseCategory/>}/>
@@ -56,8 +102,39 @@ function App() {
 
           
       
-        <Footer/>
 
+          <Routes> 
+              <Route path='/' element={ <Home/> }/>
+              <Route path='/coursecategory' element={<CourseCategory/>}/>
+              <Route path='/login' element={<Login/>} />
+              <Route path='/signup' element={<SignUp/>} />
+              <Route path='/instructordashboard' element={<Instructor_Dashboard/>}/>
+              <Route path='/instructorcourses' element={<Instructor_Courses />} />
+              <Route path='/instructorquiz' element={<Instructor_Quiz />} />
+              <Route path='/instructorearning' element={<Instructor_earning />} />
+              <Route path='/instructorstudentlist' element={<Instructor_studentlist />} />
+              <Route path='/instrctororder' element={<Instructor_order />} />
+              <Route path='/instructorreviews' element={<Instructor_Reviews />} />
+              <Route path='/instructoreditprofile' element={<Instructor_Editprofile />} />
+              <Route path='/instructorpayout' element={<Instructor_PayOuts />} />
+              <Route path='/instructorsetting' element={<Instructor_setting />} />
+              <Route path='/instructordelete' element={<Instructor_Deleteprofile />} />
+              <Route path='/signout' element={<Sign_in />} />
+              <Route path='/course' element={<CourseCategory1/>}/>
+              <Route path='/courselist' element={<CourseList/>}/>
+              <Route path='/frontendcourse' element={<FrontEndCourseList/>}/>
+              <Route path='/backendcourse' element={<BackEndCourseList/>}/>
+              <Route path='/graphicscourse' element={<GraphicsCourseList/>}/>
+              <Route path='/digitalmarketing' element={<DigitalMarketingCourse/>}/>
+              <Route path='/networkingvideo' element={<NetworkingVideo/>}/>
+              <Route path='/frontendvideo' element={<FrontEndVideo/>}/>
+              <Route path='/backendvideo' element={<BackEndVideo/>}/>
+              <Route path='/graphicsvideo' element={<GraphicsVideo/>}/>
+              <Route path='/DMvideo' element={<MarketingVideo/>}/>
+              <Route path='/videoplayer1' element={<VideoPlayer1/>}/>
+          </Routes> 
+
+        <Footer/>
     </Router>
    </>
     

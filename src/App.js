@@ -54,7 +54,7 @@ import StudentSetting from './Components/StudentSetting';
 import StudentDeleteAccount from './Components/StudentDeleteAccount';
 import StudentSubscription from './Components/StudentSubscription';
 import AdminDashboard from './Components/AdminDashboard';
-import CourseList1 from './Components/CourseList1';
+
 
 
 

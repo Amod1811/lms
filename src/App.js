@@ -11,6 +11,7 @@ import Login from './Components/Login';
 import SignUp from './Components/SignUp';
 import Footer from './Components/Footer';
 import Nav1 from './Components/Nav1';
+
 import Instructor_Dashboard from './Components/Instructor_Dashboard';
 import Instructor_Courses from './Components/Instructor_Courses';
 import Instructor_Quiz from './Components/Instructor_Quiz';
@@ -27,6 +28,9 @@ import Sign_UP from './Components/Sign_UP';
 import Instructor_createCourse from './Components/Instructor_createCourse';
 import Instructor_Single from './Components/Instructor_Single';
 import Instructor_List from './Components/Instructor_List';
+
+import StudentDashboard from './Components/StudentDashboard';
+
 
 
 
@@ -59,7 +63,8 @@ function App() {
               <Route path='/login' element={<Login/>} />
               <Route path='/signup' element={<SignUp/>} />
           </Routes>
-
+         
+           <StudentDashboard/>
         <Footer/>
 
     </Router>

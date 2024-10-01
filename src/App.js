@@ -39,6 +39,7 @@ import FrontEndVideo from './Components/FrontEndVideo';
 import GraphicsVideo from './Components/GraphicsVideo';
 import MarketingVideo from './Components/MarketingVideo';
 import VideoPlayer1 from './Components/VideoPlayer1';
+import CourseList1 from './Components/CourseList1';
 
 
 
@@ -84,7 +85,7 @@ function App() {
               <Route path='/instructordelete' element={<Instructor_Deleteprofile />} />
               <Route path='/signout' element={<Sign_in />} />
               <Route path='/course' element={<CourseCategory1/>}/>
-              <Route path='/courselist' element={<CourseList/>}/>
+              <Route path='/courselist' element={<CourseList1/>}/>
               <Route path='/frontendcourse' element={<FrontEndCourseList/>}/>
               <Route path='/backendcourse' element={<BackEndCourseList/>}/>
               <Route path='/graphicscourse' element={<GraphicsCourseList/>}/>

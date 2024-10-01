@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const BackEndCourseList = () => {
   return (
@@ -89,7 +90,7 @@ Page content START */}
                 <div className="card-body">
                   {/* Title */}
                   <div className="d-flex justify-content-between mb-2">
-                    <h5 className="card-title mb-0 mt-5" ><a href="#">NodeJs</a></h5>
+                  <Link to="/backendvideo"  className="card-title mb-0 mt-5"><h5>NodeJs</h5></Link>
                     {/* Wishlist icon */}
                     <a href="#"><i className="fas fa-heart text-danger" /></a>
                   </div>

@@ -1,7 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 
 const CourseList1 = () => {
-  return (
+  return ( 
     <>
     <div>
   <section className="bg-dark align-items-center d-flex" style={{background: 'url(assets/images/pattern/04.png) no-repeat center center', backgroundSize: 'cover'}}>
@@ -89,7 +91,8 @@ Page content START */}
                 <div className="card-body">
                   {/* Title */}
                   <div className="d-flex justify-content-between mb-2">
-                    <h5 className="card-title mb-0 mt-5" ><a href="#">Computer Hardware</a></h5>
+                    <Link to="/networkingvideo"  className="card-title mb-0 mt-5"><h5>Computer Hardware</h5></Link>
+                    
                     {/* Wishlist icon */}
                     <a href="#"><i className="fas fa-heart text-danger" /></a>
                   </div>

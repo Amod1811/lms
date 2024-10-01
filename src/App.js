@@ -11,6 +11,7 @@ import Login from './Components/Login';
 import SignUp from './Components/SignUp';
 import Footer from './Components/Footer';
 import Nav1 from './Components/Nav1';
+import StudentDashboard from './Components/StudentDashboard';
 
 
 
@@ -28,7 +29,7 @@ function App() {
               <Route path='/signup' element={<SignUp/>} />
           </Routes>
          
-
+           <StudentDashboard/>
         <Footer/>
 
     </Router>

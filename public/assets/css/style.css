@@ -203,7 +203,7 @@
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
-  font-size: var(--bs-body-font-size);
+  font-size: 14px;
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
@@ -219,6 +219,17 @@ hr {
   border: 0;
   border-top: var(--bs-border-width) solid;
   opacity: 0.25;
+}
+
+.dropdown-menu>li>a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  color: #333;
+  font-size: 13px;
+  white-space: nowrap;
 }
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
@@ -609,7 +620,7 @@ progress {
 }
 
 .lead {
-  font-size: 1.171875rem;
+  font-size: 14px;
   font-weight: 400;
 }
 
@@ -2586,16 +2597,17 @@ progress {
   display: block;
   width: 100%;
   padding: 0.5rem 1rem;
-  font-size: 0.9375rem;
+  font-size: 13px;
   font-weight: 400;
   line-height: 1.5;
+  height: 40px;
   color: var(--bs-gray-700);
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   background-color: var(--bs-body-bg);
   background-clip: padding-box;
-  border: 1px solid var(--bs-gray-300);
+  border: 2px solid var(--bs-gray-400);
   border-radius: 0.325rem;
   -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -8654,6 +8666,8 @@ textarea.form-control-lg {
 }
 
 .shadow-lg {
+  margin-top: 20px;
+  margin-right: 50px;
   -webkit-box-shadow: var(--bs-box-shadow-lg) !important;
           box-shadow: var(--bs-box-shadow-lg) !important;
 }
@@ -9097,6 +9111,10 @@ textarea.form-control-lg {
 }
 
 .flex-nowrap {
+
+  margin-right: 250px;
+
+
   -ms-flex-wrap: nowrap !important;
       flex-wrap: nowrap !important;
 }
@@ -9106,6 +9124,10 @@ textarea.form-control-lg {
       flex-wrap: wrap-reverse !important;
 }
 
+
+.sign{
+  margin-left: -250px;
+}
 .justify-content-start {
   -webkit-box-pack: start !important;
       -ms-flex-pack: start !important;
@@ -16656,7 +16678,7 @@ textarea.form-control-lg {
 }
 
 .h-40px {
-  height: 40px !important;
+  height: 100px !important;
 }
 
 .h-50px {
@@ -19411,9 +19433,10 @@ textarea.form-control-lg {
     z-index: 1100 !important;
   }
   .navbar-expand-xl .navbar-brand .navbar-brand-item {
-    height: 36px;
+    height: 120px;
     display: block;
     width: auto;
+    margin-top: -40px;
   }
   .navbar-expand-xl .navbar-nav .dropdown > .dropdown-menu {
     top: 120%;

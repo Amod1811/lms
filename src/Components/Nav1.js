@@ -1,5 +1,6 @@
 import React from 'react'
 import { IoMdCart } from "react-icons/io";
+import { Link } from 'react-router-dom';
 import { FaCircleUser } from "react-icons/fa6";
 
 const Nav1 = () => {
@@ -12,8 +13,8 @@ const Nav1 = () => {
       <div className="container-fluid px-3 px-xl-5">
         {/* Logo START */}
         <a className="navbar-brand" href="index-2.html">
-          <img className="light-mode-item navbar-brand-item" src="assets/images/logo_new.jpg" alt="logo" />
-          <img className="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo" />
+        <img className="light-mode-item logo navbar-brand-item" src="assets/images/logo1newbg.png" alt="logo" />
+          {/* <img className="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo" /> */}
         </a>
         {/* Logo END */}
         {/* Responsive navbar toggler */}
@@ -209,8 +210,8 @@ const Nav1 = () => {
           <ul className="navbar-nav navbar-nav-scroll me-auto">
             {/* Nav item 1 Demos */}
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle active" href="#" id="demoMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
-              <ul className="dropdown-menu" aria-labelledby="demoMenu">
+              <a className="nav-link  active" href="#" id="demoMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+              {/* <ul className="dropdown-menu" aria-labelledby="demoMenu">
                 <li> <a className="dropdown-item active" href="index-2.html">Home Default</a></li>
                 <li> <a className="dropdown-item" href="index-3.html">Home Education</a></li>
                 <li> <a className="dropdown-item" href="index-4.html">Home Academy</a></li>
@@ -222,11 +223,12 @@ const Nav1 = () => {
                 <li> <a className="dropdown-item" href="index-10.html">Home School</a></li><li>
                 </li><li> <a className="dropdown-item" href="index-11.html">Home Abroad</a></li>
                 <li> <a className="dropdown-item" href="index-12.html">Home Workshop</a></li>
-              </ul>
+              </ul> */}
             </li>
             {/* Nav item 2 Pages */}
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses</a>
+            <Link className="nav-link " to="/CourseCategory">Courses</Link>
+              {/* <a className="nav-link dropdown-toggle" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses</a> */}
               <ul className="dropdown-menu" aria-labelledby="pagesMenu">
                 {/* Dropdown submenu */}
                 <li className="dropdown-submenu dropend">
@@ -320,7 +322,8 @@ const Nav1 = () => {
 
             {/* Nav item 3 Account */}
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Packages</a>
+              {/* <a className="nav-link dropdown-toggle" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Packages</a> */}
+              <Link className="nav-link" to="/coursecategory">Packages</Link>
               <ul className="dropdown-menu" aria-labelledby="pagesMenu">
                 {/* Dropdown submenu */}
                 <li className="dropdown-submenu dropend">
@@ -570,7 +573,7 @@ const Nav1 = () => {
     {/* Nav END */}
   </header>
   {/* Header END */}
-</div>
+</div> 
 
   )
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LabelList } from 'recharts';
 import Chart from './Chart';
 import Internal_Footer from './Internal_Footer';
+import { Link } from 'react-router-dom';
 
 
 const Instructor_Dashboard = () => {
@@ -40,7 +41,7 @@ const Instructor_Dashboard = () => {
                 </div>
                 {/* Button */}
                 <div className="d-flex align-items-center mt-2 mt-md-0">
-                  <a href="instructor-create-course.html" className="btn btn-success mb-0">Create a course</a>
+                  <a to="instructor-create-course.html" className="btn btn-success mb-0">Create a course</a>
                 </div>
               </div>
             </div>
@@ -50,7 +51,7 @@ const Instructor_Dashboard = () => {
           {/* Divider */}
           <hr className="d-xl-none" />
           <div className="col-12 col-xl-3 d-flex justify-content-between align-items-center">
-            <a className="h6 mb-0 fw-bold d-xl-none" href="#">Menu</a>
+            <a className="h6 mb-0 fw-bold d-xl-none" to="#">Menu</a>
             <button className="btn btn-primary d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidebar" aria-controls="offcanvasSidebar">
               <i className="fas fa-sliders-h" />
             </button>
@@ -81,18 +82,18 @@ const Instructor_Dashboard = () => {
               <div className="bg-dark border rounded-3 pb-0 p-3 w-100">
                 {/* Dashboard menu */}
                 <div className="list-group list-group-dark list-group-borderless">
-                  <a className="list-group-item active" href="instructor-dashboard.html"><i className="bi bi-ui-checks-grid fa-fw me-2" />Dashboard</a>
-                  <a className="list-group-item" href="instructor-manage-course.html"><i className="bi bi-basket fa-fw me-2" />My Courses</a>
-                  <a className="list-group-item" href="instructor-quiz.html"><i className="bi bi-question-diamond fa-fw me-2" />Quiz</a>
-                  <a className="list-group-item" href="instructor-earning.html"><i className="bi bi-graph-up fa-fw me-2" />Earnings</a>
-                  <a className="list-group-item" href="instructor-studentlist.html"><i className="bi bi-people fa-fw me-2" />Students</a>
-                  <a className="list-group-item" href="instructor-order.html"><i className="bi bi-folder-check fa-fw me-2" />Orders</a>
-                  <a className="list-group-item" href="instructor-review.html"><i className="bi bi-star fa-fw me-2" />Reviews</a>
-                  <a className="list-group-item" href="instructor-edit-profile.html"><i className="bi bi-pencil-square fa-fw me-2" />Edit Profile</a>
-                  <a className="list-group-item" href="instructor-payout.html"><i className="bi bi-wallet2 fa-fw me-2" />Payouts</a>
-                  <a className="list-group-item" href="instructor-setting.html"><i className="bi bi-gear fa-fw me-2" />Settings</a>
-                  <a className="list-group-item" href="instructor-delete-account.html"><i className="bi bi-trash fa-fw me-2" />Delete Profile</a>
-                  <a className="list-group-item text-danger bg-danger-soft-hover" href="sign-in.html"><i className="fas fa-sign-out-alt fa-fw me-2" />Sign Out</a>
+                  <Link className="list-group-item active" to="/instructordashboard"><i className="bi bi-ui-checks-grid fa-fw me-2" />Dashboard</Link>
+                  <Link className="list-group-item" to="/instructorcourses"><i className="bi bi-basket fa-fw me-2" />My Courses</Link>
+                  <Link className="list-group-item" to="/instructorquiz"><i className="bi bi-question-diamond fa-fw me-2" />Quiz</Link>
+                  <Link className="list-group-item" to="/instructorearning"><i className="bi bi-graph-up fa-fw me-2" />Earnings</Link>
+                  <Link className="list-group-item" to="/instructorstudentlist"><i className="bi bi-people fa-fw me-2" />Students</Link>
+                  <Link className="list-group-item" to="/instrctororder"><i className="bi bi-folder-check fa-fw me-2" />Orders</Link>
+                  <Link className="list-group-item" to="/instructorreviews"><i className="bi bi-star fa-fw me-2" />Reviews</Link>
+                  <Link className="list-group-item" to="/instructoreditprofile"><i className="bi bi-pencil-square fa-fw me-2" />Edit Profile</Link>
+                  <Link className="list-group-item" to="/instructorpayout"><i className="bi bi-wallet2 fa-fw me-2" />Payouts</Link>
+                  <Link className="list-group-item" to="/instructorsetting"><i className="bi bi-gear fa-fw me-2" />Settings</Link>
+                  <Link className="list-group-item" to="/instructordelete"><i className="bi bi-trash fa-fw me-2" />Delete Profile</Link>
+                  <Link className="list-group-item text-danger bg-danger-soft-hover" to="/signout"><i className="fas fa-sign-out-alt fa-fw me-2" />Sign Out</Link>
                 </div>
               </div>
             </div>
@@ -179,7 +180,7 @@ const Instructor_Dashboard = () => {
                 <div className="card-header bg-transparent border-bottom">
                   <div className="d-sm-flex justify-content-sm-between align-items-center">
                     <h3 className="mb-2 mb-sm-0">Most Selling Courses</h3>
-                    <a href="#" className="btn btn-sm btn-primary-soft mb-0">View all</a>
+                    <a to="#" className="btn btn-sm btn-primary-soft mb-0">View all</a>
                   </div>
                 </div>
                 {/* Card header END */}
@@ -211,7 +212,7 @@ const Instructor_Dashboard = () => {
                               </div>
                               {/* Title */}
                               <h6 className="mb-0 ms-2 table-responsive-title">	
-                                <a href="#">Building Scalable APIs with GraphQL</a>
+                                <a to="#">Building Scalable APIs with GraphQL</a>
                               </h6>
                             </div>
                           </td>
@@ -225,7 +226,7 @@ const Instructor_Dashboard = () => {
                           </td>
                           {/* Action item */}
                           <td>
-                            <a href="#" className="btn btn-sm btn-success-soft btn-round me-1 mb-0"><i className="far fa-fw fa-edit" /></a>
+                            <a to="#" className="btn btn-sm btn-success-soft btn-round me-1 mb-0"><i className="far fa-fw fa-edit" /></a>
                             <button className="btn btn-sm btn-danger-soft btn-round mb-0"><i className="fas fa-fw fa-times" /></button>
                           </td>
                         </tr>
@@ -240,7 +241,7 @@ const Instructor_Dashboard = () => {
                               </div>
                               {/* Title */}
                               <h6 className="mb-0 ms-2 table-responsive-title">	
-                                <a href="#">Bootstrap 5 From Scratch</a>
+                                <a to="#">Bootstrap 5 From Scratch</a>
                               </h6>
                             </div>
                           </td>
@@ -254,7 +255,7 @@ const Instructor_Dashboard = () => {
                           </td>
                           {/* Action item */}
                           <td>
-                            <a href="#" className="btn btn-sm btn-success-soft btn-round me-1 mb-0"><i className="far fa-fw fa-edit" /></a>
+                            <a to="#" className="btn btn-sm btn-success-soft btn-round me-1 mb-0"><i className="far fa-fw fa-edit" /></a>
                             <button className="btn btn-sm btn-danger-soft btn-round mb-0"><i className="fas fa-fw fa-times" /></button>
                           </td>
                         </tr>
@@ -269,7 +270,7 @@ const Instructor_Dashboard = () => {
                               </div>
                               {/* Title */}
                               <h6 className="mb-0 ms-2 table-responsive-title">	
-                                <a href="#">Graphic Design Masterclass</a>
+                                <a to="#">Graphic Design Masterclass</a>
                               </h6>
                             </div>
                           </td>
@@ -283,7 +284,7 @@ const Instructor_Dashboard = () => {
                           </td>
                           {/* Action item */}
                           <td>
-                            <a href="#" className="btn btn-sm btn-success-soft btn-round me-1 mb-0"><i className="far fa-fw fa-edit" /></a>
+                            <a to="#" className="btn btn-sm btn-success-soft btn-round me-1 mb-0"><i className="far fa-fw fa-edit" /></a>
                             <button className="btn btn-sm btn-danger-soft btn-round mb-0"><i className="fas fa-fw fa-times" /></button>
                           </td>
                         </tr>
@@ -298,7 +299,7 @@ const Instructor_Dashboard = () => {
                               </div>
                               {/* Title */}
                               <h6 className="mb-0 ms-2 table-responsive-title">	
-                                <a href="#">Learn Invision</a>
+                                <a to="#">Learn Invision</a>
                               </h6>
                             </div>
                           </td>
@@ -312,7 +313,7 @@ const Instructor_Dashboard = () => {
                           </td>
                           {/* Action item */}
                           <td>
-                            <a href="#" className="btn btn-sm btn-success-soft btn-round me-1 mb-0"><i className="far fa-fw fa-edit" /></a>
+                            <a to="#" className="btn btn-sm btn-success-soft btn-round me-1 mb-0"><i className="far fa-fw fa-edit" /></a>
                             <button className="btn btn-sm btn-danger-soft btn-round mb-0"><i className="fas fa-fw fa-times" /></button>
                           </td>
                         </tr>
@@ -327,7 +328,7 @@ const Instructor_Dashboard = () => {
                               </div>
                               {/* Title */}
                               <h6 className="mb-0 ms-2 table-responsive-title">	
-                                <a href="#">Angular – The Complete Guider</a>
+                                <a to="#">Angular – The Complete Guider</a>
                               </h6>
                             </div>
                           </td>
@@ -341,7 +342,7 @@ const Instructor_Dashboard = () => {
                           </td>
                           {/* Action item */}
                           <td>
-                            <a href="#" className="btn btn-sm btn-success-soft btn-round me-1 mb-0"><i className="far fa-fw fa-edit" /></a>
+                            <a to="#" className="btn btn-sm btn-success-soft btn-round me-1 mb-0"><i className="far fa-fw fa-edit" /></a>
                             <button className="btn btn-sm btn-danger-soft btn-round mb-0"><i className="fas fa-fw fa-times" /></button>
                           </td>
                         </tr>
@@ -357,11 +358,11 @@ const Instructor_Dashboard = () => {
                     {/* Pagination */}
                     <nav className="d-flex justify-content-center mb-0" aria-label="navigation">
                       <ul className="pagination pagination-sm pagination-primary-soft d-inline-block d-md-flex rounded mb-0">
-                        <li className="page-item mb-0"><a className="page-link" href="#" tabIndex={-1}><i className="fas fa-angle-left" /></a></li>
-                        <li className="page-item mb-0"><a className="page-link" href="#">1</a></li>
-                        <li className="page-item mb-0 active"><a className="page-link" href="#">2</a></li>
-                        <li className="page-item mb-0"><a className="page-link" href="#">3</a></li>
-                        <li className="page-item mb-0"><a className="page-link" href="#"><i className="fas fa-angle-right" /></a></li>
+                        <li className="page-item mb-0"><a className="page-link" to="#" tabIndex={-1}><i className="fas fa-angle-left" /></a></li>
+                        <li className="page-item mb-0"><a className="page-link" to="#">1</a></li>
+                        <li className="page-item mb-0 active"><a className="page-link" to="#">2</a></li>
+                        <li className="page-item mb-0"><a className="page-link" to="#">3</a></li>
+                        <li className="page-item mb-0"><a className="page-link" to="#"><i className="fas fa-angle-right" /></a></li>
                       </ul>
                     </nav>
                   </div>

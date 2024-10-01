@@ -24,11 +24,9 @@ import Instructor_PayOuts from './Components/Instructor_PayOuts';
 import Instructor_setting from './Components/Instructor_setting';
 import Instructor_Deleteprofile from './Components/Instructor_Deleteprofile';
 import Sign_in from './Components/Sign_in';
-import Sign_UP from './Components/Sign_UP';
 import Instructor_createCourse from './Components/Instructor_createCourse';
 import Instructor_Single from './Components/Instructor_Single';
 import Instructor_List from './Components/Instructor_List';
-
 import StudentDashboard from './Components/StudentDashboard';
 
 
@@ -40,8 +38,8 @@ function App() {
 
     <Router>
        <Nav/>
-       <Instructor_Dashboard/>
-       <Instructor_Courses/>
+       {/* <Instructor_Dashboard/> */}
+       {/* <Instructor_Courses/>
        <Instructor_Quiz/>
        <Instructor_earning/>
        <Instructor_studentlist/>
@@ -55,18 +53,29 @@ function App() {
        <Sign_UP/>
        <Instructor_createCourse/>
        <Instructor_Single/>
-       <Instructor_List/>
+       <Instructor_List/> */}
         {/* <Nav1/> */}
           <Routes>
               <Route path='/' element={ <Home/> }/>
               <Route path='/coursecategory' element={<CourseCategory/>}/>
               <Route path='/login' element={<Login/>} />
               <Route path='/signup' element={<SignUp/>} />
+              <Route path='/instructordashboard' element={<Instructor_Dashboard/>}/>
+              <Route path='/instructorcourses' element={<Instructor_Courses />} />
+              <Route path='/instructorquiz' element={<Instructor_Quiz />} />
+              <Route path='/instructorearning' element={<Instructor_earning />} />
+              <Route path='/instructorstudentlist' element={<Instructor_studentlist />} />
+              <Route path='/instrctororder' element={<Instructor_order />} />
+              <Route path='/instructorreviews' element={<Instructor_Reviews />} />
+              <Route path='/instructoreditprofile' element={<Instructor_Editprofile />} />
+              <Route path='/instructorpayout' element={<Instructor_PayOuts />} />
+              <Route path='/instructorsetting' element={<Instructor_setting />} />
+              <Route path='/instructordelete' element={<Instructor_Deleteprofile />} />
+              <Route path='/signout' element={<Sign_in />} />
           </Routes>
          
-           <StudentDashboard/>
+          
         <Footer/>
-
     </Router>
    </>
     

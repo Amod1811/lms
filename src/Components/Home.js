@@ -6,10 +6,7 @@ import Review from './Review'
 import TrendingCourses from './TrendingCourses '
 
 const Home = () => {
-
-
-
-  return ( 
+ return ( 
 
 <>
 {/* **************** MAIN CONTENT START **************** */}

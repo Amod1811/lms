@@ -10,6 +10,7 @@ import CourseList from './Components/CourseList';
 import Login from './Components/Login';
 import SignUp from './Components/SignUp';
 import Footer from './Components/Footer';
+import Nav1 from './Components/Nav1';
 
 
 

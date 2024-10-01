@@ -28,6 +28,17 @@ import Instructor_createCourse from './Components/Instructor_createCourse';
 import Instructor_Single from './Components/Instructor_Single';
 import Instructor_List from './Components/Instructor_List';
 import StudentDashboard from './Components/StudentDashboard';
+import CourseCategory1 from './Components/CourseCategory1';
+import FrontEndCourseList from './Components/FrontEndCourseList';
+import BackEndCourseList from './Components/BackEndCourseList';
+import GraphicsCourseList from './Components/GraphicsCourseList';
+import DigitalMarketingCourse from './Components/DigitalMarketingCourse';
+import NetworkingVideo from './Components/NetworkingVideo';
+import BackEndVideo from './Components/BackEndVideo';
+import FrontEndVideo from './Components/FrontEndVideo';
+import GraphicsVideo from './Components/GraphicsVideo';
+import MarketingVideo from './Components/MarketingVideo';
+import VideoPlayer1 from './Components/VideoPlayer1';
 
 
 
@@ -55,7 +66,7 @@ function App() {
        <Instructor_Single/>
        <Instructor_List/> */}
         {/* <Nav1/> */}
-          <Routes>
+          <Routes> 
               <Route path='/' element={ <Home/> }/>
               <Route path='/coursecategory' element={<CourseCategory/>}/>
               <Route path='/login' element={<Login/>} />
@@ -72,9 +83,19 @@ function App() {
               <Route path='/instructorsetting' element={<Instructor_setting />} />
               <Route path='/instructordelete' element={<Instructor_Deleteprofile />} />
               <Route path='/signout' element={<Sign_in />} />
-          </Routes>
-         
-          
+              <Route path='/course' element={<CourseCategory1/>}/>
+              <Route path='/courselist' element={<CourseList/>}/>
+              <Route path='/frontendcourse' element={<FrontEndCourseList/>}/>
+              <Route path='/backendcourse' element={<BackEndCourseList/>}/>
+              <Route path='/graphicscourse' element={<GraphicsCourseList/>}/>
+              <Route path='/digitalmarketing' element={<DigitalMarketingCourse/>}/>
+              <Route path='/networkingvideo' element={<NetworkingVideo/>}/>
+              <Route path='/frontendvideo' element={<FrontEndVideo/>}/>
+              <Route path='/backendvideo' element={<BackEndVideo/>}/>
+              <Route path='/graphicsvideo' element={<GraphicsVideo/>}/>
+              <Route path='/DMvideo' element={<MarketingVideo/>}/>
+              <Route path='/videoplayer1' element={<VideoPlayer1/>}/>
+          </Routes> 
         <Footer/>
     </Router>
    </>

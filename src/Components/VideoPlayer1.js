@@ -1,7 +1,7 @@
 import React from 'react'
 
 const VideoPlayer1 = () => {
-  return (
+  return ( 
     <section className="py-0 bg-dark position-relative">
     <div className="row g-0">
       <div className="d-flex">

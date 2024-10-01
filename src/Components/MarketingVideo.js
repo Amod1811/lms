@@ -1,7 +1,7 @@
 import React from 'react'
 
 const MarketingVideo = () => {
-  return (
+  return ( 
     <div>
       <section className="bg-blue align-items-center d-flex" style={{background: 'url(assets/images/pattern/04.png) no-repeat center center', backgroundSize: 'cover'}}>
     <div className="container">

@@ -2,7 +2,7 @@ import React from 'react'
 
 const CourseCategory = () => {
   return (
-    <>
+    <> 
     <div>
   <section className="bg-light position-relative">
     {/* Svg decoration */}

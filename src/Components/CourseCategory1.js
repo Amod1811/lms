@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const CourseCategory1 = () => {
-  return (
+  return ( 
     <>
     <div>
   <section className="bg-light position-relative">
@@ -76,7 +76,7 @@ Categories START */}
               <img src="assets/images/element/networking.webp" alt />
             </div>
             {/* Title */}
-            <Link to="/courseList1" className="stretched-link"> <h5 className="mb-2"> HW/NW</h5></Link>
+            <Link to="/courselist" className="stretched-link"> <h5 className="mb-2"> HW/NW</h5></Link>
             <h6 className="mb-0">6 Courses</h6>
           </div>
         </div>
@@ -88,7 +88,7 @@ Categories START */}
               <img src="assets/images/element/online.svg" alt />
             </div>
             {/* Title */}
-            <h5 className="mb-2"><a href="CourseList1" className="stretched-link">FrontEnd</a></h5>
+            <Link to="/frontendcourse" className="stretched-link"> <h5 className="mb-2">FrontEnd</h5></Link>
             <h6 className="mb-0">6 Courses</h6>
           </div>
         </div>
@@ -100,7 +100,7 @@ Categories START */}
               <img src="assets/images/element/engineering.svg" alt />
             </div>
             {/* Title */}
-            <h5 className="mb-2"><a href="#" className="stretched-link">Backend</a></h5>
+            <Link to="/backendcourse" className="stretched-link"> <h5 className="mb-2">BackEnd</h5></Link>
             <h6 className="mb-0">6 Courses</h6>
           </div>
         </div>
@@ -112,7 +112,7 @@ Categories START */}
               <img src="assets/images/element/coding.svg" alt />
             </div>
             {/* Title */}
-            <h5 className="mb-2"><a href="#" className="stretched-link">Graphics</a></h5>
+            <Link to="/graphicscourse" className="stretched-link"> <h5 className="mb-2">Graphics Design</h5></Link>
             <h6 className="mb-0">25 Courses</h6>
           </div>
         </div>
@@ -124,7 +124,7 @@ Categories START */}
               <img src="assets/images/element/profit.svg" alt />
             </div>
             {/* Title */}
-            <h5 className="mb-2"><a href="#" className="stretched-link">Digital Marketing</a></h5>
+            <Link to="/digitalmarketing" className="stretched-link"> <h5 className="mb-2">Digital Marketing</h5></Link>
             <h6 className="mb-0">20 Courses</h6>
           </div>
         </div>

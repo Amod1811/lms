@@ -2,7 +2,7 @@ import React from 'react'
 
 const GraphicsVideo = () => {
   return (
-    <div>
+    <div> 
       <section className="bg-blue align-items-center d-flex" style={{background: 'url(assets/images/pattern/04.png) no-repeat center center', backgroundSize: 'cover'}}>
     <div className="container">
       <div className="row">

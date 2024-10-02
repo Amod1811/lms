@@ -38,7 +38,7 @@ const Instructor_Deleteprofile = () => {
                 </div>
                 {/* Button */}
                 <div className="d-flex align-items-center mt-2 mt-md-0">
-                  <a href="instructor-create-course.html" className="btn btn-success mb-0">Create a course</a>
+                <Link to="/instructorcreatecourse" className="btn btn-success mb-0">Create a course</Link>
                 </div>
               </div>
             </div>

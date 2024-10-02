@@ -55,6 +55,7 @@ import StudentDeleteAccount from './Components/StudentDeleteAccount';
 import StudentSubscription from './Components/StudentSubscription';
 import AdminDashboard from './Components/AdminDashboard';
 import Sign_UP from './Components/Sign_UP';
+import AddQuizModal from './Components/AddQuizModal';
 
 
 
@@ -88,8 +89,9 @@ function App() {
               {/* <Route path='/' element={ <Home/> }/> */}
               <Route path='/coursecategory' element={<CourseCategory/>}/>
               <Route path='/' element={ <Home/> }/>
+              <Route path='/addmodalquiz' element={<AddQuizModal/>}/>
               <Route path='/coursecategory' element={<CourseCategory/>}/>
-             
+              <Route path='/instructorcreatecourse' element={<Instructor_createCourse/>} />
               <Route path='/instructordashboard' element={<Instructor_Dashboard/>}/>
               <Route path='/instructorcourses' element={<Instructor_Courses />} />
               <Route path='/instructorquiz' element={<Instructor_Quiz />} />

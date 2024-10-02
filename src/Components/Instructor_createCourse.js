@@ -196,7 +196,7 @@ const Instructor_createCourse = () => {
                           <button className="ql-list" value="bullet" />
                           <button className="ql-indent" value={-1} />
                           <button className="ql-indent" value={+1} />
-                        </span>
+                        </span> 
                         <span className="ql-formats">
                           <button className="ql-link" />
                           <button className="ql-image" />

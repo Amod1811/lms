@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import PureCounter from '@srexi/purecounterjs';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LabelList } from 'recharts';
 import Chart from './Chart';
 import Internal_Footer from './Internal_Footer';
@@ -6,6 +7,11 @@ import { Link } from 'react-router-dom';
 
 
 const Instructor_Dashboard = () => {
+  useEffect(() => {
+    // Initialize the counter after the component mounts
+    new PureCounter();
+  }, []); 
+
   return (
     <div>
    <main>
@@ -41,7 +47,7 @@ const Instructor_Dashboard = () => {
                 </div>
                 {/* Button */}
                 <div className="d-flex align-items-center mt-2 mt-md-0">
-                  <a to="instructor-create-course.html" className="btn btn-success mb-0">Create a course</a>
+                  <Link to="/instructorcreatecourse" className="btn btn-success mb-0">Create a course</Link>
                 </div>
               </div>
             </div>
@@ -105,45 +111,73 @@ const Instructor_Dashboard = () => {
         <div className="col-xl-9">
           {/* Counter boxes START */}
           <div className="row g-4">
-            {/* Counter item */}
-            <div className="col-sm-6 col-lg-4">
-              <div className="d-flex justify-content-center align-items-center p-4 bg-warning bg-opacity-15 rounded-3">
-                <span className="display-6 text-warning mb-0"><i className="fas fa-tv fa-fw" /></span>
-                <div className="ms-4">
-                  <div className="d-flex">
-                    <h5 className="purecounter mb-0 fw-bold" data-purecounter-start={0} data-purecounter-end={25} data-purecounter-delay={200}>0</h5>
-                  </div>
-                  <span className="mb-0 h6 fw-light">Total Courses</span>
-                </div>
-              </div>
+      {/* Counter item */}
+      <div className="col-sm-6 col-lg-4">
+        <div className="d-flex justify-content-center align-items-center p-4 bg-warning bg-opacity-15 rounded-3">
+          <span className="display-6 text-warning mb-0">
+            <i className="fas fa-tv fa-fw" />
+          </span>
+          <div className="ms-4">
+            <div className="d-flex">
+              <h5
+                className="purecounter mb-0 fw-bold"
+                data-purecounter-start="0"
+                data-purecounter-end="25"
+                data-purecounter-delay="200"
+              >
+                0
+              </h5>
             </div>
-            {/* Counter item */}
-            <div className="col-sm-6 col-lg-4">
-              <div className="d-flex justify-content-center align-items-center p-4 bg-purple bg-opacity-10 rounded-3">
-                <span className="display-6 text-purple mb-0"><i className="fas fa-user-graduate fa-fw" /></span>
-                <div className="ms-4">
-                  <div className="d-flex">
-                    <h5 className="purecounter mb-0 fw-bold" data-purecounter-start={0} data-purecounter-end={25} data-purecounter-delay={200}>0</h5>
-                    <span className="mb-0 h5">K+</span>
-                  </div>
-                  <span className="mb-0 h6 fw-light">Total Students</span>
-                </div>
-              </div>
-            </div>
-            {/* Counter item */}
-            <div className="col-sm-6 col-lg-4">
-              <div className="d-flex justify-content-center align-items-center p-4 bg-info bg-opacity-10 rounded-3">
-                <span className="display-6 text-info mb-0"><i className="fas fa-gem fa-fw" /></span>
-                <div className="ms-4">
-                  <div className="d-flex">
-                    <h5 className="purecounter mb-0 fw-bold" data-purecounter-start={0} data-purecounter-end={12} data-purecounter-delay={300}>0</h5>
-                    <span className="mb-0 h5">K</span>
-                  </div>
-                  <span className="mb-0 h6 fw-light">Enrolled Students</span>
-                </div>
-              </div>
-            </div>
+            <span className="mb-0 h6 fw-light">Total Courses</span>
           </div>
+        </div>
+      </div>
+      {/* Counter item */}
+      <div className="col-sm-6 col-lg-4">
+        <div className="d-flex justify-content-center align-items-center p-4 bg-purple bg-opacity-10 rounded-3">
+          <span className="display-6 text-purple mb-0">
+            <i className="fas fa-user-graduate fa-fw" />
+          </span>
+          <div className="ms-4">
+            <div className="d-flex">
+              <h5
+                className="purecounter mb-0 fw-bold"
+                data-purecounter-start="0"
+                data-purecounter-end="25"
+                data-purecounter-delay="200"
+              >
+                0
+              </h5>
+              <span className="mb-0 h5">K+</span>
+            </div>
+            <span className="mb-0 h6 fw-light">Total Students</span>
+          </div>
+        </div>
+      </div>
+      {/* Counter item */}
+      <div className="col-sm-6 col-lg-4">
+        <div className="d-flex justify-content-center align-items-center p-4 bg-info bg-opacity-10 rounded-3">
+          <span className="display-6 text-info mb-0">
+            <i className="fas fa-gem fa-fw" />
+          </span>
+          <div className="ms-4">
+            <div className="d-flex">
+              <h5
+                className="purecounter mb-0 fw-bold"
+                data-purecounter-start="0"
+                data-purecounter-end="12"
+                data-purecounter-delay="300"
+              >
+                0
+              </h5>
+              <span className="mb-0 h5">K</span>
+            </div>
+            <span className="mb-0 h6 fw-light">Enrolled Students</span>
+          </div>
+        </div>
+      </div>
+    </div>
+         
           {/* Counter boxes END */}
           {/* Chart START */}
           <div className="row mt-5">

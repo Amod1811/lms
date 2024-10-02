@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const FrontEndVideo = () => {
   return ( 
@@ -79,7 +80,7 @@ const FrontEndVideo = () => {
                     <a href="#" className="h6 fw-light mb-0"><i className="far fa-heart" /></a>
                   </div>
                   {/* Title */}
-                  <h5 className="card-title"><a href="#">Video1 Title</a></h5>
+                  <Link to="/videoplayer1" className='card-title'><h5>Video1 Title</h5></Link>
                   <p className="mb-2 text-truncate-2">Description</p>
                   {/* Rating star */}
                   <ul className="list-inline mb-0">

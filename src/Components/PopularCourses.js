@@ -138,8 +138,30 @@ const PopularCourses = () => {
         time: '12h 56m',
         lectures: 15
       }
-   ]
-    
+   ],
+       'Finance' : 
+       [
+           
+            {
+              img: 'assets/images/courses/4by3/04.jpg',
+              badge: 'All level',
+              title: 'Learn Invision',
+              description: 'Arrived off she elderly beloved him Course regard to up he hardly.',
+              rating: 3.5,
+              time: '6h 56m',
+              lectures: 82
+            },
+            {
+              img: 'assets/images/courses/4by3/09.jpg',
+              badge: 'All level',
+              title: 'JavaScript: full Understanding',
+              description: 'Far advanced settling say finished raillery. Offered cheifly farther.',
+              rating: 5.0,
+              time: '35h 20m',
+              lectures: 89
+            }
+          ]
+  
   };
 
   const handleTabChange = (tabName) => {

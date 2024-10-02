@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import PureCounter from '@srexi/purecounterjs';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LabelList } from 'recharts';
 import Chart from './Chart';
-import Internal_Footer from './Internal_Footer';
+import Internal_Footer from './Internal_Footer'; 
 import { Link } from 'react-router-dom';
 
 

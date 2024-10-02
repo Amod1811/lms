@@ -4,6 +4,7 @@ import Counter from './Counter'
 import PopularCourses from './PopularCourses'
 import Review from './Review'
 import TrendingCourses from './TrendingCourses '
+import StudentDashboard from './StudentDashboard'
 
 
 const Home = () => {
@@ -289,7 +290,7 @@ Main Banner END */}
  <PopularCourses/>
  <TrendingCourses/>
  <Review/>
-
+  <StudentDashboard/>
 </>
   )
 }

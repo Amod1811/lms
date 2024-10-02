@@ -40,20 +40,20 @@ import FrontEndVideo from './Components/FrontEndVideo';
 import GraphicsVideo from './Components/GraphicsVideo';
 import MarketingVideo from './Components/MarketingVideo';
 import VideoPlayer1 from './Components/VideoPlayer1';
-
-
+import AdminDashboard from './Components/AdminDashboard';
+import CourseList1 from './Components/CourseList1';
+import StudentSubscription from './Components/StudentSubscription';
 import StudentCourseList from './Components/StudentCourseList';
 import StudentCourseResume from './Components/StudentCourseResume';
-
+import StudentQuiz from './Components/StudentQuiz';
 import StudentPaymentInfo from './Components/StudentPaymentInfo';
 import StudentBookmark from './Components/StudentBookmark';
 import StudentEditProfile from './Components/StudentEditProfile';
 
 import StudentSetting from './Components/StudentSetting';
 import StudentDeleteAccount from './Components/StudentDeleteAccount';
-import StudentSubscription from './Components/StudentSubscription';
-import AdminDashboard from './Components/AdminDashboard';
-import CourseList1 from './Components/CourseList1';
+
+
 
 
 
@@ -89,18 +89,7 @@ function App() {
               <Route path='/signup' element={<SignUp/>} />
           </Routes>
           {/* <AdminDashboard/> */}
-           {/* <StudentDashboard/>
-         <StudentSubscription/>
-           <StudentCourseList/>
-           <StudentCourseResume/>
-            
-           <StudentPaymentInfo/>
-           <StudentBookmark/>
-           <StudentEditProfile/>
-       
-          <StudentSetting/>
-          <StudentDeleteAccount/> */}
-
+          
           
       
 
@@ -134,8 +123,21 @@ function App() {
               <Route path='/DMvideo' element={<MarketingVideo/>}/>
               <Route path='/videoplayer1' element={<VideoPlayer1/>}/>
           </Routes> 
+ 
+          <Routes>
+             <Route path='/studentdashboard' element={<StudentDashboard />} />
+             <Route path='/studentsubscription' element={<StudentSubscription />} />
+             <Route path='/studentlist' element={<StudentCourseList />} />
+             <Route path='/studentresume' element={<StudentCourseResume />} />
+             <Route path='/studentquiz' element={<StudentQuiz />} />
+             <Route path='/studentpaymentinfo' element={<StudentPaymentInfo />} />
+             <Route path='/studentbookmark' element={<StudentBookmark />} />
+             <Route path='/studenteditprofile' element={<StudentEditProfile />} />
+             <Route path='/studentsetting' element={<StudentSetting />} />
+             <Route path='/studentdeleteaccount' element={<StudentDeleteAccount />} />
+         </Routes>
 
-        <Footer/>
+         <Footer/>
     </Router>
    </>
     

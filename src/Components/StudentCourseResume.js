@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function StudentCourseResume() {
   return (
@@ -84,17 +85,18 @@ Page content START */}
               <div className="bg-dark border rounded-3 p-3 w-100">
                 {/* Dashboard menu */}
                 <div className="list-group list-group-dark list-group-borderless collapse-list">
-                  <a className="list-group-item" href="student-dashboard.html"><i className="bi bi-ui-checks-grid fa-fw me-2" />Dashboard</a>
-                  <a className="list-group-item" href="student-subscription.html"><i className="bi bi-card-checklist fa-fw me-2" />My Subscriptions</a>
-                  <a className="list-group-item" href="student-course-list.html"><i className="bi bi-basket fa-fw me-2" />My Courses</a>
-                  <a className="list-group-item active" href="student-course-resume.html"><i className="far fa-fw fa-file-alt me-2" />Course Resume</a>
-                  <a className="list-group-item" href="student-quiz.html"><i className="bi bi-question-diamond fa-fw me-2" />Quiz</a>
-                  <a className="list-group-item" href="student-payment-info.html"><i className="bi bi-credit-card-2-front fa-fw me-2" />Payment Info</a>
-                  <a className="list-group-item" href="student-bookmark.html"><i className="bi bi-cart-check fa-fw me-2" />Wishlist</a>
-                  <a className="list-group-item" href="instructor-edit-profile.html"><i className="bi bi-pencil-square fa-fw me-2" />Edit Profile</a>
-                  <a className="list-group-item" href="instructor-setting.html"><i className="bi bi-gear fa-fw me-2" />Settings</a>
-                  <a className="list-group-item" href="instructor-delete-account.html"><i className="bi bi-trash fa-fw me-2" />Delete Profile</a>
-                  <a className="list-group-item text-danger bg-danger-soft-hover" href="#"><i className="fas fa-sign-out-alt fa-fw me-2" />Sign Out</a>
+                  <Link className="list-group-item" to="/studentdashboard"><i className="bi bi-ui-checks-grid fa-fw me-2" />Dashboard</Link>
+                  <Link className="list-group-item" to="/studentsubscription"><i className="bi bi-card-checklist fa-fw me-2" />My Subscriptions</Link>
+                  <Link className="list-group-item" to="/studentlist"><i className="bi bi-basket fa-fw me-2" />My Courses</Link>
+                  <Link className="list-group-item active" to="/studentresume"><i className="far fa-fw fa-file-alt me-2" />Course Resume</Link>
+                  <Link className="list-group-item" to="/studentquiz"><i className="bi bi-question-diamond fa-fw me-2" />Quiz</Link>
+                  <Link className="list-group-item" to="/studentpaymentinfo"><i className="bi bi-credit-card-2-front fa-fw me-2" />Payment Info</Link>
+                  <Link className="list-group-item" to="/studentbookmark"><i className="bi bi-cart-check fa-fw me-2" />Wishlist</Link>
+                  <Link className="list-group-item" to="/studenteditprofile"><i className="bi bi-pencil-square fa-fw me-2" />Edit Profile</Link>
+                  {/* <Link className="list-group-item" to="/studentpayout"><i className="bi bi-pencil-square fa-fw me-2" />Payout</Link>  */}
+                  <Link className="list-group-item" to="/studentsetting"><i className="bi bi-gear fa-fw me-2" />Settings</Link>
+                  <Link className="list-group-item" to="/studentdeleteaccount"><i className="bi bi-trash fa-fw me-2" />Delete Profile</Link>
+                  <Link className="list-group-item text-danger bg-danger-soft-hover" to="/signout"><i className="fas fa-sign-out-alt fa-fw me-2" />Sign Out</Link>
                   {/* Collapse menu */}
                   <a className="list-group-item" data-bs-toggle="collapse" href="#collapseauthentication" role="button" aria-expanded="false" aria-controls="collapseauthentication">
                     <i className="bi bi-lock fa-fw me-2" />Dropdown level
@@ -181,7 +183,7 @@ Page content START */}
                           {/* Add note button */}
                           <a className="btn btn-xs btn-warning mb-0" data-bs-toggle="collapse" href="#addnote-1" role="button" aria-expanded="false" aria-controls="addnote-1">
                             <i className="bi fa-fw bi-pencil-square me-2" />Note
-                          </a>
+                          </a>&nbsp;
                           <a href="#" className="btn btn-xs btn-dark mb-0">Play again</a>
                           {/* Notes START */}
                           <div className="collapse" id="addnote-1">
@@ -231,7 +233,7 @@ Page content START */}
                           {/* Add note button */}
                           <a className="btn btn-xs btn-warning mb-0" data-bs-toggle="collapse" href="#addnote-2" role="button" aria-expanded="false" aria-controls="addnote-2">
                             <i className="bi fa-fw bi-pencil-square me-2" />Note
-                          </a>
+                          </a>&nbsp;
                           <a href="#" className="btn btn-xs btn-dark mb-0">Play again</a>
                           {/* Notes START */}
                           <div className="collapse" id="addnote-2">

@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Sign_UP = () => {
-  return (
+  return ( 
     <div>
 <main>
   <section className="p-0 d-flex align-items-center position-relative overflow-hidden">

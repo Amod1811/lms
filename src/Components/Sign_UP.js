@@ -15,7 +15,7 @@ const Sign_UP = () => {
               <h2 className="fw-bold">Welcome to our largest community</h2>
               <p className="mb-0 h6 fw-light">Let's learn something new today!</p>
             </div>
-            {/* SVG Image */}
+            {/* SVG Image */} 
             <img src="assets/images/element/02.svg" className="mt-5" alt />
             {/* Info */}
             <div className="d-sm-flex mt-5 align-items-center justify-content-center">

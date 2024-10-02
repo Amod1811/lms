@@ -20892,12 +20892,21 @@ small,
   display: inline-block !important;
 }
 
-.avatar-img {
+.avatar-imgs {
   width: 100%;
   height: 100%;
+  margin-left: -200px;
   -o-object-fit: cover;
      object-fit: cover;
 }
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  /* margin-left: -200px; */
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 
 .avatar-group {
   padding: 0;

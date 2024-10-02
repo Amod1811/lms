@@ -101,7 +101,7 @@ const AddQuizModal = () => {
               <button type="button" className="btn btn-danger-soft my-0" data-bs-dismiss="modal">Close</button>
               <button type="submit" className="btn btn-success my-0" onClick={handleSubmit}>Add Quiz</button>
             </div>
-          </div>
+          </div> 
         </div>
       </div>
       {/* Add course modal END */}

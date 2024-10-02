@@ -54,11 +54,9 @@ import StudentEditProfile from './Components/StudentEditProfile';
 
 import StudentSetting from './Components/StudentSetting';
 import StudentDeleteAccount from './Components/StudentDeleteAccount';
-
-import StudentSubscription from './Components/StudentSubscription';
-import AdminDashboard from './Components/AdminDashboard';
-import Sign_UP from './Components/Sign_UP';
 import AddQuizModal from './Components/AddQuizModal';
+import Sign_UP from './Components/Sign_UP';
+
 
 
 

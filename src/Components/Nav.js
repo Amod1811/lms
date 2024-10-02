@@ -34,7 +34,7 @@ const Nav = () => {
           <ul className="navbar-nav navbar-nav-scroll me-auto">
             {/* Nav item 1 Demos */}
             <li className="nav-item ">
-              <Link className="nav-link  active" to="/" id="demoMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</Link>
+              <Link className="nav-link  active" to="/instructordashboard" id="demoMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</Link>
              
             </li>
             {/* Nav item 2 Pages */}
@@ -279,7 +279,7 @@ const Nav = () => {
         
           <ul className="navbar-nav sign">
               <li className="nav-item">
-                 <Link to="/login">Login</Link>
+                 <Link to="/signout">Login</Link>
               </li>&nbsp;&nbsp;&nbsp;
               <li className="nav-item">
                  <Link to="/signup">SignUp</Link>

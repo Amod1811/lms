@@ -88,24 +88,6 @@ function App() {
               <Route path='/coursecategory' element={<CourseCategory/>}/>
               <Route path='/login' element={<Login/>} />
               <Route path='/signup' element={<SignUp/>} />
-          </Routes>
-          {/* <AdminDashboard/> */}
-           {/* <StudentDashboard/>
-         <StudentSubscription/>
-           <StudentCourseList/>
-           <StudentCourseResume/>
-            
-           <StudentPaymentInfo/>
-           <StudentBookmark/>
-           <StudentEditProfile/>
-       
-          <StudentSetting/>
-          <StudentDeleteAccount/> */}
-
-          
-      
-
-          <Routes> 
               <Route path='/' element={ <Home/> }/>
               <Route path='/coursecategory' element={<CourseCategory/>}/>
               <Route path='/login' element={<Login/>} />
@@ -139,8 +121,6 @@ function App() {
         <Footer/>
     </Router>
    </>
-    
- 
   );
 }
 

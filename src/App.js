@@ -92,12 +92,7 @@ function App() {
               <Route path='/coursecategory' element={<CourseCategory/>}/>
 
           {/* <AdminDashboard/> */}
-          
-          
-      
-
-        
-              <Route path='/' element={ <Home/> }/>
+             <Route path='/' element={ <Home/> }/>
               <Route path='/addmodalquiz' element={<AddQuizModal/>}/>
               <Route path='/coursecategory' element={<CourseCategory/>}/>
               <Route path='/instructorcreatecourse' element={<Instructor_createCourse/>} />

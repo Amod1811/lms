@@ -56,7 +56,7 @@ import AdminDashboard from './Components/AdminDashboard';
 
 
 import Sign_UP from './Components/Sign_UP';
-import Cart from './Components/Cart';
+import BackToTop from './Components/BacktoTop';
 
 
 
@@ -69,25 +69,8 @@ function App() {
 
     <Router>
        <Nav/>
-       <Nav1/>
-       {/* <Cart/> */}
-       {/* <Instructor_Dashboard/> */}
-       {/* <Instructor_Courses/>
-       <Instructor_Quiz/>
-       <Instructor_earning/>
-       <Instructor_studentlist/>
-       <Instructor_order/>
-       <Instructor_Reviews/>
-       <Instructor_Editprofile/>
-       <Instructor_PayOuts/>
-       <Instructor_setting/>
-       <Instructor_Deleteprofile/>
-       <Sign_in/>
-       <Sign_UP/>
-       <Instructor_createCourse/>
-       <Instructor_Single/>
-       <Instructor_List/> */}
-        {/* <Nav1/> */}
+       
+       
 
           <Routes>
               {/* <Route path='/' element={ <Home/> }/> */}
@@ -137,6 +120,8 @@ function App() {
             <Route path='/studentdeleteaccount' element={ <StudentDeleteAccount/>}/>
           </Routes>
         <Footer/>
+         <Nav1/>
+         <BackToTop/>
     </Router>
    </>
     

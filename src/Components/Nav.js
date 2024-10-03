@@ -1,4 +1,5 @@
 import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
 
 const Nav = () => {
@@ -22,6 +23,7 @@ const Nav = () => {
           <span className="navbar-toggler-animation">
             <span />
             <span />
+            
             <span />
           </span>
         </button>

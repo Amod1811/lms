@@ -272,11 +272,7 @@ const Nav = () => {
               </form>
             </div>
           </div>
-          {/* Nav Search END */}
-        </div>
-        {/* Main navbar END */}
-        {/* Profile START */}
-        <div className="dropdown ms-1 ms-lg-0">
+          {/* <div className="dropdown ms-1 ms-lg-0">
           <a className="avatar avatar-sm p-0" href="#" id="profileDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
         
           <ul className="navbar-nav sign">
@@ -289,8 +285,6 @@ const Nav = () => {
           </ul>
         </a>
          
-<<<<<<< HEAD
-=======
         </div> */}
         <div className="dropdown ms-1 ms-lg-0">
         <ul className="navbar-nav sign">
@@ -303,8 +297,10 @@ const Nav = () => {
           </ul>
 </div>
           {/* Nav Search END */}
->>>>>>> f9f13a3ff8e227d738ea52b3c6f99c1f020ddcac
         </div>
+        {/* Main navbar END */}
+        {/* Profile START */} 
+        
         {/* Profile START */}
       </div>
     </nav>

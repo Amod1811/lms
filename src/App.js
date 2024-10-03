@@ -156,7 +156,7 @@ function App() {
             <Route path='/studentpaymentinfo' element={<StudentPaymentInfo/>}/>
             <Route path='/studentbookmark' element={ <StudentBookmark/>}/>
             <Route path='/studenteditprofile' element={<StudentEditProfile/>}/>
-            <Route path='/studentpayout' element={ <StudentPayout/>}/>
+            {/* <Route path='/studentpayout' element={ <StudentPayout/>}/> */}
              <Route path='/studentsetting' element={ <StudentSetting/>}/>
             <Route path='/studentdeleteaccount' element={ <StudentDeleteAccount/>}/>
           </Routes>

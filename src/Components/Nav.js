@@ -285,6 +285,7 @@ const Nav = () => {
           </ul>
         </a>
          
+<<<<<<< HEAD
         </div> */}
         <div className="dropdown ms-1 ms-lg-0">
         <ul className="navbar-nav sign">
@@ -301,13 +302,19 @@ const Nav = () => {
         {/* Main navbar END */}
         {/* Profile START */} 
         
+=======
+
+>>>>>>> beff5ef52138c96b680fc661215b0ffdfe06d51b
         {/* Profile START */}
       </div>
-    </nav>
-    {/* Nav END */}
-  </header>
+      </div>
+      </nav>
+      {/* Nav END */}
+      </header>
   {/* Header END */}
-</div>
+   </div>
+  
+
 
   )
 }

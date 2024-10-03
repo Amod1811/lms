@@ -34,7 +34,6 @@ const Nav = () => {
 
             {/* Main navbar START */}
             <div className="navbar-collapse w-100 collapse" id="navbarCollapse">
-              {/* Nav Main menu START */}
               <ul className="navbar-nav navbar-nav-scroll me-auto">
                 {/* Nav item 1 Home */}
                 <li className="nav-item">
@@ -43,62 +42,44 @@ const Nav = () => {
 
                 {/* Nav item 2 Courses Dropdown */}
                 <li className="nav-item dropdown">
-                  <Link className="nav-link dropdown-toggle" to="/Course" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses</Link>
+                  <Link className="nav-link" to="/Course">Courses</Link>
                   <ul className="dropdown-menu" aria-labelledby="pagesMenu">
-                    {/* Networking Submenu */}
+                    {/* Dropdown submenu */}
                     <li className="dropdown-submenu dropend">
                       <a className="dropdown-item dropdown-toggle" href="#">Networking</a>
-                      <ul className="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-                        {['Hardware', 'Networking', 'AWS', 'Linux (CCNA)', 'MCITP', 'MCSE'].map((item, index) => (
-                          <React.Fragment key={index}>
-                            <li><a className="dropdown-item" href="#">{item}</a></li>
-                            {index < 5 && <li><hr className="dropdown-divider" /></li>}
-                          </React.Fragment>
-                        ))}
+                      <ul className="dropdown-menu dropdown-menu-start">
+                        <li><a className="dropdown-item" href="#">Hardware</a></li>
+                        <li><a className="dropdown-item" href="#">Networking</a></li>
+                        <li><a className="dropdown-item" href="#">AWS</a></li>
+                        <li><a className="dropdown-item" href="#">Linux (CCNA)</a></li>
+                        <li><a className="dropdown-item" href="#">MCITP</a></li>
+                        <li><a className="dropdown-item" href="#">MCSE</a></li>
                       </ul>
                     </li>
-
-                    {/* Front-end Submenu */}
                     <li className="dropdown-submenu dropend">
                       <a className="dropdown-item dropdown-toggle" href="#">Front-end</a>
-                      <ul className="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-                        {['HTML', 'CSS', 'JS', 'JQuery', 'BootStrap', 'React'].map((item, index) => (
-                          <React.Fragment key={index}>
-                            <li><a className="dropdown-item" href="#">{item}</a></li>
-                            {index < 5 && <li><hr className="dropdown-divider" /></li>}
-                          </React.Fragment>
-                        ))}
+                      <ul className="dropdown-menu dropdown-menu-start">
+                        <li><a className="dropdown-item" href="#">HTML</a></li>
+                        <li><a className="dropdown-item" href="#">CSS</a></li>
+                        <li><a className="dropdown-item" href="#">JS</a></li>
+                        <li><a className="dropdown-item" href="#">React</a></li>
                       </ul>
                     </li>
-
-                    {/* Back-end Submenu */}
                     <li className="dropdown-submenu dropend">
                       <a className="dropdown-item dropdown-toggle" href="#">Back-end</a>
-                      <ul className="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-                        {['Node.js', 'Express.js', 'MySQL', 'MongoDb', 'PhP', 'JAVA'].map((item, index) => (
-                          <React.Fragment key={index}>
-                            <li><a className="dropdown-item" href="#">{item}</a></li>
-                            {index < 5 && <li><hr className="dropdown-divider" /></li>}
-                          </React.Fragment>
-                        ))}
+                      <ul className="dropdown-menu dropdown-menu-start">
+                        <li><a className="dropdown-item" href="#">Node.js</a></li>
+                        <li><a className="dropdown-item" href="#">Express.js</a></li>
+                        <li><a className="dropdown-item" href="#">MySQL</a></li>
+                        <li><a className="dropdown-item" href="#">MongoDb</a></li>
                       </ul>
                     </li>
-
-                    {/* Graphics Item */}
-                    <li className="dropdown">
-                      <a className="dropdown-item" href="#">Graphics</a>
-                    </li>
-
-                    {/* Digital Marketing Submenu */}
                     <li className="dropdown-submenu dropend">
                       <a className="dropdown-item dropdown-toggle" href="#">Digital Marketing</a>
-                      <ul className="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-                        {['SEO', 'SMM', 'SEM'].map((item, index) => (
-                          <React.Fragment key={index}>
-                            <li><a className="dropdown-item" href="#">{item}</a></li>
-                            {index < 2 && <li><hr className="dropdown-divider" /></li>}
-                          </React.Fragment>
-                        ))}
+                      <ul className="dropdown-menu dropdown-menu-start">
+                        <li><a className="dropdown-item" href="#">SEO</a></li>
+                        <li><a className="dropdown-item" href="#">SMM</a></li>
+                        <li><a className="dropdown-item" href="#">SEM</a></li>
                       </ul>
                     </li>
                   </ul>
@@ -113,43 +94,36 @@ const Nav = () => {
                 <li className="nav-item dropdown">
                   <Link className="nav-link" to="/coursecategory">Dashboard</Link>
                   <ul className="dropdown-menu" aria-labelledby="pagesMenu">
-                    {['Admin', 'Instructor', 'Student'].map((role, index) => (
-                      <li className="dropdown-submenu dropend" key={index}>
-                        <Link className="dropdown-item" to={`/${role.toLowerCase()}dashboard`}>{role}</Link>
-                      </li>
-                    ))}
+                    <li className="dropdown-submenu dropend">
+                      <Link className="dropdown-item dropdown-toggle" to="/admin-dashboard">Admin</Link>
+                    </li>
+                    <li className="dropdown-submenu dropend">
+                      <Link className="dropdown-item dropdown-toggle" to="/instructordashboard">Instructor</Link>
+                    </li>
+                    <li className="dropdown-submenu dropend">
+                      <Link className="dropdown-item dropdown-toggle" to="/studentdashboard">Student</Link>
+                    </li>
                   </ul>
                 </li>
               </ul>
-              {/* Nav Main menu END */}
 
-              {/* Nav Search START */}
-              <div className="nav my-3 my-xl-0 px-4 flex-nowrap align-items-center">
-                <form className="position-relative w-100">
-                  <input className="form-control pe-5 bg-transparent" type="search" placeholder="Search" aria-label="Search" />
-                  <button className="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset" type="submit">
-                    <i className="fas fa-search fs-6" />
+              {/* Search bar and sign in/signup links */}
+              <div className="d-flex align-items-center">
+                <form className="d-flex">
+                  <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                  <button className="btn btn-outline-success" type="submit">
+                    <i className="fas fa-search"></i>
                   </button>
                 </form>
-                {/* Search bar and sign in/signup links */}
-                <div className="d-flex align-items-center">
-                  <form className="d-flex">
-                    <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button className="btn btn-outline-success" type="submit">
-                      <i className="fas fa-search"></i>
-                    </button>
-                  </form>
-                  <ul className="navbar-nav sign ms-3">
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/signout">Login</Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/signUp">SignUp</Link>
-                    </li>
-                  </ul>
-                </div>
+                <ul className="navbar-nav sign ms-3">
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/signout">Login</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/signUp">SignUp</Link>
+                  </li>
+                </ul>
               </div>
-              {/* Nav Search END */}
             </div>
             {/* Main navbar END */}
           </div>
@@ -160,6 +134,5 @@ const Nav = () => {
     </div>
   );
 };
-
 
 export default Nav;

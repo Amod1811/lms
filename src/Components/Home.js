@@ -292,7 +292,11 @@ Main Banner END */}
  <TrendingCourses/>
  <Review/>
   <StudentDashboard/>
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> f9f13a3ff8e227d738ea52b3c6f99c1f020ddcac
 </>
   )
 }

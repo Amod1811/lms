@@ -52,9 +52,15 @@ import StudentEditProfile from './Components/StudentEditProfile';
 
 import StudentSetting from './Components/StudentSetting';
 import StudentDeleteAccount from './Components/StudentDeleteAccount';
+<<<<<<< HEAD
 import StudentPayout from './Components/StudentPayout';
 import About from './Components/About';
 import AdminDashboard from './Components/AdminDashboard';
+=======
+import Sign_UP from './Components/Sign_UP';
+
+
+>>>>>>> f9f13a3ff8e227d738ea52b3c6f99c1f020ddcac
 
 
 
@@ -87,6 +93,7 @@ function App() {
           <Routes>
               {/* <Route path='/' element={ <Home/> }/> */}
               <Route path='/coursecategory' element={<CourseCategory/>}/>
+<<<<<<< HEAD
               <Route path='/login' element={<Login/>} />
               <Route path='/signup' element={<SignUp/>} />
           </Routes>
@@ -96,10 +103,9 @@ function App() {
       
 
           <Routes> 
+=======
+>>>>>>> f9f13a3ff8e227d738ea52b3c6f99c1f020ddcac
               <Route path='/' element={ <Home/> }/>
-              <Route path='/coursecategory' element={<CourseCategory/>}/>
-              <Route path='/login' element={<Login/>} />
-              <Route path='/signup' element={<SignUp/>} />
               <Route path='/instructordashboard' element={<Instructor_Dashboard/>}/>
               <Route path='/instructorcourses' element={<Instructor_Courses />} />
               <Route path='/instructorquiz' element={<Instructor_Quiz />} />
@@ -112,6 +118,7 @@ function App() {
               <Route path='/instructorsetting' element={<Instructor_setting />} />
               <Route path='/instructordelete' element={<Instructor_Deleteprofile />} />
               <Route path='/signout' element={<Sign_in />} />
+              <Route path='/signUp' element={<Sign_UP/>} />
               <Route path='/course' element={<CourseCategory1/>}/>
               <Route path='/courselist' element={<CourseList1/>}/>
               <Route path='/frontendcourse' element={<FrontEndCourseList/>}/>
@@ -124,7 +131,25 @@ function App() {
               <Route path='/graphicsvideo' element={<GraphicsVideo/>}/>
               <Route path='/DMvideo' element={<MarketingVideo/>}/>
               <Route path='/videoplayer1' element={<VideoPlayer1/>}/>
+<<<<<<< HEAD
           </Routes> 
+=======
+         
+ 
+          
+             <Route path='/studentdashboard' element={<StudentDashboard />} />
+             <Route path='/studentsubscription' element={<StudentSubscription />} />
+             <Route path='/studentlist' element={<StudentCourseList />} />
+             <Route path='/studentresume' element={<StudentCourseResume />} />
+             <Route path='/studentquiz' element={<StudentQuiz />} />
+             <Route path='/studentpaymentinfo' element={<StudentPaymentInfo />} />
+             <Route path='/studentbookmark' element={<StudentBookmark />} />
+             <Route path='/studenteditprofile' element={<StudentEditProfile />} />
+             <Route path='/studentsetting' element={<StudentSetting />} />
+             <Route path='/studentdeleteaccount' element={<StudentDeleteAccount />} />
+       
+        </Routes>
+>>>>>>> f9f13a3ff8e227d738ea52b3c6f99c1f020ddcac
     
     {/* Student Dashboard Route Start */}
           <Routes>

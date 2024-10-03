@@ -14,7 +14,7 @@ const Sign_UP = () => {
             <div className="text-center">
               <h2 className="fw-bold">Welcome to our largest community</h2>
               <p className="mb-0 h6 fw-light">Let's learn something new today!</p>
-            </div>
+            </div> 
             {/* SVG Image */} 
             <img src="assets/images/element/02.svg" className="mt-5" alt />
             {/* Info */}

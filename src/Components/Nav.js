@@ -1,5 +1,5 @@
 import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
 
 const Nav = () => {
@@ -292,7 +292,7 @@ const Nav = () => {
                  <Link to="/signout">Login</Link>
               </li>&nbsp;&nbsp;&nbsp;
               <li className="nav-item">
-                 <Link to="/signup">SignUp</Link>
+                 <Link to="/signUp">SignUp</Link>
               </li>
           </ul>
 </div>

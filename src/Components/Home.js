@@ -5,7 +5,7 @@ import PopularCourses from './PopularCourses'
 import Review from './Review'
 import TrendingCourses from './TrendingCourses '
 import StudentDashboard from './StudentDashboard'
-import AdminDashboard from './AdminDashboard'
+
 
 
 const Home = () => {
@@ -292,7 +292,7 @@ Main Banner END */}
  <TrendingCourses/>
  <Review/>
   <StudentDashboard/>
-  <AdminDashboard/>
+
 </>
   )
 }

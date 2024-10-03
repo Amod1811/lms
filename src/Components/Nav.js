@@ -302,9 +302,7 @@ const Nav = () => {
         {/* Main navbar END */}
         {/* Profile START */} 
         
-=======
 
->>>>>>> beff5ef52138c96b680fc661215b0ffdfe06d51b
         {/* Profile START */}
       </div>
       </div>

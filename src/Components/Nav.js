@@ -305,7 +305,7 @@ const Nav = () => {
 
         {/* Profile START */}
       </div>
-      </div>
+      
       </nav>
       {/* Nav END */}
       </header>

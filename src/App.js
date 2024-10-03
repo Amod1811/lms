@@ -118,7 +118,7 @@ function App() {
 
     
     {/* Student Dashboard Route Start */}
-          <Routes>
+        
             <Route path='/studentdashboard' element={ <StudentDashboard/>}/>
             <Route path='/studentsubscription' element={<StudentSubscription/>}/>
             <Route path='/studentlist' element={<StudentCourseList/>}/>

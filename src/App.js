@@ -86,7 +86,7 @@ function App() {
 
        
 
-       <Nav/>
+       {/* <Nav/> */}
 
 
           <Routes>

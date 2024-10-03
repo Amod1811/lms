@@ -104,21 +104,7 @@ const Nav = () => {
 
                 <li className="dropdown">
                   <a className="dropdown-item " href="#">Graphics</a>
-                  {/* <ul className="dropdown-menu dropdown-menu-start" data-bs-popper="none"> */}
-                    {/* <li> <a className="dropdown-item" href="course-categories.html">Course Categories</a></li> */}
                   
-                    {/* <li> <a className="dropdown-item" href="#">Hardware</a></li>
-                    <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="#">Networking</a></li>
-                    <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="#">AWS</a></li>
-                    <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="#">Linux (CCNA)</a></li>
-                    <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="#">MCITP</a></li>
-                    <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="#">MCSE</a></li>            
-                  </ul> */}
                 </li>
 
 
@@ -132,12 +118,7 @@ const Nav = () => {
                     <li> <a className="dropdown-item" href="#">SMM</a></li>
                     <li> <hr className="dropdown-divider" /></li>
                     <li> <a className="dropdown-item" href="#">SEM</a></li>
-                    {/* <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="#">Linux (CCNA)</a></li>
-                    <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="#">MCITP</a></li>
-                    <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="#">MCSE</a></li>             */}
+                    
                   </ul>
                 </li>
                 {/* Dropdown submenu */}
@@ -214,21 +195,7 @@ const Nav = () => {
 
                 <li className="dropdown">
                   <a className="dropdown-item " href="#">Graphics</a>
-                  {/* <ul className="dropdown-menu dropdown-menu-start" data-bs-popper="none"> */}
-                    {/* <li> <a className="dropdown-item" href="course-categories.html">Course Categories</a></li> */}
-                  
-                    {/* <li> <a className="dropdown-item" href="#">Hardware</a></li>
-                    <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="#">Networking</a></li>
-                    <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="#">AWS</a></li>
-                    <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="#">Linux (CCNA)</a></li>
-                    <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="#">MCITP</a></li>
-                    <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="#">MCSE</a></li>            
-                  </ul> */}
+                 
                 </li>
 
 
@@ -242,12 +209,7 @@ const Nav = () => {
                     <li> <a className="dropdown-item" href="#">SMM</a></li>
                     <li> <hr className="dropdown-divider" /></li>
                     <li> <a className="dropdown-item" href="#">SEM</a></li>
-                    {/* <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="#">Linux (CCNA)</a></li>
-                    <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="#">MCITP</a></li>
-                    <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="#">MCSE</a></li>             */}
+                    
                   </ul>
                 </li>
                 {/* Dropdown submenu */}
@@ -272,21 +234,6 @@ const Nav = () => {
               </form>
             </div>
           </div>
-          {/* <div className="dropdown ms-1 ms-lg-0">
-          <a className="avatar avatar-sm p-0" href="#" id="profileDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
-        
-          <ul className="navbar-nav sign">
-              <li className="nav-item">
-                 <Link to="/signout">Login</Link>
-              </li>&nbsp;&nbsp;&nbsp;
-              <li className="nav-item">
-                 <Link to="/signup">SignUp</Link>
-              </li>
-          </ul>
-        </a>
-         
-<<<<<<< HEAD
-        </div> */}
         <div className="dropdown ms-1 ms-lg-0">
         <ul className="navbar-nav sign">
               <li className="nav-item">
@@ -311,9 +258,6 @@ const Nav = () => {
       </header>
   {/* Header END */}
    </div>
-  
-
-
   )
 }
 

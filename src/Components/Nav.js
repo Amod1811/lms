@@ -33,7 +33,7 @@ const Nav = () => {
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 {/* Nav item 1 Home */}
                 <li className="nav-item">
-                  <Link className="nav-link active" to="/instructordashboard">Home</Link>
+                  <Link className="nav-link active" to="/">Home</Link>
                 </li>
 
                 {/* Nav item 2 Courses Dropdown */}

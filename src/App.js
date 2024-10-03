@@ -51,6 +51,12 @@ import StudentEditProfile from './Components/StudentEditProfile';
 
 import StudentSetting from './Components/StudentSetting';
 import StudentDeleteAccount from './Components/StudentDeleteAccount';
+<<<<<<< HEAD
+=======
+
+import AdminDashboard from './Components/AdminDashboard';
+
+>>>>>>> 70fad0d2af66ca7ddddfcb029b90423bdd86cb36
 import Sign_UP from './Components/Sign_UP';
 
 
@@ -116,7 +122,7 @@ function App() {
      
     
     {/* Student Dashboard Route Start */}
-          <Routes>
+        
             <Route path='/studentdashboard' element={ <StudentDashboard/>}/>
             <Route path='/studentsubscription' element={<StudentSubscription/>}/>
             <Route path='/studentlist' element={<StudentCourseList/>}/>

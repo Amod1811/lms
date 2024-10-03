@@ -2,16 +2,10 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import CourseCategory from './Components/CourseCategory';
-
 import Nav from './Components/Nav';
 import Home from './Components/Home';
-
-
-import Login from './Components/Login';
-import SignUp from './Components/SignUp';
 import Footer from './Components/Footer';
 import Nav1 from './Components/Nav1';
-
 import Instructor_Dashboard from './Components/Instructor_Dashboard';
 import Instructor_Courses from './Components/Instructor_Courses';
 import Instructor_Quiz from './Components/Instructor_Quiz';
@@ -27,7 +21,6 @@ import Sign_in from './Components/Sign_in';
 import Instructor_createCourse from './Components/Instructor_createCourse';
 import Instructor_Single from './Components/Instructor_Single';
 import Instructor_List from './Components/Instructor_List';
-
 import StudentDashboard from './Components/StudentDashboard';
 import CourseCategory1 from './Components/CourseCategory1';
 import FrontEndCourseList from './Components/FrontEndCourseList';
@@ -84,9 +77,15 @@ function App() {
         {/* <Nav1/> */}
 
           <Routes>
-              {/* <Route path='/' element={ <Home/> }/> */}
-              <Route path='/coursecategory' element={<CourseCategory/>}/>
               <Route path='/' element={ <Home/> }/>
+              <Route path='/signout' element={<Sign_in />} />
+              <Route path='/signUp' element={<Sign_UP/>} />
+
+
+
+                    {/* Instructor Dashboard */}
+
+
               <Route path='/instructordashboard' element={<Instructor_Dashboard/>}/>
               <Route path='/instructorcourses' element={<Instructor_Courses />} />
               <Route path='/instructorquiz' element={<Instructor_Quiz />} />
@@ -98,8 +97,13 @@ function App() {
               <Route path='/instructorpayout' element={<Instructor_PayOuts />} />
               <Route path='/instructorsetting' element={<Instructor_setting />} />
               <Route path='/instructordelete' element={<Instructor_Deleteprofile />} />
-              <Route path='/signout' element={<Sign_in />} />
-              <Route path='/signUp' element={<Sign_UP/>} />
+             
+
+
+                     {/* CourseCategories */}
+
+
+              <Route path='/coursecategory' element={<CourseCategory/>}/>
               <Route path='/course' element={<CourseCategory1/>}/>
               <Route path='/courselist' element={<CourseList1/>}/>
               <Route path='/frontendcourse' element={<FrontEndCourseList/>}/>
@@ -112,9 +116,12 @@ function App() {
               <Route path='/graphicsvideo' element={<GraphicsVideo/>}/>
               <Route path='/DMvideo' element={<MarketingVideo/>}/>
               <Route path='/videoplayer1' element={<VideoPlayer1/>}/>
-         
- 
-          
+
+
+
+                       {/* Student Dashboard */}
+
+
              <Route path='/studentdashboard' element={<StudentDashboard />} />
              <Route path='/studentsubscription' element={<StudentSubscription />} />
              <Route path='/studentlist' element={<StudentCourseList />} />

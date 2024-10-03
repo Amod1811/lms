@@ -222,7 +222,8 @@ Page content START */}
               </div>
               {/* Button */}
               <div>
-                <a href="#" className="btn btn-sm btn-success mb-0">Edit</a>
+                <a href="#" className="btn btn-sm btn-success mb-0">Edit</a>&nbsp;
+
                 <button className="btn btn-sm btn-danger mb-0">Delete</button>
               </div>
             </div>
@@ -237,7 +238,7 @@ Page content START */}
               </div>
               {/* Button */}
               <div>
-                <a href="#" className="btn btn-sm btn-success mb-0">Edit</a>
+                <a href="#" className="btn btn-sm btn-success mb-0">Edit</a>&nbsp;
                 <button className="btn btn-sm btn-danger mb-0">Delete</button>
               </div>
             </div>

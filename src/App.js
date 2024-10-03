@@ -33,6 +33,7 @@ import FrontEndVideo from './Components/FrontEndVideo';
 import GraphicsVideo from './Components/GraphicsVideo';
 import MarketingVideo from './Components/MarketingVideo';
 import VideoPlayer1 from './Components/VideoPlayer1';
+
 import CourseList1 from './Components/CourseList1';
 import StudentSubscription from './Components/StudentSubscription';
 import StudentCourseList from './Components/StudentCourseList';
@@ -44,8 +45,8 @@ import StudentEditProfile from './Components/StudentEditProfile';
 
 import StudentSetting from './Components/StudentSetting';
 import StudentDeleteAccount from './Components/StudentDeleteAccount';
-import Sign_UP from './Components/Sign_UP';
 
+import Sign_UP from './Components/Sign_UP';
 
 
 
@@ -76,7 +77,14 @@ function App() {
        <Instructor_List/> */}
         {/* <Nav1/> */}
 
-          <Routes>
+         
+
+          
+          
+      
+
+          <Routes> 
+
               <Route path='/' element={ <Home/> }/>
               <Route path='/signout' element={<Sign_in />} />
               <Route path='/signUp' element={<Sign_UP/>} />
@@ -119,7 +127,9 @@ function App() {
 
 
 
+
                        {/* Student Dashboard */}
+
 
 
              <Route path='/studentdashboard' element={<StudentDashboard />} />
@@ -133,9 +143,31 @@ function App() {
              <Route path='/studentsetting' element={<StudentSetting />} />
              <Route path='/studentdeleteaccount' element={<StudentDeleteAccount />} />
        
-        </Routes>
-    
      
+
+    
+    {/* Student Dashboard Route Start */}
+        
+            <Route path='/studentdashboard' element={ <StudentDashboard/>}/>
+            <Route path='/studentsubscription' element={<StudentSubscription/>}/>
+            <Route path='/studentlist' element={<StudentCourseList/>}/>
+            <Route path='/studentresume' element={<StudentCourseResume/>}/>
+            <Route path='/studentquiz' element={<StudentQuiz/>}/>
+            <Route path='/studentpaymentinfo' element={<StudentPaymentInfo/>}/>
+            <Route path='/studentbookmark' element={ <StudentBookmark/>}/>
+            <Route path='/studenteditprofile' element={<StudentEditProfile/>}/>
+            <Route path='/studentpayout' element={ <StudentPayout/>}/>
+             <Route path='/studentsetting' element={ <StudentSetting/>}/>
+            <Route path='/studentdeleteaccount' element={ <StudentDeleteAccount/>}/>
+          </Routes>
+
+        {/* Student Dashboard Route End*/}
+
+
+        {/* Admin Dashboard Route Start */}
+        
+
+        {/* Admin Dashboard Route End */}
          <Footer/>
     </Router>
    </>

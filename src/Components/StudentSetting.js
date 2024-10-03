@@ -84,9 +84,9 @@ Page content START */}
                   <Link className="list-group-item" href="instructor-studentlist.html"><i className="bi bi-people fa-fw me-2" />Students</Link>
                   <Link className="list-group-item" href="instructor-order.html"><i className="bi bi-folder-check fa-fw me-2" />Orders</Link>
                   <Link className="list-group-item" href="instructor-review.html"><i className="bi bi-star fa-fw me-2" />Reviews</Link>
-                  <Link className="list-group-item active" to="/studenteditprofile"><i className="bi bi-pencil-square fa-fw me-2" />Edit Profile</Link>
+                  <Link className="list-group-item " to="/studenteditprofile"><i className="bi bi-pencil-square fa-fw me-2" />Edit Profile</Link>
                   {/* <Link className="list-group-item" to="/payout"><i className="bi bi-wallet2 fa-fw me-2" />Payouts</Link> */}
-                  <Link className="list-group-item " to="/studentsetting"><i className="bi bi-gear fa-fw me-2" />Settings</Link>
+                  <Link className="list-group-item active " to="/studentsetting"><i className="bi bi-gear fa-fw me-2" />Settings</Link>
                   <Link className="list-group-item" to="/studentdeleteaccount"><i className="bi bi-trash fa-fw me-2" />Delete Profile</Link>
                   <Link className="list-group-item text-danger bg-danger-soft-hover" to="/signout"><i className="fas fa-sign-out-alt fa-fw me-2" />Sign out</Link>
                 </div>

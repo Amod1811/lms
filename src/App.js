@@ -7,10 +7,9 @@ import Nav from './Components/Nav';
 import Home from './Components/Home';
 
 
-import Login from './Components/Login';
-import SignUp from './Components/SignUp';
+
 import Footer from './Components/Footer';
-import Nav1 from './Components/Nav1';
+
 
 import Instructor_Dashboard from './Components/Instructor_Dashboard';
 import Instructor_Courses from './Components/Instructor_Courses';
@@ -24,9 +23,7 @@ import Instructor_PayOuts from './Components/Instructor_PayOuts';
 import Instructor_setting from './Components/Instructor_setting';
 import Instructor_Deleteprofile from './Components/Instructor_Deleteprofile';
 import Sign_in from './Components/Sign_in';
-import Instructor_createCourse from './Components/Instructor_createCourse';
-import Instructor_Single from './Components/Instructor_Single';
-import Instructor_List from './Components/Instructor_List';
+
 
 import StudentDashboard from './Components/StudentDashboard';
 import CourseCategory1 from './Components/CourseCategory1';
@@ -52,128 +49,60 @@ import StudentEditProfile from './Components/StudentEditProfile';
 
 import StudentSetting from './Components/StudentSetting';
 import StudentDeleteAccount from './Components/StudentDeleteAccount';
-<<<<<<< HEAD
-import StudentPayout from './Components/StudentPayout';
-import About from './Components/About';
-import AdminDashboard from './Components/AdminDashboard';
-=======
 import Sign_UP from './Components/Sign_UP';
-
-
->>>>>>> f9f13a3ff8e227d738ea52b3c6f99c1f020ddcac
-
-
-
-
 
 function App() {
   return (
     <>
 
     <Router>
-       <Nav/>
-       {/* <Instructor_Dashboard/> */}
-       {/* <Instructor_Courses/>
-       <Instructor_Quiz/>
-       <Instructor_earning/>
-       <Instructor_studentlist/>
-       <Instructor_order/>
-       <Instructor_Reviews/>
-       <Instructor_Editprofile/>
-       <Instructor_PayOuts/>
-       <Instructor_setting/>
-       <Instructor_Deleteprofile/>
-       <Sign_in/>
-       <Sign_UP/>
-       <Instructor_createCourse/>
-       <Instructor_Single/>
-       <Instructor_List/> */}
-        {/* <Nav1/> */}
+     <Nav/>
+       <Routes>
+                   <Route path='/coursecategory' element={<CourseCategory/>}/>
+                   <Route path='/' element={ <Home/> }/>
+                   <Route path='/instructordashboard' element={<Instructor_Dashboard/>}/>
+                   <Route path='/instructorcourses' element={<Instructor_Courses />} />
+                   <Route path='/instructorquiz' element={<Instructor_Quiz />} />
+                   <Route path='/instructorearning' element={<Instructor_earning />} />
+                   <Route path='/instructorstudentlist' element={<Instructor_studentlist />} />
+                   <Route path='/instrctororder' element={<Instructor_order />} />
+                   <Route path='/instructorreviews' element={<Instructor_Reviews />} />
+                   <Route path='/instructoreditprofile' element={<Instructor_Editprofile />} />
+                   <Route path='/instructorpayout' element={<Instructor_PayOuts />} />
+                   <Route path='/instructorsetting' element={<Instructor_setting />} />
+                   <Route path='/instructordelete' element={<Instructor_Deleteprofile />} />
+                   <Route path='/signout' element={<Sign_in />} />
+                   <Route path='/signUp' element={<Sign_UP/>} />
+                   <Route path='/course' element={<CourseCategory1/>}/>
+                   <Route path='/courselist' element={<CourseList1/>}/>
+                   <Route path='/frontendcourse' element={<FrontEndCourseList/>}/>
+                   <Route path='/backendcourse' element={<BackEndCourseList/>}/>
+                   <Route path='/graphicscourse' element={<GraphicsCourseList/>}/>
+                   <Route path='/digitalmarketing' element={<DigitalMarketingCourse/>}/>
+                   <Route path='/networkingvideo' element={<NetworkingVideo/>}/>
+                   <Route path='/frontendvideo' element={<FrontEndVideo/>}/>
+                   <Route path='/backendvideo' element={<BackEndVideo/>}/>
+                   <Route path='/graphicsvideo' element={<GraphicsVideo/>}/>
+                   <Route path='/DMvideo' element={<MarketingVideo/>}/>
+                   <Route path='/videoplayer1' element={<VideoPlayer1/>}/>
+       </Routes>
 
-          <Routes>
-              {/* <Route path='/' element={ <Home/> }/> */}
-              <Route path='/coursecategory' element={<CourseCategory/>}/>
-<<<<<<< HEAD
-              <Route path='/login' element={<Login/>} />
-              <Route path='/signup' element={<SignUp/>} />
+
+
+       <Routes>
+                 <Route path='/studentdashboard' element={ <StudentDashboard/>}/>
+                 <Route path='/studentsubscription' element={<StudentSubscription/>}/>
+                 <Route path='/studentlist' element={<StudentCourseList/>}/>
+                 <Route path='/studentresume' element={<StudentCourseResume/>}/>
+                 <Route path='/studentquiz' element={<StudentQuiz/>}/>
+                 <Route path='/studentpaymentinfo' element={<StudentPaymentInfo/>}/>
+                 <Route path='/studentbookmark' element={ <StudentBookmark/>}/>
+                 <Route path='/studenteditprofile' element={<StudentEditProfile/>}/>
+                 {/* <Route path='/studentpayout' element={ <StudentPayout/>}/> */}
+                  <Route path='/studentsetting' element={ <StudentSetting/>}/>
+                 <Route path='/studentdeleteaccount' element={ <StudentDeleteAccount/>}/>
           </Routes>
-          {/* <AdminDashboard/> */}
-          
-          
-      
-
-          <Routes> 
-=======
->>>>>>> f9f13a3ff8e227d738ea52b3c6f99c1f020ddcac
-              <Route path='/' element={ <Home/> }/>
-              <Route path='/instructordashboard' element={<Instructor_Dashboard/>}/>
-              <Route path='/instructorcourses' element={<Instructor_Courses />} />
-              <Route path='/instructorquiz' element={<Instructor_Quiz />} />
-              <Route path='/instructorearning' element={<Instructor_earning />} />
-              <Route path='/instructorstudentlist' element={<Instructor_studentlist />} />
-              <Route path='/instrctororder' element={<Instructor_order />} />
-              <Route path='/instructorreviews' element={<Instructor_Reviews />} />
-              <Route path='/instructoreditprofile' element={<Instructor_Editprofile />} />
-              <Route path='/instructorpayout' element={<Instructor_PayOuts />} />
-              <Route path='/instructorsetting' element={<Instructor_setting />} />
-              <Route path='/instructordelete' element={<Instructor_Deleteprofile />} />
-              <Route path='/signout' element={<Sign_in />} />
-              <Route path='/signUp' element={<Sign_UP/>} />
-              <Route path='/course' element={<CourseCategory1/>}/>
-              <Route path='/courselist' element={<CourseList1/>}/>
-              <Route path='/frontendcourse' element={<FrontEndCourseList/>}/>
-              <Route path='/backendcourse' element={<BackEndCourseList/>}/>
-              <Route path='/graphicscourse' element={<GraphicsCourseList/>}/>
-              <Route path='/digitalmarketing' element={<DigitalMarketingCourse/>}/>
-              <Route path='/networkingvideo' element={<NetworkingVideo/>}/>
-              <Route path='/frontendvideo' element={<FrontEndVideo/>}/>
-              <Route path='/backendvideo' element={<BackEndVideo/>}/>
-              <Route path='/graphicsvideo' element={<GraphicsVideo/>}/>
-              <Route path='/DMvideo' element={<MarketingVideo/>}/>
-              <Route path='/videoplayer1' element={<VideoPlayer1/>}/>
-<<<<<<< HEAD
-          </Routes> 
-=======
-         
- 
-          
-             <Route path='/studentdashboard' element={<StudentDashboard />} />
-             <Route path='/studentsubscription' element={<StudentSubscription />} />
-             <Route path='/studentlist' element={<StudentCourseList />} />
-             <Route path='/studentresume' element={<StudentCourseResume />} />
-             <Route path='/studentquiz' element={<StudentQuiz />} />
-             <Route path='/studentpaymentinfo' element={<StudentPaymentInfo />} />
-             <Route path='/studentbookmark' element={<StudentBookmark />} />
-             <Route path='/studenteditprofile' element={<StudentEditProfile />} />
-             <Route path='/studentsetting' element={<StudentSetting />} />
-             <Route path='/studentdeleteaccount' element={<StudentDeleteAccount />} />
-       
-        </Routes>
->>>>>>> f9f13a3ff8e227d738ea52b3c6f99c1f020ddcac
-    
-    {/* Student Dashboard Route Start */}
-          <Routes>
-            <Route path='/studentdashboard' element={ <StudentDashboard/>}/>
-            <Route path='/studentsubscription' element={<StudentSubscription/>}/>
-            <Route path='/studentlist' element={<StudentCourseList/>}/>
-            <Route path='/studentresume' element={<StudentCourseResume/>}/>
-            <Route path='/studentquiz' element={<StudentQuiz/>}/>
-            <Route path='/studentpaymentinfo' element={<StudentPaymentInfo/>}/>
-            <Route path='/studentbookmark' element={ <StudentBookmark/>}/>
-            <Route path='/studenteditprofile' element={<StudentEditProfile/>}/>
-            <Route path='/studentpayout' element={ <StudentPayout/>}/>
-             <Route path='/studentsetting' element={ <StudentSetting/>}/>
-            <Route path='/studentdeleteaccount' element={ <StudentDeleteAccount/>}/>
-          </Routes>
-
-        {/* Student Dashboard Route End*/}
-
-
-        {/* Admin Dashboard Route Start */}
-        
-
-        {/* Admin Dashboard Route End */}
-         <Footer/>
+        <Footer/>
     </Router>
    </>
     

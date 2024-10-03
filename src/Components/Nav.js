@@ -289,29 +289,17 @@ const Nav = () => {
           </ul>
         </a>
          
-<<<<<<< HEAD
-=======
-        </div> */}
-        <div className="dropdown ms-1 ms-lg-0">
-        <ul className="navbar-nav sign">
-              <li className="nav-item">
-                 <Link to="/signout">Login</Link>
-              </li>&nbsp;&nbsp;&nbsp;
-              <li className="nav-item">
-                 <Link to="/signUp">SignUp</Link>
-              </li>
-          </ul>
-</div>
-          {/* Nav Search END */}
->>>>>>> f9f13a3ff8e227d738ea52b3c6f99c1f020ddcac
-        </div>
+
         {/* Profile START */}
       </div>
-    </nav>
-    {/* Nav END */}
-  </header>
+      </div>
+      </nav>
+      {/* Nav END */}
+      </header>
   {/* Header END */}
-</div>
+   </div>
+  
+
 
   )
 }

@@ -51,9 +51,12 @@ import StudentEditProfile from './Components/StudentEditProfile';
 
 import StudentSetting from './Components/StudentSetting';
 import StudentDeleteAccount from './Components/StudentDeleteAccount';
+<<<<<<< HEAD
+=======
 
 import AdminDashboard from './Components/AdminDashboard';
 
+>>>>>>> 70fad0d2af66ca7ddddfcb029b90423bdd86cb36
 import Sign_UP from './Components/Sign_UP';
 
 
@@ -115,7 +118,8 @@ function App() {
               <Route path='/graphicsvideo' element={<GraphicsVideo/>}/>
               <Route path='/DMvideo' element={<MarketingVideo/>}/>
               <Route path='/videoplayer1' element={<VideoPlayer1/>}/>
-
+        </Routes>
+     
     
     {/* Student Dashboard Route Start */}
         

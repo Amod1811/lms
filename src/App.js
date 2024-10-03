@@ -6,8 +6,7 @@ import Nav from './Components/Nav';
 import Home from './Components/Home';
 
 
-import Login from './Components/Login';
-import SignUp from './Components/SignUp';
+
 import Footer from './Components/Footer';
 import Nav1 from './Components/Nav1';
 
@@ -51,6 +50,7 @@ import StudentEditProfile from './Components/StudentEditProfile';
 
 import StudentSetting from './Components/StudentSetting';
 import StudentDeleteAccount from './Components/StudentDeleteAccount';
+<<<<<<< HEAD
 import Sign_UP from './Components/Sign_UP';
 import AdminDashboard from './Components/AdminDashboard';
 import AdminCourceList from './Components/AdminCourceList';
@@ -67,12 +67,27 @@ import AdminInstructorRequest from './Components/AdminInstructorRequest';
 import AdminReview from './Components/AdminReview';
 import AdminSeating from './Components/AdminSeating';
 import AdminError404 from './Components/AdminError404';
+=======
+
+
+import AdminDashboard from './Components/AdminDashboard';
+
+
+import Sign_UP from './Components/Sign_UP';
+import BackToTop from './Components/BacktoTop';
+
+
+
+
+
+>>>>>>> c606d7a6ead8f1099ed19641fa95a0c192a4f046
 
 function App() {
   return (
     <>
 
     <Router>
+<<<<<<< HEAD
        {/* <Nav/> */}
        {/* <Instructor_Dashboard/> */}
        {/* <Instructor_Courses/>
@@ -91,6 +106,11 @@ function App() {
        <Instructor_Single/>
        <Instructor_List/> */}
         {/* <Nav1/> */}
+=======
+       <Nav/>
+       
+       
+>>>>>>> c606d7a6ead8f1099ed19641fa95a0c192a4f046
 
           <Routes>
               {/* <Route path='/' element={ <Home/> }/> */}
@@ -122,7 +142,11 @@ function App() {
               <Route path='/graphicsvideo' element={<GraphicsVideo/>}/>
               <Route path='/DMvideo' element={<MarketingVideo/>}/>
               <Route path='/videoplayer1' element={<VideoPlayer1/>}/>
+<<<<<<< HEAD
           </Routes>
+=======
+       
+>>>>>>> c606d7a6ead8f1099ed19641fa95a0c192a4f046
      
     
     {/* Student Dashboard Route Start */}
@@ -166,6 +190,8 @@ function App() {
 
 
         <Footer/>
+         <Nav1/>
+         <BackToTop/>
     </Router>
    </>
     

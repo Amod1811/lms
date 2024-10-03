@@ -66,12 +66,10 @@ import AdminInstructirList from './Components/AdminInstructirList';
 import AdminInstructorRequest from './Components/AdminInstructorRequest';
 import AdminReview from './Components/AdminReview';
 import AdminSeating from './Components/AdminSeating';
-import AdminError404 from './Components/AdminError404';
 
-import AdminDashboard from './Components/AdminDashboard';
+import AdminError404 from './Components/AdminError404'
 
 
-import Sign_UP from './Components/Sign_UP';
 import BackToTop from './Components/BacktoTop';
 
 
@@ -86,24 +84,7 @@ function App() {
 
     <Router>
 
-       {/* <Nav/> */}
-       {/* <Instructor_Dashboard/> */}
-       {/* <Instructor_Courses/>
-       <Instructor_Quiz/>
-       <Instructor_earning/>
-       <Instructor_studentlist/>
-       <Instructor_order/>
-       <Instructor_Reviews/>
-       <Instructor_Editprofile/>
-       <Instructor_PayOuts/>
-       <Instructor_setting/>
-       <Instructor_Deleteprofile/>
-       <Sign_in/>
-       <Sign_UP/>
-       <Instructor_createCourse/>
-       <Instructor_Single/>
-       <Instructor_List/> */}
-        {/* <Nav1/> */}
+       
 
        <Nav/>
 
@@ -142,7 +123,7 @@ function App() {
      
     
     {/* Student Dashboard Route Start */}
-    <Routes>
+   
            <Route path='/studentdashboard' element={ <StudentDashboard/>}/>
             <Route path='/studentsubscription' element={<StudentSubscription/>}/>
             <Route path='/studentlist' element={<StudentCourseList/>}/>
@@ -154,13 +135,7 @@ function App() {
             {/* <Route path='/studentpayout' element={ <StudentPayout/>}/> */}
              <Route path='/studentsetting' element={ <StudentSetting/>}/>
             <Route path='/studentdeleteaccount' element={ <StudentDeleteAccount/>}/>
-        </Routes>
-      {/* Student Dashboard Route End */}
-
-
-
-      {/* Admin Dashboard Route Start */}
-      <Routes>
+      
          <Route path="/admin-dashboard" element={<AdminDashboard/>} />
           {/* <Route path="/abroad-single" element={<AbroadSingle />} /> */}
           <Route path="/admin-student-list" element={<AdminStudentList/>}/>

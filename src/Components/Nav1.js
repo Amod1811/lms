@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { FaCircleUser } from "react-icons/fa6";
 import { useState } from 'react';
 
-const Nav = () => {
+const Nav = () => { 
   const [cartItems, setCartItems] = useState(0); // Cart items count
   const [isDropdownOpen, setDropdownOpen] = useState(false); // For profile dropdown
 

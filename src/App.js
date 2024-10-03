@@ -40,6 +40,7 @@ import FrontEndVideo from './Components/FrontEndVideo';
 import GraphicsVideo from './Components/GraphicsVideo';
 import MarketingVideo from './Components/MarketingVideo';
 import VideoPlayer1 from './Components/VideoPlayer1';
+
 import CourseList1 from './Components/CourseList1';
 import StudentSubscription from './Components/StudentSubscription';
 import StudentCourseList from './Components/StudentCourseList';
@@ -51,20 +52,9 @@ import StudentEditProfile from './Components/StudentEditProfile';
 
 import StudentSetting from './Components/StudentSetting';
 import StudentDeleteAccount from './Components/StudentDeleteAccount';
+import StudentPayout from './Components/StudentPayout';
+import About from './Components/About';
 import AdminDashboard from './Components/AdminDashboard';
-import AdminStudentList from './Components/AdminStudentList';
-import AdminInstructorCard from './Components/AdminInstructorCard';
-import AdminCourseCategory from './Components/AdminCourseCategory';
-import AdminCourseDetail from './Components/AdminCourseDetail';
-import AdminCourceList from './Components/AdminCourceList';
-import AdminEditCourseDetals from './Components/AdminEditCourseDetals';
-import AdminElearning from './Components/AdminElearning';
-import AdminInstructorRequest from './Components/AdminInstructorRequest';
-import AdminReview from './Components/AdminReview';
-import AdminError404 from './Components/AdminError404';
-import AdminSeating from './Components/AdminSeating';
-import AdminInstructirList from './Components/AdminInstructirList';
-
 
 
 
@@ -99,13 +89,13 @@ function App() {
               <Route path='/coursecategory' element={<CourseCategory/>}/>
               <Route path='/login' element={<Login/>} />
               <Route path='/signup' element={<SignUp/>} />
-          
+          </Routes>
           {/* <AdminDashboard/> */}
           
           
       
 
-        
+          <Routes> 
               <Route path='/' element={ <Home/> }/>
               <Route path='/coursecategory' element={<CourseCategory/>}/>
               <Route path='/login' element={<Login/>} />
@@ -134,40 +124,30 @@ function App() {
               <Route path='/graphicsvideo' element={<GraphicsVideo/>}/>
               <Route path='/DMvideo' element={<MarketingVideo/>}/>
               <Route path='/videoplayer1' element={<VideoPlayer1/>}/>
-         
- 
-          
-             <Route path='/studentdashboard' element={<StudentDashboard />} />
-             <Route path='/studentsubscription' element={<StudentSubscription />} />
-             <Route path='/studentlist' element={<StudentCourseList />} />
-             <Route path='/studentresume' element={<StudentCourseResume />} />
-             <Route path='/studentquiz' element={<StudentQuiz />} />
-             <Route path='/studentpaymentinfo' element={<StudentPaymentInfo />} />
-             <Route path='/studentbookmark' element={<StudentBookmark />} />
-             <Route path='/studenteditprofile' element={<StudentEditProfile />} />
-             <Route path='/studentsetting' element={<StudentSetting />} />
-             <Route path='/studentdeleteaccount' element={<StudentDeleteAccount />} />
-       
-        <Route path="*" element={<AdminDashboard />} />
-          <Route path="/course-category" element={<CourseCategory />} />
-          {/* <Route path="/abroad-single" element={<AbroadSingle />} /> */}
-          <Route path="/admin-student-list" element={<AdminStudentList/>}/>
-          <Route Path="/admin-instructor-card" element={<AdminInstructorCard/>}/>
-          <Route path="/admin-course-category" element={<AdminCourseCategory />} />
-          <Route path="/admin-course-detail" element={<AdminCourseDetail />} />
-          <Route path="/admin-course-list" element={<AdminCourceList />} />
-          <Route path="/admin-elearning" element={<AdminElearning/>} />
-          <Route path="/admin-edit-course-details" element={<AdminEditCourseDetals />} />
-          <Route path="/admin-instructor-card" element={<AdminInstructorCard />} />
-          <Route path="/admin-instructor-list" element={<AdminInstructirList />} />
-          <Route path="/admin-instructor-request" element={<AdminInstructorRequest />} />
-          <Route path="/admin-review" element={<AdminReview />} />
-          <Route path="/admin-seating" element={<AdminSeating />} />
-          
-          <Route path="/AdminError" element={<AdminError404 />} />
-        </Routes>
+          </Routes> 
     
-     
+    {/* Student Dashboard Route Start */}
+          <Routes>
+            <Route path='/studentdashboard' element={ <StudentDashboard/>}/>
+            <Route path='/studentsubscription' element={<StudentSubscription/>}/>
+            <Route path='/studentlist' element={<StudentCourseList/>}/>
+            <Route path='/studentresume' element={<StudentCourseResume/>}/>
+            <Route path='/studentquiz' element={<StudentQuiz/>}/>
+            <Route path='/studentpaymentinfo' element={<StudentPaymentInfo/>}/>
+            <Route path='/studentbookmark' element={ <StudentBookmark/>}/>
+            <Route path='/studenteditprofile' element={<StudentEditProfile/>}/>
+            <Route path='/studentpayout' element={ <StudentPayout/>}/>
+             <Route path='/studentsetting' element={ <StudentSetting/>}/>
+            <Route path='/studentdeleteaccount' element={ <StudentDeleteAccount/>}/>
+          </Routes>
+
+        {/* Student Dashboard Route End*/}
+
+
+        {/* Admin Dashboard Route Start */}
+        
+
+        {/* Admin Dashboard Route End */}
          <Footer/>
     </Router>
    </>

@@ -67,15 +67,15 @@ import AdminInstructorRequest from './Components/AdminInstructorRequest';
 import AdminReview from './Components/AdminReview';
 import AdminSeating from './Components/AdminSeating';
 
-<<<<<<< HEAD
 
 
 
-=======
+
+
 import AdminError404 from './Components/AdminError404'
 
 
->>>>>>> 3361cac5ac3f31d9fa8e87715a2949013c5a9960
+
 import BackToTop from './Components/BacktoTop';
 
 
@@ -141,7 +141,7 @@ function App() {
             {/* <Route path='/studentpayout' element={ <StudentPayout/>}/> */}
              <Route path='/studentsetting' element={ <StudentSetting/>}/>
             <Route path='/studentdeleteaccount' element={ <StudentDeleteAccount/>}/>
-<<<<<<< HEAD
+
         
       {/* Student Dashboard Route End */}
 
@@ -149,9 +149,9 @@ function App() {
 
       {/* Admin Dashboard Route Start */}
      
-=======
+
       
->>>>>>> 3361cac5ac3f31d9fa8e87715a2949013c5a9960
+
          <Route path="/admin-dashboard" element={<AdminDashboard/>} />
           {/* <Route path="/abroad-single" element={<AbroadSingle />} /> */}
           <Route path="/admin-student-list" element={<AdminStudentList/>}/>

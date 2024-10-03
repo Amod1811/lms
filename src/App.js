@@ -6,8 +6,7 @@ import Nav from './Components/Nav';
 import Home from './Components/Home';
 
 
-import Login from './Components/Login';
-import SignUp from './Components/SignUp';
+
 import Footer from './Components/Footer';
 import Nav1 from './Components/Nav1';
 
@@ -51,13 +50,13 @@ import StudentEditProfile from './Components/StudentEditProfile';
 
 import StudentSetting from './Components/StudentSetting';
 import StudentDeleteAccount from './Components/StudentDeleteAccount';
-<<<<<<< HEAD
-=======
+
 
 import AdminDashboard from './Components/AdminDashboard';
 
->>>>>>> 70fad0d2af66ca7ddddfcb029b90423bdd86cb36
+
 import Sign_UP from './Components/Sign_UP';
+import Cart from './Components/Cart';
 
 
 
@@ -70,6 +69,8 @@ function App() {
 
     <Router>
        <Nav/>
+       <Nav1/>
+       {/* <Cart/> */}
        {/* <Instructor_Dashboard/> */}
        {/* <Instructor_Courses/>
        <Instructor_Quiz/>
@@ -118,7 +119,7 @@ function App() {
               <Route path='/graphicsvideo' element={<GraphicsVideo/>}/>
               <Route path='/DMvideo' element={<MarketingVideo/>}/>
               <Route path='/videoplayer1' element={<VideoPlayer1/>}/>
-        </Routes>
+       
      
     
     {/* Student Dashboard Route Start */}

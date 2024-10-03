@@ -1,8 +1,11 @@
 import React from 'react'
+import Nav from './Nav'
+
 
 const CourseCategory = () => {
   return (
     <> 
+<Nav/>
     <div>
   <section className="bg-light position-relative">
     {/* Svg decoration */}

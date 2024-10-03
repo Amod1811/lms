@@ -36,7 +36,7 @@ const Nav = () => {
           <ul className="navbar-nav navbar-nav-scroll me-auto">
             {/* Nav item 1 Demos */}
             <li className="nav-item ">
-              <Link className="nav-link  active" to="/instructordashboard" id="demoMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</Link>
+              <Link className="nav-link  active" to="#" id="demoMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</Link>
              
             </li>
             {/* Nav item 2 Pages */}
@@ -251,6 +251,32 @@ const Nav = () => {
                   </ul>
                 </li>
                 {/* Dropdown submenu */}
+                
+               
+               
+              </ul>
+            </li>
+            {/* packages end */}
+
+
+
+             {/* Packages */}
+
+          <li className="nav-item dropdown">
+          <Link className="nav-link" to="/coursecategory">Dashboard</Link>
+              {/* <a className="nav-link dropdown-toggle" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Packages</a> */}
+              <ul className="dropdown-menu" aria-labelledby="pagesMenu">
+                {/* Dropdown submenu */}
+                <li className="dropdown-submenu dropend">
+                  <Link className="dropdown-item dropdown-toggle" to="/admin-dashboard">Admin</Link>
+                </li>
+                <li className="dropdown-submenu dropend">
+                  <Link className="dropdown-item dropdown-toggle" to="/instructordashboard">Instructor</Link>
+                </li>
+                <li className="dropdown-submenu dropend">
+                  <Link className="dropdown-item dropdown-toggle" to="/studentdashboard">student</Link>
+                </li>
+             {/* Dropdown submenu */}
                 
                
                

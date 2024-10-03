@@ -51,25 +51,29 @@ import StudentEditProfile from './Components/StudentEditProfile';
 
 import StudentSetting from './Components/StudentSetting';
 import StudentDeleteAccount from './Components/StudentDeleteAccount';
-<<<<<<< HEAD
-=======
-
-import AdminDashboard from './Components/AdminDashboard';
-
->>>>>>> 70fad0d2af66ca7ddddfcb029b90423bdd86cb36
 import Sign_UP from './Components/Sign_UP';
-
-
-
-
-
+import AdminDashboard from './Components/AdminDashboard';
+import AdminCourceList from './Components/AdminCourceList';
+import AdminSideNavbar from './Components/AdminSideNavbar';
+import AdminTopNavBar from './Components/AdminTopNavBar';
+import AdminCourseCategory from './Components/AdminCourseCategory';
+import AdminCourseDetail from './Components/AdminCourseDetail';
+import AdminEditCourseDetals from './Components/AdminEditCourseDetals';
+import AdminStudentList from './Components/AdminStudentList';
+import AdminInstructorCard from './Components/AdminInstructorCard';
+import AdminElearning from './Components/AdminElearning';
+import AdminInstructirList from './Components/AdminInstructirList';
+import AdminInstructorRequest from './Components/AdminInstructorRequest';
+import AdminReview from './Components/AdminReview';
+import AdminSeating from './Components/AdminSeating';
+import AdminError404 from './Components/AdminError404';
 
 function App() {
   return (
     <>
 
     <Router>
-       <Nav/>
+       {/* <Nav/> */}
        {/* <Instructor_Dashboard/> */}
        {/* <Instructor_Courses/>
        <Instructor_Quiz/>
@@ -118,12 +122,12 @@ function App() {
               <Route path='/graphicsvideo' element={<GraphicsVideo/>}/>
               <Route path='/DMvideo' element={<MarketingVideo/>}/>
               <Route path='/videoplayer1' element={<VideoPlayer1/>}/>
-        </Routes>
+          </Routes>
      
     
     {/* Student Dashboard Route Start */}
-        
-            <Route path='/studentdashboard' element={ <StudentDashboard/>}/>
+    <Routes>
+           <Route path='/studentdashboard' element={ <StudentDashboard/>}/>
             <Route path='/studentsubscription' element={<StudentSubscription/>}/>
             <Route path='/studentlist' element={<StudentCourseList/>}/>
             <Route path='/studentresume' element={<StudentCourseResume/>}/>
@@ -134,7 +138,33 @@ function App() {
             {/* <Route path='/studentpayout' element={ <StudentPayout/>}/> */}
              <Route path='/studentsetting' element={ <StudentSetting/>}/>
             <Route path='/studentdeleteaccount' element={ <StudentDeleteAccount/>}/>
-          </Routes>
+        </Routes>
+      {/* Student Dashboard Route End */}
+
+
+
+      {/* Admin Dashboard Route Start */}
+      <Routes>
+         <Route path="/admin-dashboard" element={<AdminDashboard/>} />
+          {/* <Route path="/abroad-single" element={<AbroadSingle />} /> */}
+          <Route path="/admin-student-list" element={<AdminStudentList/>}/>
+          <Route Path="/admin-instructor-card" element={<AdminInstructorCard/>}/>
+          <Route path="/admin-course-category" element={<AdminCourseCategory/>} />
+          <Route path="/admin-course-detail" element={<AdminCourseDetail/>} />
+          <Route path="/admin-course-list" element={<AdminCourceList/>} />
+          <Route path="/admin-elearning" element={<AdminElearning/>} />
+          <Route path="/admin-edit-course-details" element={<AdminEditCourseDetals/>} />
+          <Route path="/admin-instructor-card" element={<AdminInstructorCard/>} />
+          <Route path="/admin-instructor-list" element={<AdminInstructirList/>} />
+          <Route path="/admin-instructor-request" element={<AdminInstructorRequest/>} />
+          <Route path="/admin-review" element={<AdminReview/>} />
+          <Route path="/admin-seating" element={<AdminSeating/>} />
+          <Route path="/AdminError" element={<AdminError404/>} />
+      </Routes>
+{/* Admin Dashboard Route End */}
+        
+
+
         <Footer/>
     </Router>
    </>

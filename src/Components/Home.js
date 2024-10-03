@@ -4,7 +4,9 @@ import Counter from './Counter'
 import PopularCourses from './PopularCourses'
 import Review from './Review'
 import TrendingCourses from './TrendingCourses '
-import StudentDashboard from './StudentDashboard'
+import Nav from './Nav'
+ 
+
 
 
 
@@ -12,8 +14,11 @@ const Home = () => {
  return ( 
 
 <>
+<Nav/>
+
 {/* **************** MAIN CONTENT START **************** */}
 <main>
+
   {/* =======================
 Main Banner START */}
   <section className="position-relative overflow-hidden pt-5 pt-lg-3">
@@ -291,7 +296,6 @@ Main Banner END */}
  <PopularCourses/>
  <TrendingCourses/>
  <Review/>
-  <StudentDashboard/>
 
 </>
   )

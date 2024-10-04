@@ -92,9 +92,9 @@ function App() {
 
        
 
-       {/* <Nav/> */}
+       <Nav/>
 
-
+  
           <Routes>
               {/* <Route path='/' element={ <Home/> }/> */}
               <Route path='/coursecategory' element={<CourseCategory/>}/>
@@ -111,6 +111,7 @@ function App() {
               <Route path='/instructorpayout' element={<Instructor_PayOuts />} />
               <Route path='/instructorsetting' element={<Instructor_setting />} />
               <Route path='/instructordelete' element={<Instructor_Deleteprofile />} />
+              <Route path='/instructorcreatecourses' element={<Instructor_createCourse/>}/>
               <Route path='/signout' element={<Sign_in />} />
               <Route path='/signUp' element={<Sign_UP/>} />
               <Route path='/course' element={<CourseCategory1/>}/>

@@ -83,14 +83,14 @@ Page content START */}
             <div className="row g-0">
               {/* Image */}
               <div className="col-md-4">
-                <img src="assets/images/courses/4by3/01.jpg" alt="card image" />
+                <img src="assets/images/courses/4by3/canva.png" alt="card image" />
               </div>
               {/* Card body */}
               <div className="col-md-8">
                 <div className="card-body">
                   {/* Title */}
                   <div className="d-flex justify-content-between mb-2">
-                  <Link to="/graphicsvideo"  className="card-title mb-0 mt-5"><h5>NodeJs</h5></Link>
+                  <Link to="/graphicsvideo"  className="card-title mb-0 mt-5"><h5>Canva</h5></Link>
                     {/* Wishlist icon */}
                     <a href="#"><i className="fas fa-heart text-danger" /></a>
                   </div>
@@ -127,7 +127,7 @@ Page content START */}
             <div className="row g-0">
               {/* Image */}
               <div className="col-md-4">
-                <img src="assets/images/courses/4by3/02.jpg" alt="card image" />
+                <img src="assets/images/courses/4by3/Postermy.png" alt="card image" />
               </div>
               {/* Card body */}
               <div className="col-md-8">
@@ -170,7 +170,7 @@ Page content START */}
             <div className="row g-0">
               {/* Image */}
               <div className="col-md-4">
-                <img src="assets/images/courses/4by3/03.jpg" alt="card image" />
+                <img src="assets/images/courses/4by3/Renderforest.png" alt="card image" />
               </div>
               {/* Card body */}
               <div className="col-md-8">
@@ -213,7 +213,7 @@ Page content START */}
             <div className="row g-0">
               {/* Image */}
               <div className="col-md-4">
-                <img src="assets/images/courses/4by3/05.jpg" alt="card image" />
+                <img src="assets/images/courses/4by3/Figma.png" alt="card image" />
               </div>
               {/* Card body */}
               <div className="col-md-8">
@@ -336,53 +336,6 @@ Page content START */}
             </div>
           </div>
         </div>
-       
-        {/* Card item END */}
-        {/* Card item START */}
-        <div className="col-lg-10 col-xxl-6">
-          <div className="card rounded overflow-hidden shadow">
-            <div className="row g-0">
-              {/* Image */}
-              <div className="col-md-4">
-                <img src="assets/images/courses/4by3/06.jpg" alt="card image" />
-              </div>
-              {/* Card body */}
-              <div className="col-md-8">
-                <div className="card-body">
-                  {/* Title */}
-                  <div className="d-flex justify-content-between mb-2">
-                    <h5 className="card-title mb-0"><a href="#">MCSE</a></h5>
-                    {/* Wishlist icon */}
-                    <a href="#" className="h6 fw-light"><i className="far fa-heart" /></a>
-                  </div>
-                  {/* Content */}
-                  {/* Info */}
-                  <ul className="list-inline mb-1">
-                    <li className="list-inline-item h6 fw-light mb-1 mb-sm-0"><i className="far fa-clock text-danger me-2 mt-3" />21h 16m</li>
-                    <li className="list-inline-item h6 fw-light mb-1 mb-sm-0"><i className="fas fa-table text-orange me-2 mt-3" />68 lectures</li>
-                    <li className="list-inline-item h6 fw-light"><i className="fas fa-signal text-success me-2 mt-3" />All level</li>
-                  </ul>
-                  {/* Rating */}
-                  <ul className="list-inline mb-0">
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star-half-alt text-warning" /></li>
-                    <li className="list-inline-item ms-2 h6 fw-light">4.5/5.0</li>
-                  </ul>
-                  <div className="mt-5 mt-sm-3 mx-3">
-				             <a href="#" className="btn btn-dark">Buy Now</a>  
-                    <a href="#" className="btn btn-dark mx-3" >Add Cart</a>   
-				          </div> 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-       
-        {/* Card item END */}
-        
         {/* Card item END */}
       </div>
       {/* Course list END */}

@@ -84,7 +84,7 @@ Page content START */}
             <div className="row g-0">
               {/* Image */}
               <div className="col-md-4">
-                <img src="assets/images/courses/4by3/01.jpg" alt="card image" />
+                <img src="assets/images/courses/4by3/HW.png" alt="card image" />
               </div>
               {/* Card body */}
               <div className="col-md-8">
@@ -113,7 +113,7 @@ Page content START */}
                     <li className="list-inline-item ms-2 h6 fw-light">4.5/5.0</li>
                   </ul>
                   <div className="mt-5 mt-sm-3 mx-3">
-				    <a href="#" className="btn btn-dark">Buy Now</a>  
+				    <Link to="/paymentpage" className="btn btn-dark">Buy Now</Link>  
                     <a href="#" className="btn btn-dark mx-3" >Add Cart</a>   
 				</div> 
                 
@@ -129,7 +129,7 @@ Page content START */}
             <div className="row g-0">
               {/* Image */}
               <div className="col-md-4">
-                <img src="assets/images/courses/4by3/02.jpg" alt="card image" />
+                <img src="assets/images/courses/4by3/NW.png" alt="card image" />
               </div>
               {/* Card body */}
               <div className="col-md-8">
@@ -172,7 +172,7 @@ Page content START */}
             <div className="row g-0">
               {/* Image */}
               <div className="col-md-4">
-                <img src="assets/images/courses/4by3/03.jpg" alt="card image" />
+                <img src="assets/images/courses/4by3/AWS.png" alt="card image" />
               </div>
               {/* Card body */}
               <div className="col-md-8">
@@ -215,7 +215,7 @@ Page content START */}
             <div className="row g-0">
               {/* Image */}
               <div className="col-md-4">
-                <img src="assets/images/courses/4by3/05.jpg" alt="card image" />
+                <img src="assets/images/courses/4by3/Linux.png" alt="card image" />
               </div>
               {/* Card body */}
               <div className="col-md-8">
@@ -258,7 +258,7 @@ Page content START */}
             <div className="row g-0">
               {/* Image */}
               <div className="col-md-4">
-                <img src="assets/images/courses/4by3/06.jpg" alt="card image" />
+                <img src="assets/images/courses/4by3/CCNA.png" alt="card image" />
               </div>
               {/* Card body */}
               <div className="col-md-8">
@@ -302,7 +302,7 @@ Page content START */}
             <div className="row g-0">
               {/* Image */}
               <div className="col-md-4">
-                <img src="assets/images/courses/4by3/06.jpg" alt="card image" />
+                <img src="assets/images/courses/4by3/MCT.png" alt="card image" />
               </div>
               {/* Card body */}
               <div className="col-md-8">
@@ -346,7 +346,7 @@ Page content START */}
             <div className="row g-0">
               {/* Image */}
               <div className="col-md-4">
-                <img src="assets/images/courses/4by3/06.jpg" alt="card image" />
+                <img src="assets/images/courses/4by3/MCT.png" alt="card image" />
               </div>
               {/* Card body */}
               <div className="col-md-8">

@@ -43,7 +43,7 @@ Page Banner START */}
                 </div>
                 {/* Button */}
                 <div className="mt-2 mt-sm-0">
-                  <a href="student-course-list.html" className="btn btn-outline-primary mb-0">View my courses</a>
+                  <Link to="/studentlist" className="btn btn-outline-primary mb-0">View my courses</Link>
                 </div>
               </div>
             </div>

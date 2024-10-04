@@ -5,7 +5,7 @@ const Nav = () => {
   return (
     <div>
       {/* Header START */}
-      <header className="navbar-light navbar-sticky header-static">
+      <header className="navbar-light navbar-sticky-on header-static">
         {/* Nav START */}
         <nav className="navbar navbar-expand-xl">
           <div className="container-fluid px-3 px-xl-5">

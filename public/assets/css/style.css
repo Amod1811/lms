@@ -19984,22 +19984,25 @@ textarea.form-control-lg {
     top: 0;
     left: 0;
     right: 0;
-    background-color: var(--bs-body-bg);
-    -webkit-animation: fadeInDown 0.5s;
-            animation: fadeInDown 0.5s;
+    background-color: var(--bs-body-bg, #ffffff); /* Fallback to white */
     width: 100%;
-    border-bottom: 1px solid var(--bs-gray-300);
+    border-bottom: 1px solid var(--bs-gray-300, #e0e0e0); /* Fallback to light gray */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Shadow for better visibility */
   }
+
   header.navbar-sticky-on .navbar-top {
     display: none !important;
   }
+
   header.navbar-sticky-on .navbar-brand {
     padding: 14px 0;
   }
+
   header.navbar-sticky-on .navbar-brand .navbar-brand-item {
-    height: 22px;
+    height: 60px;
   }
 }
+
 @-webkit-keyframes fadeInDown {
   from {
     opacity: 0;

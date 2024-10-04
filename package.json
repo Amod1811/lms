@@ -1,5 +1,6 @@
 {
   "name": "lms",
+  "homepage": "https://adityasukhdeve.in",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

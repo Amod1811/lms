@@ -4,7 +4,7 @@ import Internal_Footer from './Internal_Footer'
 const Instructor_createCourse = () => {
   return (
     <div>
-    <main>
+   <main>
   {/* =======================
     Page Banner START */}
   <section className="py-0 bg-blue h-100px align-items-center d-flex h-200px rounded-0" style={{background: 'url(assets/images/pattern/04.png) no-repeat center center', backgroundSize: 'cover'}}>
@@ -196,7 +196,7 @@ const Instructor_createCourse = () => {
                           <button className="ql-list" value="bullet" />
                           <button className="ql-indent" value={-1} />
                           <button className="ql-indent" value={+1} />
-                        </span> 
+                        </span>
                         <span className="ql-formats">
                           <button className="ql-link" />
                           <button className="ql-image" />
@@ -524,8 +524,113 @@ const Instructor_createCourse = () => {
   {/* =======================
     Steps END */}
 </main>
-<Internal_Footer/>
+
+<div>
+  {/* Popup modal for add lecture START */}
+  <div className="modal fade" id="addLecture" tabIndex={-1} aria-labelledby="addLectureLabel" aria-hidden="true">
+    <div className="modal-dialog">
+      <div className="modal-content">
+        <div className="modal-header bg-dark">
+          <h5 className="modal-title text-white" id="addLectureLabel">Add Lecture</h5>
+          <button type="button" className="btn btn-sm btn-light mb-0 ms-auto" data-bs-dismiss="modal" aria-label="Close"><i className="bi bi-x-lg" /></button>
+        </div>
+        <div className="modal-body">
+          <form className="row text-start g-3">
+            {/* Course name */}
+            <div className="col-12">
+              <label className="form-label">Course name <span className="text-danger">*</span></label>
+              <input type="text" className="form-control" placeholder="Enter course name" />
+            </div>
+          </form>
+        </div>
+        <div className="modal-footer">
+          <button type="button" className="btn btn-danger-soft my-0" data-bs-dismiss="modal">Close</button>
+          <button type="button" className="btn btn-success my-0">Save Lecture</button>
+        </div>
+      </div>
     </div>
+  </div>
+  {/* Popup modal for add lecture END */}
+  {/* Popup modal for add topic START */}
+  <div className="modal fade" id="addTopic" tabIndex={-1} aria-labelledby="addTopicLabel" aria-hidden="true">
+    <div className="modal-dialog">
+      <div className="modal-content">
+        <div className="modal-header bg-dark">
+          <h5 className="modal-title text-white" id="addTopicLabel">Add topic</h5>
+          <button type="button" className="btn btn-sm btn-light mb-0 ms-auto" data-bs-dismiss="modal" aria-label="Close"><i className="bi bi-x-lg" /></button>
+        </div>
+        <div className="modal-body">
+          <form className="row text-start g-3">
+            {/* Topic name */}
+            <div className="col-md-6">
+              <label className="form-label">Topic name</label>
+              <input className="form-control" type="text" placeholder="Enter topic name" />
+            </div>
+            {/* Video link */}
+            <div className="col-md-6">
+              <label className="form-label">Video link</label>
+              <input className="form-control" type="text" placeholder="Enter Video link" />
+            </div>
+            {/* Description */}
+            <div className="col-12 mt-3">
+              <label className="form-label">Course description</label>
+              <textarea className="form-control" rows={4} placeholder spellCheck="false" defaultValue={""} />
+            </div>
+            {/* Buttons */}
+            <div className="col-6 mt-3">
+              <div className="btn-group" role="group" aria-label="Basic radio toggle button group">
+                {/* Free button */}
+                <input type="radio" className="btn-check" name="options" id="option1" defaultChecked />
+                <label className="btn btn-sm btn-light btn-primary-soft-check border-0 m-0" htmlFor="option1">Free</label>
+                {/* Premium button */}
+                <input type="radio" className="btn-check" name="options" id="option2" />
+                <label className="btn btn-sm btn-light btn-primary-soft-check border-0 m-0" htmlFor="option2">Premium</label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div className="modal-footer">
+          <button type="button" className="btn btn-danger-soft my-0" data-bs-dismiss="modal">Close</button>
+          <button type="button" className="btn btn-success my-0">Save topic</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  {/* Popup modal for add topic END */}
+  {/* Popup modal for add faq START */}
+  <div className="modal fade" id="addQuestion" tabIndex={-1} aria-labelledby="addQuestionLabel" aria-hidden="true">
+    <div className="modal-dialog">
+      <div className="modal-content">
+        <div className="modal-header bg-dark">
+          <h5 className="modal-title text-white" id="addQuestionLabel">Add FAQ</h5>
+          <button type="button" className="btn btn-sm btn-light mb-0 ms-auto" data-bs-dismiss="modal" aria-label="Close"><i className="bi bi-x-lg" /></button>
+        </div>
+        <div className="modal-body">
+          <form className="row text-start g-3">
+            {/* Question */}
+            <div className="col-12">
+              <label className="form-label">Question</label>
+              <input className="form-control" type="text" placeholder="Write a question" />
+            </div>
+            {/* Answer */}
+            <div className="col-12 mt-3">
+              <label className="form-label">Answer</label>
+              <textarea className="form-control" rows={4} placeholder="Write a answer" spellCheck="false" defaultValue={""} />
+            </div>
+          </form>
+        </div>
+        <div className="modal-footer">
+          <button type="button" className="btn btn-danger-soft my-0" data-bs-dismiss="modal">Close</button>
+          <button type="button" className="btn btn-success my-0">Save topic</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  {/* Popup modal for add faq END */}
+</div>
+
+</div>
+
   )
 }
 

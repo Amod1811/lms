@@ -108,14 +108,15 @@ const Nav = () => {
               </ul>
 
               {/* Search bar and sign in/signup links */}
-              <div className="d-flex align-items-center">
+              <div className="d-flex align-items-center" >
                 <form className="d-flex">
                   <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                   <button className="btn btn-outline-success" type="submit">
                     <i className="fas fa-search"></i>
                   </button>
                 </form>
-                <ul className="navbar-nav sign ms-3">
+              </div>
+              <ul className="navbar-nav sign ms-3">
                   <li className="nav-item">
                     <Link className="nav-link" to="/signout">Login</Link>
                   </li>
@@ -123,7 +124,6 @@ const Nav = () => {
                     <Link className="nav-link" to="/signUp">SignUp</Link>
                   </li>
                 </ul>
-              </div>
             </div>
             {/* Main navbar END */}
           </div>

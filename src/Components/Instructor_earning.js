@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 const Instructor_earning = () => {
   return (
     <div>
+      
     <main>
   {/* =======================
     Page Banner START */}

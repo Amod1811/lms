@@ -3,6 +3,7 @@ import React from 'react'
 const lecturesList = () => {
   return (
     <>
+    
     <div>
   <section className="bg-dark align-items-center d-flex" style={{background: 'url(assets/images/pattern/04.png) no-repeat center center', backgroundSize: 'cover'}}>
     {/* Main banner background image */}

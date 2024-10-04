@@ -4,6 +4,7 @@ import Footer from './Footer'
 const Instructor_List = () => {
   return (
     <div>
+      
    <main>
   {/* =======================
 Page Banner START */}

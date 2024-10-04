@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 const Instructor_setting = () => {
   return (
     <div>
+      
      <main>
   {/* =======================
     Page Banner START */}

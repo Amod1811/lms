@@ -4,6 +4,7 @@ import Footer from './Footer'
 const Instructor_Single = () => {
   return (
     <div>
+      
     <main>
   {/* =======================
 Page content START */}

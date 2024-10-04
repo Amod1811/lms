@@ -34,6 +34,7 @@ const Instructor_Quiz = () => {
     };
   return (
     <div>
+      
      <main>
   {/* =======================
     Main Banner START */}

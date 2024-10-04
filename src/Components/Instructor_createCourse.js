@@ -4,6 +4,7 @@ import Internal_Footer from './Internal_Footer'
 const Instructor_createCourse = () => {
   return (
     <div>
+      
    <main>
   {/* =======================
     Page Banner START */}

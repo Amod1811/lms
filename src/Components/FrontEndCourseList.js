@@ -83,7 +83,7 @@ Page content START */}
             <div className="row g-0">
               {/* Image */}
               <div className="col-md-4">
-                <img src="assets/images/courses/4by3/01.jpg" alt="card image" />
+                <img src="assets/images/courses/4by3/html.png" alt="card image" />
               </div>
               {/* Card body */}
               <div className="col-md-8">
@@ -127,7 +127,7 @@ Page content START */}
             <div className="row g-0">
               {/* Image */}
               <div className="col-md-4">
-                <img src="assets/images/courses/4by3/02.jpg" alt="card image" />
+                <img src="assets/images/courses/4by3/css.png" alt="card image" />
               </div>
               {/* Card body */}
               <div className="col-md-8">
@@ -170,7 +170,7 @@ Page content START */}
             <div className="row g-0">
               {/* Image */}
               <div className="col-md-4">
-                <img src="assets/images/courses/4by3/03.jpg" alt="card image" />
+                <img src="assets/images/courses/4by3/Boostsrap.png" alt="card image" />
               </div>
               {/* Card body */}
               <div className="col-md-8">
@@ -213,7 +213,7 @@ Page content START */}
             <div className="row g-0">
               {/* Image */}
               <div className="col-md-4">
-                <img src="assets/images/courses/4by3/05.jpg" alt="card image" />
+                <img src="assets/images/courses/4by3/react.png" alt="card image" />
               </div>
               {/* Card body */}
               <div className="col-md-8">
@@ -256,7 +256,7 @@ Page content START */}
             <div className="row g-0">
               {/* Image */}
               <div className="col-md-4">
-                <img src="assets/images/courses/4by3/06.jpg" alt="card image" />
+                <img src="assets/images/courses/4by3/javascript.png" alt="card image" />
               </div>
               {/* Card body */}
               <div className="col-md-8">
@@ -300,7 +300,7 @@ Page content START */}
             <div className="row g-0">
               {/* Image */}
               <div className="col-md-4">
-                <img src="assets/images/courses/4by3/06.jpg" alt="card image" />
+                <img src="assets/images/courses/4by3/jquery.png" alt="card image" />
               </div>
               {/* Card body */}
               <div className="col-md-8">

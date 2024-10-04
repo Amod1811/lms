@@ -5,7 +5,7 @@ const CourseCategory1 = () => {
   return ( 
   
     <>
-      <Nav/>
+      {/* <Nav/> */}
     <div>
   <section className="bg-light position-relative">
     {/* Svg decoration */} 

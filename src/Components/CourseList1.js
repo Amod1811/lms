@@ -114,7 +114,7 @@ Page content START */}
                   </ul>
                   <div className="mt-5 mt-sm-3 mx-3">
 				    <Link to="/paymentpage" className="btn btn-dark">Buy Now</Link>  
-                    <a href="#" className="btn btn-dark mx-3" >Add Cart</a>   
+                    <Link to="/addcart" className="btn btn-dark mx-3" >Add Cart</Link>   
 				</div> 
                 
                 </div>

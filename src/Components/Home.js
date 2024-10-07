@@ -5,6 +5,7 @@ import PopularCourses from './PopularCourses'
 import Review from './Review'
 import TrendingCourses from './TrendingCourses '
 import Nav from './Nav'
+import Cart from './Cart'
  
 
 
@@ -301,6 +302,7 @@ Main Banner END */}
  <PopularCourses/>
  <TrendingCourses/>
  <Review/>
+
 
 </>
   )

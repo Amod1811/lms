@@ -69,11 +69,22 @@ const Nav = () => {
                 <div className="d-flex align-items-center ms-3">
                   {/* Cart Icon with item count */}
                   <div className="position-relative">
+                    <Link to="/addcart">
+                      <IoMdCart size={28} />
+                      <div className="bg-red-600 text-white w-5 h-5 rounded-full p-1 flex items-center justify-center position-absolute" style={{ top: "-10px", right: "-10px" }}>
+                        <span>{cartItems}</span>
+                      </div>
+                    </Link>
+                  </div>
+                  
+
+
+                  {/* <div className="position-relative">
                     <IoMdCart size={28} />
                     <div className="bg-red-600 text-white w-5 h-5 rounded-full p-1 flex items-center justify-center position-absolute" style={{ top: "-10px", right: "-10px" }}>
                       <span>{cartItems}</span>
                     </div>
-                  </div>
+                  </div> */}
 
                   {/* User Profile Icon */}
                   <div className="dropdown ms-3">

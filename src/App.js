@@ -79,6 +79,7 @@ import AdminError404 from './Components/AdminError404'
 import BackToTop from './Components/BacktoTop';
 import PaymentPage from './Components/PaymentPage';
 import CoursePayment from './Components/CoursePayment';
+import Cart from './Components/Cart';
 
 
 
@@ -129,6 +130,7 @@ function App() {
               <Route path='/DMvideo' element={<MarketingVideo/>}/>
               <Route path='/videoplayer1' element={<VideoPlayer1/>}/>
               <Route path='/paymentpage' element={<PaymentPage/>}/>
+              <Route path="/addcart" element={ <Cart/>} />
 
      
     

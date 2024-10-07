@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
- 
+
 const Nav = () => {
   return (
     <div>
@@ -42,24 +42,20 @@ const Nav = () => {
 
                 {/* Nav item 2 Courses Dropdown */}
                 <li className="nav-item dropdown">
-                  <Link className="nav-link" to="/Course">Courses</Link>
-                  <ul className="dropdown-menu" aria-labelledby="pagesMenu">
+                  <Link className="nav-link dropdown-toggle" to="/Course" id="courseDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</Link>
+                  <ul className="dropdown-menu" aria-labelledby="courseDropdown">
                     {/* Dropdown submenu */}
-                    <li className="dropdown-submenu dropend">
-                      <a className="dropdown-item dropdown-toggle" href="#">Networking</a>
-                      
+                    <li className="dropdown-submenu">
+                      <Link className="dropdown-item" to="/course">Networking</Link>
                     </li>
-                    <li className="dropdown-submenu dropend">
-                      <a className="dropdown-item dropdown-toggle" href="#">Front-end</a>
-                    
-                     </li>
-                    <li className="dropdown-submenu dropend">
-                      <a className="dropdown-item dropdown-toggle" href="#">Back-end</a>
-                     
+                    <li className="dropdown-submenu">
+                      <Link className="dropdown-item" to="/course">Front-end</Link>
                     </li>
-                    <li className="dropdown-submenu dropend">
-                      <a className="dropdown-item dropdown-toggle" href="#">Digital Marketing</a>
-                     
+                    <li className="dropdown-submenu">
+                      <Link className="dropdown-item" to="/course">Back-end</Link>
+                    </li>
+                    <li className="dropdown-submenu">
+                      <Link className="dropdown-item" to="/course">Digital Marketing</Link>
                     </li>
                   </ul>
                 </li>
@@ -69,18 +65,18 @@ const Nav = () => {
                   <Link className="nav-link" to="/coursecategory">Packages</Link>
                 </li>
 
-                {/* Nav item 4 Dashboard */}
+                {/* Nav item 4 Dashboard Dropdown */}
                 <li className="nav-item dropdown">
-                  <Link className="nav-link" to="/coursecategory">Dashboard</Link>
-                  <ul className="dropdown-menu" aria-labelledby="pagesMenu">
-                    <li className="dropdown-submenu dropend">
-                      <Link className="dropdown-item dropdown-toggle" to="/adminlogin">Admin</Link>
+                  <Link className="nav-link dropdown-toggle" to="#" id="dashboardDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dashboard</Link>
+                  <ul className="dropdown-menu" aria-labelledby="dashboardDropdown">
+                    <li>
+                      <Link className="dropdown-item" to="/admin-dashboard">Admin</Link>
                     </li>
-                    <li className="dropdown-submenu dropend">
-                      <Link className="dropdown-item dropdown-toggle" to="/instructorlogin">Instructor</Link>
+                    <li>
+                      <Link className="dropdown-item" to="/instructordashboard">Instructor</Link>
                     </li>
-                    <li className="dropdown-submenu dropend">
-                      <Link className="dropdown-item dropdown-toggle" to="/studentdashboard">Student</Link>
+                    <li>
+                      <Link className="dropdown-item" to="/studentdashboard">Student</Link>
                     </li>
                   </ul>
                 </li>

@@ -129,8 +129,12 @@ function App() {
               <Route path='/graphicsvideo' element={<GraphicsVideo/>}/>
               <Route path='/DMvideo' element={<MarketingVideo/>}/>
               <Route path='/videoplayer1' element={<VideoPlayer1/>}/>
+<<<<<<< HEAD
               <Route path='/paymentpage' element={<PaymentPage/>}/>
               <Route path="/addcart" element={ <Cart/>} />
+=======
+              <Route path='/paymentpage' element={<CoursePayment/>}/>
+>>>>>>> 90dc4567dc5d54bfc21e255a7443adf043c3369f
 
      
     
@@ -179,7 +183,7 @@ function App() {
 
 
         <Footer/>
-        {/* <CoursePayment/> */}
+       
          <Nav1/>
          <BackToTop/>
     </Router>

@@ -52,6 +52,13 @@ const CoursePayment = () => {
   };
 
   return (
+    <>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <section className="pt-0">
       <div className="container">
         <div className="row">
@@ -239,6 +246,7 @@ const CoursePayment = () => {
         </div>
       </div>
     </section>
+    </>
   )
 }
 

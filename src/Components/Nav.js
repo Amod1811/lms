@@ -11,7 +11,7 @@ const Nav = () => {
           <div className="container-fluid px-3 px-xl-5">
             {/* Logo START */}
             <Link className="navbar-brand" to="/">
-              <img className="light-mode-item logo navbar-brand-item" src="assets/images/logo1newbg.png" alt="logo" />
+              <img className="light-mode-item logo navbar-brand-item" src="assets/images/LMS.png" alt="logo" />
             </Link>
             {/* Logo END */}
 
@@ -47,40 +47,19 @@ const Nav = () => {
                     {/* Dropdown submenu */}
                     <li className="dropdown-submenu dropend">
                       <a className="dropdown-item dropdown-toggle" href="#">Networking</a>
-                      <ul className="dropdown-menu dropdown-menu-start">
-                        <li><a className="dropdown-item" href="#">Hardware</a></li>
-                        <li><a className="dropdown-item" href="#">Networking</a></li>
-                        <li><a className="dropdown-item" href="#">AWS</a></li>
-                        <li><a className="dropdown-item" href="#">Linux (CCNA)</a></li>
-                        <li><a className="dropdown-item" href="#">MCITP</a></li>
-                        <li><a className="dropdown-item" href="#">MCSE</a></li>
-                      </ul>
+                      
                     </li>
                     <li className="dropdown-submenu dropend">
                       <a className="dropdown-item dropdown-toggle" href="#">Front-end</a>
-                      <ul className="dropdown-menu dropdown-menu-start">
-                        <li><a className="dropdown-item" href="#">HTML</a></li>
-                        <li><a className="dropdown-item" href="#">CSS</a></li>
-                        <li><a className="dropdown-item" href="#">JS</a></li>
-                        <li><a className="dropdown-item" href="#">React</a></li>
-                      </ul>
-                    </li>
+                    
+                     </li>
                     <li className="dropdown-submenu dropend">
                       <a className="dropdown-item dropdown-toggle" href="#">Back-end</a>
-                      <ul className="dropdown-menu dropdown-menu-start">
-                        <li><a className="dropdown-item" href="#">Node.js</a></li>
-                        <li><a className="dropdown-item" href="#">Express.js</a></li>
-                        <li><a className="dropdown-item" href="#">MySQL</a></li>
-                        <li><a className="dropdown-item" href="#">MongoDb</a></li>
-                      </ul>
+                     
                     </li>
                     <li className="dropdown-submenu dropend">
                       <a className="dropdown-item dropdown-toggle" href="#">Digital Marketing</a>
-                      <ul className="dropdown-menu dropdown-menu-start">
-                        <li><a className="dropdown-item" href="#">SEO</a></li>
-                        <li><a className="dropdown-item" href="#">SMM</a></li>
-                        <li><a className="dropdown-item" href="#">SEM</a></li>
-                      </ul>
+                     
                     </li>
                   </ul>
                 </li>

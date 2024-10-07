@@ -130,10 +130,12 @@ function App() {
               <Route path='/DMvideo' element={<MarketingVideo/>}/>
               <Route path='/videoplayer1' element={<VideoPlayer1/>}/>
 
+
               <Route path='/paymentpage' element={<PaymentPage/>}/>
               <Route path="/addcart" element={ <Cart/>} />
 
               <Route path='/paymentpage' element={<CoursePayment/>}/>
+
 
 
      

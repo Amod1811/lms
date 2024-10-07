@@ -3,6 +3,9 @@ import React from 'react'
 const Sign_in = () => {
   return (
     <div>
+      <br />
+<br />
+<br />
     <main>
   <section className="p-0 d-flex align-items-center position-relative overflow-hidden">
     <div className="container-fluid">
@@ -45,7 +48,7 @@ const Sign_in = () => {
             <div className="col-sm-10 col-xl-8 m-auto">
               {/* Title */}
               <span className="mb-0 fs-1">👋</span>
-              <h1 className="fs-2">Login into Eduport!</h1>
+              <h1 className="fs-2">Login into LMS!</h1>
               <p className="lead mb-4">Nice to see you! Please log in with your account.</p>
               {/* Form START */}
               <form>

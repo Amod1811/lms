@@ -78,6 +78,7 @@ import AdminError404 from './Components/AdminError404'
 
 import BackToTop from './Components/BacktoTop';
 import PaymentPage from './Components/PaymentPage';
+import CoursePayment from './Components/CoursePayment';
 
 
 
@@ -176,6 +177,7 @@ function App() {
 
 
         <Footer/>
+        <CoursePayment/>
          <Nav1/>
          <BackToTop/>
     </Router>

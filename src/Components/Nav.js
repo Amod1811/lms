@@ -24,7 +24,7 @@ const Nav = () => {
               aria-controls="navbarCollapse"
               aria-expanded="false"
               aria-label="Toggle navigation"
-            >
+            > 
               <span className="navbar-toggler-animation">
                 <span />
                 <span />

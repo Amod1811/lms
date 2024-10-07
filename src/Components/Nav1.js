@@ -1,16 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { IoMdCart } from "react-icons/io";
 import { Link } from 'react-router-dom';
 import { FaCircleUser } from "react-icons/fa6";
-import { useState } from 'react';
 
-const Nav = () => { 
+const Nav = () => {
   const [cartItems, setCartItems] = useState(0); // Cart items count
   const [isDropdownOpen, setDropdownOpen] = useState(false); // For profile dropdown
 
   const toggleDropdown = () => {
     setDropdownOpen(!isDropdownOpen);
   };
+
   return (
     <div>
       {/* Header START */}
@@ -47,92 +47,8 @@ const Nav = () => {
 
                 {/* Nav item 2 Courses Dropdown */}
                 <li className="nav-item dropdown">
-            <Link className="nav-link" to="/Course">Courses</Link>
-              {/* <Link className="nav-link dropdown-toggle" to="/coursecategory" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses</Link> */}
-              <ul className="dropdown-menu" aria-labelledby="pagesMenu">
-                {/* Dropdown submenu */}
-                <li className="dropdown-submenu dropend">
-                  <a className="dropdown-item dropdown-toggle" href="#">Networking</a>
-                  <ul className="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-                    {/* <li> <a className="dropdown-item" href="course-categories.html">Course Categories</a></li> */}
-                  
-                    <li> <a className="dropdown-item" href="#">Hardware</a></li>
-                    <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="#">Networking</a></li>
-                    <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="#">AWS</a></li>
-                    <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="#">Linux (CCNA)</a></li>
-                    <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="#">MCITP</a></li>
-                    <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="#">MCSE</a></li>            
-                  </ul>
+                  <Link className="nav-link" to="/Course">Courses</Link>
                 </li>
-
-                <li className="dropdown-submenu dropend">
-                  <a className="dropdown-item dropdown-toggle" href="#">Front-end</a>
-                  <ul className="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-                    {/* <li> <a className="dropdown-item" href="course-categories.html">Course Categories</a></li> */}
-                  
-                    <li> <a className="dropdown-item" href="#">HTML</a></li>
-                    <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="#">CSS</a></li>
-                    <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="#">JS</a></li>
-                    <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="#">JQuery</a></li>
-                    <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="#">BootStrap</a></li>
-                    <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="#">React</a></li>            
-                  </ul>
-                </li>
-
-                <li className="dropdown-submenu dropend">
-                  <a className="dropdown-item dropdown-toggle" href="#">Back-end</a>
-                  <ul className="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-                    {/* <li> <a className="dropdown-item" href="course-categories.html">Course Categories</a></li> */}
-                  
-                    <li> <a className="dropdown-item" href="#">Node.js</a></li>
-                    <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="#">Express.js </a></li>
-                    <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="#">MySQL</a></li>
-                    <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="#">MongoDb</a></li>
-                    <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="#">PhP</a></li>
-                    <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="#">JAVA</a></li>            
-                  </ul>
-                </li>
-
-                <li className="dropdown">
-                  <a className="dropdown-item " href="#">Graphics</a>
-                  
-                </li>
-
-
-                <li className="dropdown-submenu dropend">
-                  <a className="dropdown-item dropdown-toggle" href="#">Digital Marketing</a>
-                  <ul className="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-                    {/* <li> <a className="dropdown-item" href="course-categories.html">Course Categories</a></li> */}
-                  
-                    <li> <a className="dropdown-item" href="#">SEO</a></li>
-                    <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="#">SMM</a></li>
-                    <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="#">SEM</a></li>
-                    
-                  </ul>
-                </li>
-                {/* Dropdown submenu */}
-                
-               
-               
-              </ul>
-            </li>
 
                 {/* Nav item 3 Packages */}
                 <li className="nav-item">
@@ -148,73 +64,38 @@ const Nav = () => {
                     <i className="fas fa-search"></i>
                   </button>
                 </form>
-                {/* Profile START */}
-        <div className="dropdown ms-1 ms-lg-0">
-          <a className="avatar avatar-sm p-0" href="#" id="profileDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
-        
-          <ul className="navbar-nav">
-        <li className="nav-item">
-        
-        <div className="d-flex align-items-center">
-      {/* Cart Icon with item count */}
-     
-  {/* Cart Icon with item count */}
-  <div className="position-relative">
-        <IoMdCart size={28} />
-        <div className="bg-red-600 text-white w-5 h-5 rounded-full p-1 flex items-center justify-center position-absolute" style={{ top: "-10px", right: "-10px" }}>
-          <span>{cartItems}</span>
-        </div>
-      </div>
-      {/* User Profile Icon */}
-      <div className="dropdown ms-3">
-        <button className="btn p-0" onClick={toggleDropdown}>
-          <FaCircleUser size={28} />
-        </button>
-        {isDropdownOpen && (
-          <div className="dropdown-menu dropdown-menu-end show mt-3">
-            <div className="dropdown-item-text">
-              <strong>Khushi Diwan</strong>
-              <p className="small mb-0">khushi@example.com</p>
-            </div>
-            <div className="dropdown-divider"></div>
-            <li><a className="dropdown-item" href="#"><i className="bi bi-person fa-fw me-2" />Edit Profile</a></li>
-            <li><a className="dropdown-item" href="#"><i className="bi bi-gear fa-fw me-2" />Account Settings</a></li>
-            <li><a className="dropdown-item" href="#"><i className="bi bi-info-circle fa-fw me-2" />Help</a></li>
-            <li><a className="dropdown-item bg-danger-soft-hover" href="#"><i className="bi bi-power fa-fw me-2" />Sign Out</a></li>
-            <li> <hr className="dropdown-divider" /></li>
-            <li>
-              <div className="bg-light dark-mode-switch theme-icon-active d-flex align-items-center p-1 rounded mt-2">
-                <button type="button" className="btn btn-sm mb-0" data-bs-theme-value="light">
-                  <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} fill="currentColor" className="bi bi-sun fa-fw mode-switch" viewBox="0 0 16 16">
-                    <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
-                    <use href="#" />
-                  </svg> Light
-                </button>
-                <button type="button" className="btn btn-sm mb-0" data-bs-theme-value="dark">
-                  <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} fill="currentColor" className="bi bi-moon-stars fa-fw mode-switch" viewBox="0 0 16 16">
-                    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z" />
-                    <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
-                    <use href="#" />
-                  </svg> Dark
-                </button>
-                <button type="button" className="btn btn-sm mb-0 active" data-bs-theme-value="auto">
-                  <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} fill="currentColor" className="bi bi-circle-half fa-fw mode-switch" viewBox="0 0 16 16">
-                    <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
-                    <use href="#" />
-                  </svg> Auto
-                </button>
-              </div>
-            </li> 
-          </div>
-        )}
-      </div>
-    </div>
-        </li>
-        
-      </ul>
-         
-          </a>
-        </div>
+
+                {/* Profile and Cart START */}
+                <div className="d-flex align-items-center ms-3">
+                  {/* Cart Icon with item count */}
+                  <div className="position-relative">
+                    <IoMdCart size={28} />
+                    <div className="bg-red-600 text-white w-5 h-5 rounded-full p-1 flex items-center justify-center position-absolute" style={{ top: "-10px", right: "-10px" }}>
+                      <span>{cartItems}</span>
+                    </div>
+                  </div>
+
+                  {/* User Profile Icon */}
+                  <div className="dropdown ms-3">
+                    <button className="btn p-0" onClick={toggleDropdown}>
+                      <FaCircleUser size={28} />
+                    </button>
+                    {isDropdownOpen && (
+                      <ul className="dropdown-menu dropdown-menu-end show mt-3">
+                        <li className="dropdown-item-text">
+                          <strong>Khushi Diwan</strong>
+                          <p className="small mb-0">khushi@example.com</p>
+                        </li>
+                        <div className="dropdown-divider"></div>
+                        <li><a className="dropdown-item" href="#">Edit Profile</a></li>
+                        <li><a className="dropdown-item" href="#">Account Settings</a></li>
+                        <li><a className="dropdown-item" href="#">Help</a></li>
+                        <li><a className="dropdown-item bg-danger-soft-hover" href="#">Sign Out</a></li>
+                      </ul>
+                    )}
+                  </div>
+                </div>
+                {/* Profile and Cart END */}
               </div>
             </div>
             {/* Main navbar END */}

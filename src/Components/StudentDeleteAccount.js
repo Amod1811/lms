@@ -36,7 +36,7 @@ Page Banner START */}
                 </div>
                 {/* Button */}
                 <div className="d-flex align-items-center mt-2 mt-md-0">
-                  <a href="instructor-create-course.html" className="btn btn-success mb-0">Create a course</a>
+                  <a href="/instructorcreatecourses" className="btn btn-success mb-0">Create a course</a>
                 </div>
               </div>
             </div>
@@ -77,7 +77,7 @@ Page content START */}
               <div className="bg-dark border rounded-3 pb-0 p-3 w-100">
                 {/* Dashboard menu */}
                 <div className="list-group list-group-dark list-group-borderless">
-                <Link className="list-group-item active" to="/studentdashboard"><i className="bi bi-ui-checks-grid fa-fw me-2" />Dashboard</Link>
+                <Link className="list-group-item" to="/studentdashboard"><i className="bi bi-ui-checks-grid fa-fw me-2" />Dashboard</Link>
                 <Link className="list-group-item" to="/studentlist"><i className="bi bi-basket fa-fw me-2" />My Courses</Link>
                 <Link className="list-group-item" to="/studentquiz"><i className="bi bi-question-diamond fa-fw me-2" />Quiz</Link>
                   <a className="list-group-item" href="instructor-earning.html"><i className="bi bi-graph-up fa-fw me-2" />Earnings</a>

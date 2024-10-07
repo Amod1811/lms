@@ -19437,7 +19437,7 @@ textarea.form-control-lg {
     height: 110px;
     display: block;
     width: auto;
-
+    /* margin-top: 10px; */
   }
   .navbar-expand-xl .navbar-nav .dropdown > .dropdown-menu {
     top: 120%;
@@ -22605,7 +22605,6 @@ html[dir=rtl] .choices__input {
 [data-bs-theme=dark] .light-mode-item {
   display: none !important;
 }
-
 
 /*User CSS*/
 /*# sourceMappingURL=style.css.map */

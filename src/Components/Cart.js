@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import React from 'react'
 
 const Cart = () => {
@@ -166,5 +166,4 @@ Page content END */}
 }
 
 export default Cart
-=======
->>>>>>> 90dc4567dc5d54bfc21e255a7443adf043c3369f
+

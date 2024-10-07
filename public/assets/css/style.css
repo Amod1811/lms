@@ -19437,7 +19437,11 @@ textarea.form-control-lg {
     height: 110px;
     display: block;
     width: auto;
+<<<<<<< HEAD
     /* margin-top: 10px; */
+=======
+
+>>>>>>> 2836d692e6f4ad64c957ea33f54ea8f30d7eff62
   }
   .navbar-expand-xl .navbar-nav .dropdown > .dropdown-menu {
     top: 120%;

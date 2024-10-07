@@ -303,7 +303,7 @@ Main Banner END */}
  <PopularCourses/>
  <TrendingCourses/>
  <Review/>
-<AdminLogin/>
+
 
 </>
   )

@@ -74,10 +74,10 @@ const Nav = () => {
                   <Link className="nav-link" to="/coursecategory">Dashboard</Link>
                   <ul className="dropdown-menu" aria-labelledby="pagesMenu">
                     <li className="dropdown-submenu dropend">
-                      <Link className="dropdown-item dropdown-toggle" to="/admin-dashboard">Admin</Link>
+                      <Link className="dropdown-item dropdown-toggle" to="/adminlogin">Admin</Link>
                     </li>
                     <li className="dropdown-submenu dropend">
-                      <Link className="dropdown-item dropdown-toggle" to="/instructordashboard">Instructor</Link>
+                      <Link className="dropdown-item dropdown-toggle" to="/instructorlogin">Instructor</Link>
                     </li>
                     <li className="dropdown-submenu dropend">
                       <Link className="dropdown-item dropdown-toggle" to="/studentdashboard">Student</Link>

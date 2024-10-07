@@ -1,6 +1,7 @@
+
 import React, { useState } from 'react';  // Import React and useState
 
-const AdminLogin = () => {
+const Instructor_Login = () => {
   const [email, setEmail] = useState('');
 
   const handleSubmit = (e: React.FormEvent) => {  // Now React.FormEvent is recognized
@@ -10,7 +11,7 @@ const AdminLogin = () => {
 
   return (
     <>
-     <br />
+    <br />
     <br />
     <br />
     <br />
@@ -19,10 +20,10 @@ const AdminLogin = () => {
     <div className="login-form-container">
       <div className="form-wrapper">
         <div className="logo-container">
-          <img src="..\assets\images\LMS.png" alt="LMS" className="logo" />
+          <img src="assets/images/LMS.png" alt="LMS" className="logo" />
         </div>
         <div className="form-card">
-          <h1 className="form-title">Admin Login</h1>
+          <h1 className="form-title">Instructor Login</h1>
           <form onSubmit={handleSubmit} className="form">
             <div className="input-group">
               <label htmlFor="email" className="input-label">Email or mobile phone number</label>
@@ -50,7 +51,7 @@ const AdminLogin = () => {
           <span className="divider-text">New to LMS?</span>
         </div>
         <button className="create-account-button" onClick={() => window.location.href = '/signUp'}>
-             Create your Admin account
+             Create your Instructor account
        </button>
       </div>
       <footer className="footer">
@@ -61,10 +62,10 @@ const AdminLogin = () => {
         </div>
         <div className="footer-text">© 1996-2024, Amazon.com, Inc. or its affiliates</div>
       </footer>
-     
     </div>
     </>
   );
 };
 
-export default AdminLogin;
+export default Instructor_Login;
+

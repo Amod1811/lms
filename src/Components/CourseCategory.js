@@ -7,6 +7,9 @@ const CourseCategory = () => {
     <> 
 {/* <Nav/> */}
     <div>
+    <br />
+<br />
+<br />
   <section className="bg-light position-relative">
     {/* Svg decoration */}
     <figure className="position-absolute bottom-0 start-0 d-none d-lg-block">

@@ -32,11 +32,11 @@ const PaymentPage = () => {
                     defaultChecked
                   />
                   <img
-                    src="https://placehold.co/24x24"
+                     src="assets/images/upi icon.png"
                     alt="Google Pay logo"
-                    className="mr-2"
+                    className="mr-2" style={{ width: '48px', height: '48px' }}
                   />
-                  <span>UPI</span>
+                  {/* <span>UPI</span> */}
                 </div>
                 <div className="ml-6">
                   <p className="font-bold">Choose an option</p>
@@ -68,7 +68,7 @@ const PaymentPage = () => {
       onChange={(e) => setSelectedUPI(e.target.value)} // Add this to update the selectedUPI state
     />
     {selectedUPI !== "" && (
-      <button className="pay-button bg-blue-600 text-white p-2 rounded w-full ">Pay</button>
+      <button className="pay-button bg-red-600 text-black p-2 rounded w-full ">Pay</button>
     )}
   </div>
 )}
@@ -119,7 +119,7 @@ const PaymentPage = () => {
                       className="border p-2 rounded w-1/2"
                     />
                   </div>
-                  <button className="bg-blue-600 text-white p-2 rounded w-full">
+                  <button className="bg-blue-600 text-black p-2 rounded w-full">
                     Pay
                   </button>
                 </div>

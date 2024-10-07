@@ -19429,16 +19429,15 @@ textarea.form-control-lg {
 .navbar-expand-xl .dropdown-fullwidth .dropdown-menu {
   padding: 0 !important;
 }
-
 @media (min-width: 1200px) {
   .navbar-expand-xl .navbar-top {
     z-index: 1100 !important;
   }
-  .navbar-expand-xl .navbar-sticky-on .navbar-brand .navbar-brand-item {
-    height: 200px;
+  .navbar-expand-xl .navbar-brand .navbar-brand-item {
+    height: 110px;
     display: block;
     width: auto;
-   
+
   }
   .navbar-expand-xl .navbar-nav .dropdown > .dropdown-menu {
     top: 120%;

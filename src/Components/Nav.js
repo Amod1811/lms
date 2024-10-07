@@ -70,10 +70,10 @@ const Nav = () => {
                   <Link className="nav-link dropdown-toggle" to="#" id="dashboardDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dashboard</Link>
                   <ul className="dropdown-menu" aria-labelledby="dashboardDropdown">
                     <li>
-                      <Link className="dropdown-item" to="/admin-dashboard">Admin</Link>
+                      <Link className="dropdown-item" to="/adminlogin">Admin</Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" to="/instructordashboard">Instructor</Link>
+                      <Link className="dropdown-item" to="/instructorlogin">Instructor</Link>
                     </li>
                     <li>
                       <Link className="dropdown-item" to="/studentdashboard">Student</Link>

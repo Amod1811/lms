@@ -80,6 +80,8 @@ import BackToTop from './Components/BacktoTop';
 import PaymentPage from './Components/PaymentPage';
 import CoursePayment from './Components/CoursePayment';
 import Cart from './Components/Cart';
+import AdminLogin from './Components/AdminLogin';
+import Instructor_Login from './Components/Instructor_Login';
 
 
 
@@ -117,6 +119,7 @@ function App() {
               <Route path='/instructorcreatecourses' element={<Instructor_createCourse/>}/>
               <Route path='/signout' element={<Sign_in />} />
               <Route path='/signUp' element={<Sign_UP/>} />
+              <Route path='/instructorlogin' element={<Instructor_Login/>} />
               <Route path='/course' element={<CourseCategory1/>}/>
               <Route path='/courselist' element={<CourseList1/>}/>
               <Route path='/frontendcourse' element={<FrontEndCourseList/>}/>
@@ -160,11 +163,8 @@ function App() {
 
 
       {/* Admin Dashboard Route Start */}
-     
-
-      
-
-         <Route path="/admin-dashboard" element={<AdminDashboard/>} />
+          <Route path="/adminlogin" element={<AdminLogin/>} />
+          <Route path="/admin-dashboard" element={<AdminDashboard/>} />
           {/* <Route path="/abroad-single" element={<AbroadSingle />} /> */}
           <Route path="/admin-student-list" element={<AdminStudentList/>}/>
           <Route Path="/admin-instructor-card" element={<AdminInstructorCard/>}/>

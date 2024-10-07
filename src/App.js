@@ -177,7 +177,7 @@ function App() {
 
 
         <Footer/>
-        <CoursePayment/>
+        {/* <CoursePayment/> */}
          <Nav1/>
          <BackToTop/>
     </Router>

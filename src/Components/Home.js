@@ -6,6 +6,7 @@ import Review from './Review'
 import TrendingCourses from './TrendingCourses '
 import Nav from './Nav'
 import Cart from './Cart'
+import AdminLogin from './AdminLogin'
  
 
 
@@ -302,7 +303,7 @@ Main Banner END */}
  <PopularCourses/>
  <TrendingCourses/>
  <Review/>
-
+<AdminLogin/>
 
 </>
   )

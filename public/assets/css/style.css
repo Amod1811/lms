@@ -19516,7 +19516,7 @@ textarea.form-control-lg {
 }
 @media (max-width: 1199.98px) {
   .navbar-expand-xl .navbar-brand .navbar-brand-item {
-    height: 64px;
+    height: 80px;
   }
   .navbar-expand-xl .navbar-brand {
     padding: 20px 0;
@@ -20000,7 +20000,7 @@ textarea.form-control-lg {
   }
 
   header.navbar-sticky-on .navbar-brand .navbar-brand-item {
-    height: 60px;
+    height: 90px;
   }
 }
 
@@ -22633,8 +22633,8 @@ html[dir=rtl] .choices__input {
           justify-content: center;
         }
         .logo {
-          height: 70px;
-          width: 140px;
+          height: 80px;
+          width: 160px;
         }
         .form-card {
           border: 1px solid #d1d5db;

@@ -63,162 +63,188 @@ const CourseCategory1 = () => {
 Page Banner END */}
   {/* =======================
 Categories START */}
-  <section>
-    <div className="container">
-      {/* Title */}
-      <div className="row mb-4">
-        <div className="col-lg-8 mx-auto text-center">
-          <h2>Choose a Categories</h2>
-          <p className="mb-0">Perceived end knowledge certainly day sweetness why cordially</p>
-        </div>
-      </div>
-      <div className="row g-4">
-        {/* Item */}
-        <div className="col-sm-6 col-md-4 col-xl-3">
-          <div className="card card-body bg-success bg-opacity-10 text-center position-relative btn-transition p-4">
-            {/* Image */}
-            <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-              <img src="assets/images/element/networking.webp" alt />
-            </div>
-            {/* Title */}
-            <Link to="/courselist" className="stretched-link"> <h5 className="mb-2"> HW/NW</h5></Link>
-            <h6 className="mb-0">6 Courses</h6>
-          </div>
-        </div>
-        {/* Item */}
-        <div className="col-sm-6 col-md-4 col-xl-3">
-          <div className="card card-body bg-orange bg-opacity-10 text-center position-relative btn-transition p-4">
-            {/* Image */}
-            <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-              <img src="assets/images/element/online.svg" alt />
-            </div>
-            {/* Title */}
-            <Link to="/frontendcourse" className="stretched-link"> <h5 className="mb-2">FrontEnd</h5></Link>
-            <h6 className="mb-0">6 Courses</h6>
-          </div>
-        </div>
-        {/* Item */}
-        <div className="col-sm-6 col-md-4 col-xl-3">
-          <div className="card card-body bg-danger bg-opacity-10 text-center position-relative btn-transition p-4">
-            {/* Image */}
-            <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-              <img src="assets/images/element/engineering.svg" alt />
-            </div>
-            {/* Title */}
-            <Link to="/backendcourse" className="stretched-link"> <h5 className="mb-2">BackEnd</h5></Link>
-            <h6 className="mb-0">6 Courses</h6>
-          </div>
-        </div>
-        {/* Item */}
-        <div className="col-sm-6 col-md-4 col-xl-3">
-          <div className="card card-body bg-purple bg-opacity-10 text-center position-relative btn-transition p-4">
-            {/* Image */}
-            <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-              <img src="assets/images/element/coding.svg" alt />
-            </div>
-            {/* Title */}
-            <Link to="/graphicscourse" className="stretched-link"> <h5 className="mb-2">Graphics Design</h5></Link>
-            <h6 className="mb-0">25 Courses</h6>
-          </div>
-        </div>
-        {/* Item */}
-        <div className="col-sm-6 col-md-4 col-xl-3">
-          <div className="card card-body bg-info bg-opacity-10 text-center position-relative btn-transition p-4">
-            {/* Image */}
-            <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-              <img src="assets/images/element/profit.svg" alt />
-            </div>
-            {/* Title */}
-            <Link to="/digitalmarketing" className="stretched-link"> <h5 className="mb-2">Digital Marketing</h5></Link>
-            <h6 className="mb-0">20 Courses</h6>
-          </div>
-        </div>
-        <div className="col-sm-6 col-md-4 col-xl-3">
-          <div className="card card-body bg-blue bg-opacity-10 text-center position-relative btn-transition p-4">
-            {/* Image */}
-            <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-              <img src="assets/images/element/medical.svg" alt />
-            </div>
-            {/* Title */}
-            <h5 className="mb-2"><a href="#" className="stretched-link">Medical</a></h5>
-            <h6 className="mb-0">10 Courses</h6>
-          </div>
-        </div>
-        {/* Item */}
-        <div className="col-sm-6 col-md-4 col-xl-3">
-          <div className="card card-body bg-warning bg-opacity-15 text-center position-relative btn-transition p-4">
-            {/* Image */}
-            <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-              <img src="assets/images/element/home.svg" alt />
-            </div>
-            {/* Title */}
-            <h5 className="mb-2"><a href="#" className="stretched-link">Architecture</a></h5>
-            <h6 className="mb-0">30 Courses</h6>
-          </div>
-        </div>
-        {/* Item */}
-        <div className="col-sm-6 col-md-4 col-xl-3">
-          <div className="card card-body bg-dark bg-opacity-10 text-center position-relative btn-transition p-4">
-            {/* Image */}
-            <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-              <img src="assets/images/element/artist.svg" alt />
-            </div>
-            {/* Title */}
-            <h5 className="mb-2"><a href="#" className="stretched-link">Art &amp; Design</a></h5>
-            <h6 className="mb-0">35 Courses</h6>
-          </div>
-        </div>
-        {/* Item */}
-        <div className="col-sm-6 col-md-4 col-xl-3">
-          <div className="card card-body bg-purple bg-opacity-10 text-center position-relative btn-transition p-4">
-            {/* Image */}
-            <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-              <img src="assets/images/element/photography.svg" alt />
-            </div>
-            {/* Title */}
-            <h5 className="mb-2"><a href="#" className="stretched-link">Photography</a></h5>
-            <h6 className="mb-0">20 Courses</h6>
-          </div>
-        </div>
-        {/* Item */}
-        <div className="col-sm-6 col-md-4 col-xl-3">
-          <div className="card card-body bg-danger bg-opacity-10 text-center position-relative btn-transition p-4">
-            {/* Image */}
-            <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-              <img src="assets/images/element/music.svg" alt />
-            </div>
-            {/* Title */}
-            <h5 className="mb-2"><a href="#" className="stretched-link">Musics</a></h5>
-            <h6 className="mb-0">10 Courses</h6>
-          </div>
-        </div>
-        {/* Item */}
-        <div className="col-sm-6 col-md-4 col-xl-3">
-          <div className="card card-body bg-success bg-opacity-10 text-center position-relative btn-transition p-4">
-            {/* Image */}
-            <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-              <img src="assets/images/element/marketing.svg" alt />
-            </div>
-            {/* Title */}
-            <h5 className="mb-2"><a href="#" className="stretched-link">Marketing</a></h5>
-            <h6 className="mb-0">30 Courses</h6>
-          </div>
-        </div>
-        {/* Item */}
-        <div className="col-sm-6 col-md-4 col-xl-3">
-          <div className="card card-body bg-primary bg-opacity-10 text-center position-relative btn-transition p-4">
-            {/* Image */}
-            <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-              <img src="assets/images/element/account.svg" alt />
-            </div>
-            {/* Title */}
-            <h5 className="mb-2"><a href="#" className="stretched-link">Accounting</a></h5>
-            <h6 className="mb-0">35 Courses</h6>
-          </div>
-        </div>
+<section>
+  <div className="container">
+    {/* Title */}
+    <div className="row mb-4">
+      <div className="col-lg-8 mx-auto text-center">
+        <h2>Choose a Categories</h2>
+        <p className="mb-0">Perceived end knowledge certainly day sweetness why cordially</p>
       </div>
     </div>
-  </section>
+    <div className="row g-4">
+      {/* Item */}
+      <div className="col-sm-6 col-md-4 col-xl-3">
+        <div className="card card-body bg-success bg-opacity-10 text-center position-relative btn-transition p-4">
+          {/* Image */}
+          <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
+            <img src="assets/images/element/networking.webp" alt="Networking" />
+          </div>
+          {/* Title */}
+          <Link to="/courselist" className="stretched-link">
+            <h5 className="mb-2">HW/NW</h5>
+          </Link>
+          <h6 className="mb-0">6 Courses</h6>
+        </div>
+      </div>
+      {/* Item */}
+      <div className="col-sm-6 col-md-4 col-xl-3">
+        <div className="card card-body bg-orange bg-opacity-10 text-center position-relative btn-transition p-4">
+          {/* Image */}
+          <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
+            <img src="assets/images/element/online.svg" alt="Online Courses" />
+          </div>
+          {/* Title */}
+          <Link to="/frontendcourse" className="stretched-link">
+            <h5 className="mb-2">FrontEnd</h5>
+          </Link>
+          <h6 className="mb-0">6 Courses</h6>
+        </div>
+      </div>
+      {/* Item */}
+      <div className="col-sm-6 col-md-4 col-xl-3">
+        <div className="card card-body bg-danger bg-opacity-10 text-center position-relative btn-transition p-4">
+          {/* Image */}
+          <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
+            <img src="assets/images/element/engineering.svg" alt="Engineering" />
+          </div>
+          {/* Title */}
+          <Link to="/backendcourse" className="stretched-link">
+            <h5 className="mb-2">BackEnd</h5>
+          </Link>
+          <h6 className="mb-0">6 Courses</h6>
+        </div>
+      </div>
+      {/* Item */}
+      <div className="col-sm-6 col-md-4 col-xl-3">
+        <div className="card card-body bg-purple bg-opacity-10 text-center position-relative btn-transition p-4">
+          {/* Image */}
+          <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
+            <img src="assets/images/element/coding.svg" alt="Graphics Design" />
+          </div>
+          {/* Title */}
+          <Link to="/graphicscourse" className="stretched-link">
+            <h5 className="mb-2">Graphics Design</h5>
+          </Link>
+          <h6 className="mb-0">25 Courses</h6>
+        </div>
+      </div>
+      <div className="col-sm-6 col-md-4 col-xl-3">
+        <div className="card card-body bg-success bg-opacity-10 text-center position-relative btn-transition p-4">
+          {/* Image */}
+          <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
+            <img src="assets/images/element/networking.webp" alt="Networking" />
+          </div>
+          {/* Title */}
+          <Link to="/courselist" className="stretched-link">
+            <h5 className="mb-2">HW/NW</h5>
+          </Link>
+          <h6 className="mb-0">6 Courses</h6>
+        </div>
+      </div>
+      {/* Item */}
+      <div className="col-sm-6 col-md-4 col-xl-3">
+        <div className="card card-body bg-orange bg-opacity-10 text-center position-relative btn-transition p-4">
+          {/* Image */}
+          <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
+            <img src="assets/images/element/online.svg" alt="Online Courses" />
+          </div>
+          {/* Title */}
+          <Link to="/frontendcourse" className="stretched-link">
+            <h5 className="mb-2">FrontEnd</h5>
+          </Link>
+          <h6 className="mb-0">6 Courses</h6>
+        </div>
+      </div>
+      {/* Item */}
+      <div className="col-sm-6 col-md-4 col-xl-3">
+        <div className="card card-body bg-danger bg-opacity-10 text-center position-relative btn-transition p-4">
+          {/* Image */}
+          <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
+            <img src="assets/images/element/engineering.svg" alt="Engineering" />
+          </div>
+          {/* Title */}
+          <Link to="/backendcourse" className="stretched-link">
+            <h5 className="mb-2">BackEnd</h5>
+          </Link>
+          <h6 className="mb-0">6 Courses</h6>
+        </div>
+      </div>
+      {/* Item */}
+      <div className="col-sm-6 col-md-4 col-xl-3">
+        <div className="card card-body bg-purple bg-opacity-10 text-center position-relative btn-transition p-4">
+          {/* Image */}
+          <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
+            <img src="assets/images/element/coding.svg" alt="Graphics Design" />
+          </div>
+          {/* Title */}
+          <Link to="/graphicscourse" className="stretched-link">
+            <h5 className="mb-2">Graphics Design</h5>
+          </Link>
+          <h6 className="mb-0">25 Courses</h6>
+        </div>
+      </div>
+      <div className="col-sm-6 col-md-4 col-xl-3">
+        <div className="card card-body bg-success bg-opacity-10 text-center position-relative btn-transition p-4">
+          {/* Image */}
+          <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
+            <img src="assets/images/element/networking.webp" alt="Networking" />
+          </div>
+          {/* Title */}
+          <Link to="/courselist" className="stretched-link">
+            <h5 className="mb-2">HW/NW</h5>
+          </Link>
+          <h6 className="mb-0">6 Courses</h6>
+        </div>
+      </div>
+      {/* Item */}
+      <div className="col-sm-6 col-md-4 col-xl-3">
+        <div className="card card-body bg-orange bg-opacity-10 text-center position-relative btn-transition p-4">
+          {/* Image */}
+          <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
+            <img src="assets/images/element/online.svg" alt="Online Courses" />
+          </div>
+          {/* Title */}
+          <Link to="/frontendcourse" className="stretched-link">
+            <h5 className="mb-2">FrontEnd</h5>
+          </Link>
+          <h6 className="mb-0">6 Courses</h6>
+        </div>
+      </div>
+      {/* Item */}
+      <div className="col-sm-6 col-md-4 col-xl-3">
+        <div className="card card-body bg-danger bg-opacity-10 text-center position-relative btn-transition p-4">
+          {/* Image */}
+          <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
+            <img src="assets/images/element/engineering.svg" alt="Engineering" />
+          </div>
+          {/* Title */}
+          <Link to="/backendcourse" className="stretched-link">
+            <h5 className="mb-2">BackEnd</h5>
+          </Link>
+          <h6 className="mb-0">6 Courses</h6>
+        </div>
+      </div>
+      {/* Item */}
+      <div className="col-sm-6 col-md-4 col-xl-3">
+        <div className="card card-body bg-purple bg-opacity-10 text-center position-relative btn-transition p-4">
+          {/* Image */}
+          <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
+            <img src="assets/images/element/coding.svg" alt="Graphics Design" />
+          </div>
+          {/* Title */}
+          <Link to="/graphicscourse" className="stretched-link">
+            <h5 className="mb-2">Graphics Design</h5>
+          </Link>
+          <h6 className="mb-0">25 Courses</h6>
+        </div>
+      </div>
+      {/* Additional Items... */}
+      {/* Ensure to update alt attributes and link hrefs */}
+    </div>
+  </div>
+</section>
+
   {/* =======================
 Categories END */}
   {/* =======================

@@ -98,10 +98,10 @@ const Nav = () => {
                           <p className="small mb-0">khushi@example.com</p>
                         </li>
                         <div className="dropdown-divider"></div>
-                        <li><a className="dropdown-item" href="#">Edit Profile</a></li>
-                        <li><a className="dropdown-item" href="#">Account Settings</a></li>
-                        <li><a className="dropdown-item" href="#">Help</a></li>
-                        <li><a className="dropdown-item bg-danger-soft-hover" href="#">Sign Out</a></li>
+                        <li><Link className="dropdown-item" to= "/studenteditprofile">Edit Profile</Link></li>
+                        <li><Link className="dropdown-item" to= "/studentsetting">Account Settings</Link></li>
+                        <li><Link className="dropdown-item" to= "#">Help</Link></li>
+                        <li><Link className="dropdown-item bg-danger-soft-hover" to= "/signout">Sign Out</Link></li>
                       </ul>
                     )}
                   </div>

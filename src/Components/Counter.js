@@ -2,6 +2,7 @@ import React from 'react';
 import PureCounter from './PureCounter';
 
 const Counter = () => {
+  
   return (
     <section className="py-0 py-xl-5">
       <div className="container">

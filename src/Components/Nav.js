@@ -50,15 +50,15 @@ const Nav = () => {
                     </li>
                     <hr />
                     <li className="dropdown-submenu">
-                      <Link className="dropdown-item" to="/course">Front-end</Link>
+                      <Link className="dropdown-item" to="/frontendcourse">Front-end</Link>
                     </li>
                     <hr />
                     <li className="dropdown-submenu">
-                      <Link className="dropdown-item" to="/course">Back-end</Link>
+                      <Link className="dropdown-item" to="/backendcourse">Back-end</Link>
                     </li>
                     <hr />
                     <li className="dropdown-submenu">
-                      <Link className="dropdown-item" to="/course">Digital Marketing</Link>
+                      <Link className="dropdown-item" to="/digitalmarketing">Digital Marketing</Link>
                     </li>
                   </ul>
                 </li>

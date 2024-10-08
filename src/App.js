@@ -135,7 +135,7 @@ function App() {
               <Route path='/videoplayer1' element={<VideoPlayer1/>}/>
               <Route path='/checkout' element={<Checkout/>}/>
 
-              <Route path='/paymentpage' element={<PaymentPage/>}/>
+              
               <Route path="/addcart" element={ <Cart/>} />
 
               <Route path='/paymentpage' element={<CoursePayment/>}/>

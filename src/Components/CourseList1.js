@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Modal, Button } from 'react-bootstrap'; // Import Bootstrap components
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 const CourseList1 = () => {
   // State to track purchased courses
@@ -15,11 +16,15 @@ const CourseList1 = () => {
   // State to track if all courses should be unblurred after a purchase
   const [isAllPurchased, setIsAllPurchased] = useState(false);
 
+  //payment navigation
+  const navigate = useNavigate();
+
   // State to track individual course information
   const handleAddToCart = () => {
     // Logic to add course to cart
     // console.log(Course ${selectedCourse} added to cart!);
     setShowModal(false);
+    navigate('/addcart'); // Redirect to any other page on cancel
   };
   const [courseInfo, setCourseInfo] = useState({
     1: { duration: '10h 56m', lectures: '82 lectures', level: 'Beginner' },
@@ -51,6 +56,11 @@ const CourseList1 = () => {
     setPurchasedCourses([...purchasedCourses, selectedCourse]);
     setIsAllPurchased(true); // Unblur all courses after purchase
     setShowModal(false);
+    navigate('/checkout'); // Redirect to payment page after purchase
+  };
+  const handleCancel = () => {
+    setShowModal(false);
+    navigate('/someotherpage'); // Redirect to any other page on cancel
   };
 
   return (

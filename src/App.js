@@ -82,6 +82,7 @@ import CoursePayment from './Components/CoursePayment';
 import Cart from './Components/Cart';
 import AdminLogin from './Components/AdminLogin';
 import Instructor_Login from './Components/Instructor_Login';
+import Checkout from './Components/Checkout';
 
 
 
@@ -132,7 +133,7 @@ function App() {
               <Route path='/graphicsvideo' element={<GraphicsVideo/>}/>
               <Route path='/DMvideo' element={<MarketingVideo/>}/>
               <Route path='/videoplayer1' element={<VideoPlayer1/>}/>
-
+              <Route path='/checkout' element={<Checkout/>}/>
 
               <Route path='/paymentpage' element={<PaymentPage/>}/>
               <Route path="/addcart" element={ <Cart/>} />
@@ -186,7 +187,7 @@ function App() {
 
         <Footer/>
        
-         {/* <Nav1/> */}
+         <Nav1/>
          <BackToTop/>
     </Router>
    </>

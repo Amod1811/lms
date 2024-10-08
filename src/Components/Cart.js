@@ -1,5 +1,6 @@
 
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Cart = () => {
   return (
@@ -146,7 +147,7 @@ Page Banner END */}
             </ul>
             {/* Button */}
             <div className="d-grid">
-              <a href="checkout.html" className="btn btn-lg btn-success">Proceed to Checkout</a>
+              <Link to="/checkout" className="btn btn-lg btn-success">Proceed to Checkout</Link>
             </div>
             {/* Content */}
             <p className="small mb-0 mt-2 text-center">By completing your purchase, you agree to these <a href="#"><strong>Terms of Service</strong></a></p>

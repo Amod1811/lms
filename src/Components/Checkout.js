@@ -158,7 +158,8 @@ Page content START */}
                               <input type="text" className="form-control" maxLength={2} placeholder="Month" />
                               <input type="text" className="form-control" maxLength={4} placeholder="Year" />
                             </div>
-                          </div>	
+                          </div>
+                          	
                           {/*Cvv code  */}
                           <div className="col-md-6">
                             <label className="form-label">CVV / CVC <span className="text-danger">*</span></label>

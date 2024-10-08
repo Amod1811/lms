@@ -48,12 +48,15 @@ const Nav = () => {
                     <li className="dropdown-submenu">
                       <Link className="dropdown-item" to="/course">Networking</Link>
                     </li>
+                    <hr />
                     <li className="dropdown-submenu">
                       <Link className="dropdown-item" to="/course">Front-end</Link>
                     </li>
+                    <hr />
                     <li className="dropdown-submenu">
                       <Link className="dropdown-item" to="/course">Back-end</Link>
                     </li>
+                    <hr />
                     <li className="dropdown-submenu">
                       <Link className="dropdown-item" to="/course">Digital Marketing</Link>
                     </li>

@@ -1,413 +1,170 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-
+import React, { useState } from 'react';
+import { Modal, Button } from 'react-bootstrap'; // Import Bootstrap components
+import { Link } from 'react-router-dom';
 
 const CourseList1 = () => {
-  return ( 
-    <>
-    <div> 
-  <section className="bg-dark align-items-center d-flex" style={{background: 'url(assets/images/pattern/04.png) no-repeat center center', backgroundSize: 'cover'}}>
-    {/* Main banner background image */}
-    <div className="container">
-      <div className="row">
-        <div className="col-12">
-          {/* Title */}
-          <h1 className="text-white">Course List</h1>
-          {/* Breadcrumb */}
-          <div className="d-flex"> 
-            <nav aria-label="breadcrumb">
-              <ol className="breadcrumb breadcrumb-dark breadcrumb-dots mb-0">
-                <li className="breadcrumb-item"><a href="#">Home</a></li>
-                <li className="breadcrumb-item active" aria-current="page">Courses</li>
-                <li className="breadcrumb-item active" aria-current="page">N/W&H/W</li>
-              </ol>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  {/* =======================
-Page Banner END */}
-  {/* =======================
-Page content START */}
-  <section className="pt-5">
-    <div className="container">
-      {/* Search option START */}
-      <div className="row mb-4 align-items-center">
-        {/* Search bar */}
-        <div className="col-sm-6 col-xl-4">
-          <form className="border rounded p-2">
-            <div className="input-group input-borderless">
-              <input className="form-control me-1" type="search" placeholder="Search course" />
-              <button type="button" className="btn btn-primary mb-0 rounded"><i className="fas fa-search" /></button>
-            </div>
-          </form>
-        </div>
-        {/* Select option */}
-        <div className="col-sm-6 col-xl-3 mt-3 mt-lg-0">
-          <form className="border rounded p-2 input-borderless">
-            <select className="form-select form-select-sm js-choice" aria-label=".form-select-sm">
-              <option value>Category</option>
-              <option>All</option>
-              <option>Networking</option>
-              <option>FrontEnd</option>
-              <option>Backend</option>
-              <option>Graphics</option>
-              <option>Digital Marketing</option>
-              
-            </select>
-          </form>
-        </div>
-        {/* Select option */}
-        <div className="col-sm-6 col-xl-3 mt-3 mt-xl-0">
-          <form className="border rounded p-2 input-borderless">
-            <select className="form-select form-select-sm js-choice" aria-label=".form-select-sm">
-              <option value>Sort by</option>
-              <option>Free</option>
-              <option>Most viewed</option>
-              <option>Popular</option>
-            </select>
-          </form>
-        </div>
-        {/* Button */}
-        <div className="col-sm-6 col-xl-2 mt-3 mt-xl-0 d-grid">
-          <a href="#" className="btn btn-lg btn-primary mb-0">Filter Results</a>
-        </div>
-      </div>
-      {/* Search option END */}
-      {/* Course list START */}
-      <div className="row g-4 justify-content-center">
-        {/* Card item START */}
-        <div className="col-lg-10 col-xxl-6">
-          <div className="card rounded overflow-hidden shadow">
-            <div className="row g-0">
-              {/* Image */}
-              <div className="col-md-4">
-                <img src="assets/images/courses/4by3/HW.png" alt="card image" />
-              </div>
-              {/* Card body */}
-              <div className="col-md-8">
-                <div className="card-body">
-                  {/* Title */}
-                  <div className="d-flex justify-content-between mb-2">
-                    <Link to="/networkingvideo"  className="card-title mb-0 mt-5"><h5>Computer Hardware</h5></Link>
-                    
-                    {/* Wishlist icon */}
-                    <a href="#"><i className="fas fa-heart text-danger" /></a>
-                  </div>
-                  {/* Content */}
-                  {/* Info */}
-                  <ul className="list-inline mb-1">
-                    <li className="list-inline-item h6 fw-light mb-1 mb-sm-0"><i className="far fa-clock text-danger me-2 mt-3" />6h 56m</li>
-                    <li className="list-inline-item h6 fw-light mb-1 mb-sm-0"><i className="fas fa-table text-orange me-2 mt-3" />82 lectures</li>
-                    <li className="list-inline-item h6 fw-light"><i className="fas fa-signal text-success me-2 mt-3" />Beginner</li>
-                  </ul>
-                  {/* Rating */}
-                  <ul className="list-inline mb-0">
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star-half-alt text-warning" /></li>
-                    <li className="list-inline-item ms-2 h6 fw-light">4.5/5.0</li>
-                  </ul>
-                  <div className="mt-5 mt-sm-3 mx-3">
-				    <Link to="/paymentpage" className="btn btn-dark">Buy Now</Link>  
-                    <Link to="/addcart" className="btn btn-dark mx-3" >Add Cart</Link>   
-				</div> 
-                
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* Card item END */}
-        {/* Card item START */}
-        <div className="col-lg-10 col-xxl-6">
-          <div className="card rounded overflow-hidden shadow">
-            <div className="row g-0">
-              {/* Image */}
-              <div className="col-md-4">
-                <img src="assets/images/courses/4by3/NW.png" alt="card image" />
-              </div>
-              {/* Card body */}
-              <div className="col-md-8">
-                <div className="card-body">
-                  {/* Title */}
-                  <div className="d-flex justify-content-between mb-2">
-                    <h5 className="card-title mb-0"><a href="#">Computer Networking</a></h5>
-                    {/* Wishlist icon */}
-                    <a href="#" className="h6 fw-light"><i className="far fa-heart" /></a>
-                  </div>
-                  {/* Content */}
-                  {/* Info */}
-                  <ul className="list-inline mb-1">
-                    <li className="list-inline-item h6 fw-light mb-1 mb-sm-0"><i className="far fa-clock text-danger me-2 mt-3" />9h 56m</li>
-                    <li className="list-inline-item h6 fw-light mb-1 mb-sm-0"><i className="fas fa-table text-orange me-2 mt-3" />65 lectures</li>
-                    <li className="list-inline-item h6 fw-light"><i className="fas fa-signal text-success me-2 mt-3" />All level</li>
-                  </ul>
-                  {/* Rating */}
-                  <ul className="list-inline mb-0">
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                    <li className="list-inline-item me-0 small"><i className="far fa-star text-warning" /></li>
-                    <li className="list-inline-item ms-2 h6 fw-light">4.0/5.0</li>
-                  </ul>
-                  <div className="mt-5 mt-sm-3 mx-3">
-				             <a href="#" className="btn btn-dark">Buy Now</a>  
-                    <a href="#" className="btn btn-dark mx-3" >Add Cart</a>   
-			          	</div> 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* Card item END */}
-        {/* Card item START */}
-        <div className="col-lg-10 col-xxl-6">
-          <div className="card rounded overflow-hidden shadow">
-            <div className="row g-0">
-              {/* Image */}
-              <div className="col-md-4">
-                <img src="assets/images/courses/4by3/AWS.png" alt="card image" />
-              </div>
-              {/* Card body */}
-              <div className="col-md-8">
-                <div className="card-body">
-                  {/* Title */}
-                  <div className="d-flex justify-content-between mb-2">
-                    <h5 className="card-title mb-0"><a href="#">AWS Cloud Computing</a></h5>
-                    {/* Wishlist icon */}
-                    <a href="#" className="h6 fw-light"><i className="far fa-heart" /></a>
-                  </div>
-                  {/* Content */}
-                  {/* Info */}
-                  <ul className="list-inline mb-1">
-                    <li className="list-inline-item h6 fw-light mb-1 mb-sm-0"><i className="far fa-clock text-danger me-2 mt-3" />7h 16m</li>
-                    <li className="list-inline-item h6 fw-light mb-1 mb-sm-0"><i className="fas fa-table text-orange me-2 mt-3" />32 lectures</li>
-                    <li className="list-inline-item h6 fw-light"><i className="fas fa-signal text-success me-2 mt-3" />Intermediate</li>
-                  </ul>
-                  {/* Rating */}
-                  <ul className="list-inline mb-0">
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                    <li className="list-inline-item me-0 small"><i className="far fa-star text-warning" /></li>
-                    <li className="list-inline-item ms-2 h6 fw-light">4.0/5.0</li>
-                  </ul>
-                  <div className="mt-5 mt-sm-3 mx-3">
-				             <a href="#" className="btn btn-dark">Buy Now</a>  
-                    <a href="#" className="btn btn-dark mx-3" >Add Cart</a>   
-				          </div> 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* Card item END */}
-        {/* Card item START */}
-        <div className="col-lg-10 col-xxl-6">
-          <div className="card rounded overflow-hidden shadow">
-            <div className="row g-0">
-              {/* Image */}
-              <div className="col-md-4">
-                <img src="assets/images/courses/4by3/Linux.png" alt="card image" />
-              </div>
-              {/* Card body */}
-              <div className="col-md-8">
-                <div className="card-body">
-                  {/* Title */}
-                  <div className="d-flex justify-content-between mb-2">
-                    <h5 className="card-title mb-0"><a href="#">Linux</a></h5>
-                    {/* Wishlist icon */}
-                    <a href="#"><i className="fas fa-heart text-danger" /></a>
-                  </div>
-                  {/* Content */}
-                  {/* Info */}
-                  <ul className="list-inline mb-1">
-                    <li className="list-inline-item h6 fw-light mb-1 mb-sm-0"><i className="far fa-clock text-danger me-2 mt-3" />7h 16m</li>
-                    <li className="list-inline-item h6 fw-light mb-1 mb-sm-0"><i className="fas fa-table text-orange me-2 mt-3" />32 lectures</li>
-                    <li className="list-inline-item h6 fw-light"><i className="fas fa-signal text-success me-2 mt-3" />Intermediate</li>
-                  </ul>
-                  {/* Rating */}
-                  <ul className="list-inline mb-0">
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                    <li className="list-inline-item me-0 small"><i className="far fa-star text-warning" /></li>
-                    <li className="list-inline-item ms-2 h6 fw-light">4.0/5.0</li>
-                  </ul>
-                  <div className="mt-5 mt-sm-3 mx-3">
-				             <a href="#" className="btn btn-dark">Buy Now</a>  
-                    <a href="#" className="btn btn-dark mx-3" >Add Cart</a>   
-				          </div> 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* Card item END */}
-        {/* Card item START */}
-        <div className="col-lg-10 col-xxl-6">
-          <div className="card rounded overflow-hidden shadow">
-            <div className="row g-0">
-              {/* Image */}
-              <div className="col-md-4">
-                <img src="assets/images/courses/4by3/CCNA.png" alt="card image" />
-              </div>
-              {/* Card body */}
-              <div className="col-md-8">
-                <div className="card-body">
-                  {/* Title */}
-                  <div className="d-flex justify-content-between mb-2">
-                    <h5 className="card-title mb-0"><a href="#">CCNA</a></h5>
-                    {/* Wishlist icon */}
-                    <a href="#" className="h6 fw-light"><i className="far fa-heart" /></a>
-                  </div>
-                  {/* Content */}
-                  {/* Info */}
-                  <ul className="list-inline mb-1">
-                    <li className="list-inline-item h6 fw-light mb-1 mb-sm-0"><i className="far fa-clock text-danger me-2 mt-3" />21h 16m</li>
-                    <li className="list-inline-item h6 fw-light mb-1 mb-sm-0"><i className="fas fa-table text-orange me-2 mt-3" />68 lectures</li>
-                    <li className="list-inline-item h6 fw-light"><i className="fas fa-signal text-success me-2 mt-3" />All level</li>
-                  </ul>
-                  {/* Rating */}
-                  <ul className="list-inline mb-0">
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star-half-alt text-warning" /></li>
-                    <li className="list-inline-item ms-2 h6 fw-light">4.5/5.0</li>
-                  </ul>
-                  <div className="mt-5 mt-sm-3 mx-3">
-				             <a href="#" className="btn btn-dark">Buy Now</a>  
-                    <a href="#" className="btn btn-dark mx-3" >Add Cart</a>   
-				          </div> 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-       
-        {/* Card item END */}
-         {/* Card item START */}
-         <div className="col-lg-10 col-xxl-6">
-          <div className="card rounded overflow-hidden shadow">
-            <div className="row g-0">
-              {/* Image */}
-              <div className="col-md-4">
-                <img src="assets/images/courses/4by3/MCT.png" alt="card image" />
-              </div>
-              {/* Card body */}
-              <div className="col-md-8">
-                <div className="card-body">
-                  {/* Title */}
-                  <div className="d-flex justify-content-between mb-2">
-                    <h5 className="card-title mb-0"><a href="#">MCITP</a></h5>
-                    {/* Wishlist icon */}
-                    <a href="#" className="h6 fw-light"><i className="far fa-heart" /></a>
-                  </div>
-                  {/* Content */}
-                  {/* Info */}
-                  <ul className="list-inline mb-1">
-                    <li className="list-inline-item h6 fw-light mb-1 mb-sm-0"><i className="far fa-clock text-danger me-2 mt-3" />21h 16m</li>
-                    <li className="list-inline-item h6 fw-light mb-1 mb-sm-0"><i className="fas fa-table text-orange me-2 mt-3" />68 lectures</li>
-                    <li className="list-inline-item h6 fw-light"><i className="fas fa-signal text-success me-2 mt-3" />All level</li>
-                  </ul>
-                  {/* Rating */}
-                  <ul className="list-inline mb-0">
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star-half-alt text-warning" /></li>
-                    <li className="list-inline-item ms-2 h6 fw-light">4.5/5.0</li>
-                  </ul>
-                  <div className="mt-5 mt-sm-3 mx-3">
-				             <a href="#" className="btn btn-dark">Buy Now</a>  
-                    <a href="#" className="btn btn-dark mx-3" >Add Cart</a>   
-				          </div> 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-       
-        {/* Card item END */}
-        {/* Card item START */}
-        <div className="col-lg-10 col-xxl-6">
-          <div className="card rounded overflow-hidden shadow">
-            <div className="row g-0">
-              {/* Image */}
-              <div className="col-md-4">
-                <img src="assets/images/courses/4by3/MCT.png" alt="card image" />
-              </div>
-              {/* Card body */}
-              <div className="col-md-8">
-                <div className="card-body">
-                  {/* Title */}
-                  <div className="d-flex justify-content-between mb-2">
-                    <h5 className="card-title mb-0"><a href="#">MCSE</a></h5>
-                    {/* Wishlist icon */}
-                    <a href="#" className="h6 fw-light"><i className="far fa-heart" /></a>
-                  </div>
-                  {/* Content */}
-                  {/* Info */}
-                  <ul className="list-inline mb-1">
-                    <li className="list-inline-item h6 fw-light mb-1 mb-sm-0"><i className="far fa-clock text-danger me-2 mt-3" />21h 16m</li>
-                    <li className="list-inline-item h6 fw-light mb-1 mb-sm-0"><i className="fas fa-table text-orange me-2 mt-3" />68 lectures</li>
-                    <li className="list-inline-item h6 fw-light"><i className="fas fa-signal text-success me-2 mt-3" />All level</li>
-                  </ul>
-                  {/* Rating */}
-                  <ul className="list-inline mb-0">
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                    <li className="list-inline-item me-0 small"><i className="fas fa-star-half-alt text-warning" /></li>
-                    <li className="list-inline-item ms-2 h6 fw-light">4.5/5.0</li>
-                  </ul>
-                  <div className="mt-5 mt-sm-3 mx-3">
-				             <a href="#" className="btn btn-dark">Buy Now</a>  
-                    <a href="#" className="btn btn-dark mx-3" >Add Cart</a>   
-				          </div> 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-       
-        {/* Card item END */}
-        
-        {/* Card item END */}
-      </div>
-      {/* Course list END */}
-      {/* Pagination START */}
-      <div className="col-12">
-        <nav className="mt-4 d-flex justify-content-center" aria-label="navigation">
-          <ul className="pagination pagination-primary-soft d-inline-block d-md-flex rounded mb-0">
-            {/* <li className="page-item mb-0"><a className="page-link" href="#" tabIndex={-1}><i className="fas fa-angle-double-left" /></a></li> */}
-            <li className="page-item mb-0 active" ><a className="page-link" href="#">1</a></li>
-            <li className="page-item mb-0"><a className="page-link" href="#">2</a></li>
-            <li className="page-item mb-0"><a className="page-link" href="#">..</a></li>
-            <li className="page-item mb-0"><a className="page-link" href="#">6</a></li>
-            <li className="page-item mb-0"><a className="page-link" href="#"><i className="fas fa-angle-double-right" /></a></li>
-          </ul>
-        </nav>
-      </div>
-      {/* Pagination END */}
-    </div>
-  </section>
-</div>
+  // State to track purchased courses
+  const [purchasedCourses, setPurchasedCourses] = useState([]);
+  
+  // State to track which course was selected for purchase
+  const [selectedCourse, setSelectedCourse] = useState(null);
+  
+  // State to control the modal visibility
+  const [showModal, setShowModal] = useState(false);
 
-    </>
-  )
-}
+  // State to track if all courses should be unblurred after a purchase
+  const [isAllPurchased, setIsAllPurchased] = useState(false);
 
-export default CourseList1
+  // State to track individual course information
+  const handleAddToCart = () => {
+    // Logic to add course to cart
+    // console.log(Course ${selectedCourse} added to cart!);
+    setShowModal(false);
+  };
+  const [courseInfo, setCourseInfo] = useState({
+    1: { duration: '10h 56m', lectures: '82 lectures', level: 'Beginner' },
+    2: { duration: '6h 20m', lectures: '60 lectures', level: 'Intermediate' },
+    3: { duration: '12h 15m', lectures: '100 lectures', level: 'Advanced' },
+    4: { duration: '12h 15m', lectures: '100 lectures', level: 'Advanced' },
+    5: { duration: '12h 15m', lectures: '100 lectures', level: 'Advanced' },
+    6: { duration: '12h 15m', lectures: '100 lectures', level: 'Advanced' },
+  });
+
+  // Dummy course data
+  const courses = [
+    { id: 1, title: <Link to='/networkingvideo'>SEO</Link>, imgSrc: 'assets/images/videos/360p.mp4', type: 'video' },
+    { id: 2, title: 'SMM', imgSrc: 'assets/images/courses/4by3/SMM.png' },
+    { id: 3, title: 'Digital Marketing', imgSrc: 'assets/images/courses/4by3/DM.png' },
+    { id: 4, title: 'SMM', imgSrc: 'assets/images/courses/4by3/SMM.png' },
+    { id: 5, title: 'SMM', imgSrc: 'assets/images/courses/4by3/SMM.png' },
+    { id: 6, title: 'SMM', imgSrc: 'assets/images/courses/4by3/SMM.png' },
+  ];
+
+  // Show modal when a course is clicked
+  const handleShowModal = (courseId) => {
+    setSelectedCourse(courseId);
+    setShowModal(true);
+  };
+
+  // Handle purchase and unblur all courses after a purchase
+  const handlePurchase = () => {
+    setPurchasedCourses([...purchasedCourses, selectedCourse]);
+    setIsAllPurchased(true); // Unblur all courses after purchase
+    setShowModal(false);
+  };
+
+  return (
+    <div>
+      <br /><br /><br /><br />
+      <section
+        className="bg-dark align-items-center d-flex"
+        style={{
+          background: 'url(assets/images/pattern/04.png) no-repeat center center',
+          backgroundSize: 'cover',
+        }}
+      >
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <h1 className="text-white">Course List</h1>
+              <div className="d-flex">
+                <nav aria-label="breadcrumb">
+                  <ol className="breadcrumb breadcrumb-dark breadcrumb-dots mb-0">
+                    <li className="breadcrumb-item"><a href="#">Home</a></li>
+                    <li className="breadcrumb-item active" aria-current="page">Courses</li>
+                    <li className="breadcrumb-item active" aria-current="page">Digital Marketing</li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <style>{`
+        .blur-content {
+          filter: blur(5px);
+          opacity: 0.5;
+        }
+        .card:hover {
+          cursor: pointer;
+        }
+      `}</style>
+
+      <section className="pt-5">
+        <div className="container">
+          <div className="row g-4 justify-content-center">
+            {courses.map((course, index) => (
+              <div className="col-lg-10 col-xxl-6" key={course.id}>
+                <div
+                  className={`card rounded overflow-hidden shadow ${
+                    isAllPurchased || index < 3 ? '' : 'blur-content' // Unblur first three courses and purchased courses or if all courses are unblurred
+                  }`}
+                  onClick={() => index >= 3 && !purchasedCourses.includes(course.id) && handleShowModal(course.id)} // Courses beyond the first three can be purchased
+                >
+                  <div className="row g-0">
+                    <div className="col-md-4">
+                    <video src={course.imgSrc} controls width="100%" height="auto">
+                      
+                    </video>
+                    </div>
+                    <div className="col-md-8">
+                      <div className="card-body">
+                        <div className="d-flex justify-content-between mb-2">
+                          <h5 className="card-title mb-0">{course.title}</h5>
+                          <a href="#"><i className="fas fa-heart text-danger" /></a>
+                        </div>
+                        <ul className="list-inline mb-1">
+                          <li className="list-inline-item h6 fw-light mb-1 mb-sm-0">
+                            <i className="far fa-clock text-danger me-2 mt-3" />
+                            {courseInfo[course.id]?.duration}
+                          </li>
+                          <li className="list-inline-item h6 fw-light mb-1 mb-sm-0">
+                            <i className="fas fa-table text-orange me-2 mt-3" />
+                            {courseInfo[course.id]?.lectures}
+                          </li>
+                          <li className="list-inline-item h6 fw-light">
+                            <i className="fas fa-signal text-success me-2 mt-3" />
+                            {courseInfo[course.id]?.level}
+                          </li>
+                        </ul>
+                        <ul className="list-inline mb-0">
+                          <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
+                          <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
+                          <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
+                          <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
+                          <li className="list-inline-item me-0 small"><i className="fas fa-star-half-alt text-warning" /></li>
+                          <li className="list-inline-item ms-2 h6 fw-light">4.5/5.0</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <Modal show={showModal} onHide={() => setShowModal(false)}>
+        <Modal.Header closeButton>
+          <Modal.Title>Buy Course</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Are you sure you want to buy this course?</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={() => setShowModal(false)}>
+            Cancel
+          </Button>
+          <Button variant="primary" onClick={handlePurchase}>
+            Buy Now
+          </Button>
+          <Button variant="info" onClick={handleAddToCart}>
+            Add to Cart
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </div>
+  );
+};
+
+export default CourseList1;

@@ -60,6 +60,10 @@ const Nav = () => {
                     <li className="dropdown-submenu">
                       <Link className="dropdown-item" to="/digitalmarketing">Digital Marketing</Link>
                     </li>
+                    <hr />
+                    <li className="dropdown-submenu">
+                      <Link className="dropdown-item" to="/graphicscourse">Graphics Designing</Link>
+                    </li>
                   </ul>
                 </li>
 

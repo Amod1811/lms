@@ -19517,6 +19517,14 @@ textarea.form-control-lg {
 @media (max-width: 1199.98px) {
   .navbar-expand-xl .navbar-brand .navbar-brand-item {
     height: 80px;
+    
+  }
+  .navbar-expand-xl.sticky-top {
+    position: sticky; /* Use sticky positioning */
+    top: 0; /* Stick to the top */
+    z-index: 1020; /* Ensure it stays on top of other elements */
+    background-color: var(--bs-body-bg); /* Match background for smooth appearance */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
   }
   .navbar-expand-xl .navbar-brand {
     padding: 20px 0;
@@ -19993,14 +20001,17 @@ textarea.form-control-lg {
 
   header.navbar-sticky-on .navbar-top {
     display: none !important;
+    
   }
 
   header.navbar-sticky-on .navbar-brand {
     padding: 14px 0;
+    
   }
 
   header.navbar-sticky-on .navbar-brand .navbar-brand-item {
     height: 90px;
+    
   }
 }
 
@@ -21558,6 +21569,7 @@ a.text-primary-hover:hover, button.text-primary-hover:hover {
     left: -300px;
     height: 100vh;
     z-index: 9;
+    
   }
   .sidebar.navbar-expand-xl .navbar-brand {
     display: none;

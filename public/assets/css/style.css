@@ -19990,7 +19990,7 @@ textarea.form-control-lg {
   top: 100%;
   padding-bottom: 15px;
 }
-@media (min-width: 400px ){
+@media (max-width: 400px ){
   header.navbar-sticky-on {
     position: fixed;
     z-index: 1020;
@@ -22737,7 +22737,7 @@ html[dir=rtl] .choices__input {
           transition: color 0.2s;
         }
         .help-link:hover {
-          color: #e76a00;
+          color: #FF0000;
         }
         /* .divider {
           position: relative;
@@ -22834,6 +22834,8 @@ html[dir=rtl] .choices__input {
           }
         }
     
+         /* Admin login  end */
+
 
         /* Video Player Css start */
 .body {
@@ -22986,3 +22988,17 @@ p {
 }
 /* mini video stop */
 /* Video Player Css Stop */
+
+/* Home Search Start*/
+.cust{
+    width: 400px; 
+    max-width: 100%; 
+}
+
+/* Ensure the button retains its default size */
+.btn-sea {
+    width : 50px;
+    
+}
+
+/* Home Search End*/

@@ -37,7 +37,7 @@ const Nav = () => {
               <ul className="navbar-nav navbar-nav-scroll me-auto">
                 {/* Nav item 1 Home */}
                 <li className="nav-item">
-                  <Link className="nav-link active" to="/">Home</Link>
+                  <Link className="nav-link " to="/">Home</Link>
                 </li>
 
                 {/* Nav item 2 Courses Dropdown */}
@@ -90,14 +90,14 @@ const Nav = () => {
               </ul>
 
               {/* Search bar and sign in/signup links */}
-              <div className="d-flex align-items-center" >
+              {/* <div className="d-flex align-items-center" >
                 <form className="d-flex">
                   <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                   <button className="btn btn-outline-success" type="submit">
                     <i className="fas fa-search"></i>
                   </button>
                 </form>
-              </div>
+              </div> */}
               <ul className="navbar-nav sign ms-3">
                   <li className="nav-item">
                     <Link className="nav-link" to="/signout">Login</Link>

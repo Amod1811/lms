@@ -1,4 +1,5 @@
 import React, { useState } from 'react';  // Import React and useState
+import { Link } from 'react-router-dom';
 
 const AdminLogin = () => {
   const [email, setEmail] = useState('');
@@ -35,9 +36,12 @@ const AdminLogin = () => {
                 required
               />
             </div>
-            <button type="submit" className="submit-button">
-              Continue
-            </button>
+            <Link to="/signUp">
+              <button type="submit" className="submit-button">
+                  Continue
+              </button>
+           </Link>
+           
           </form>
           <p className="terms-text">
             By continuing, you agree to LMS's{' '}

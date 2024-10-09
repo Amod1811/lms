@@ -162,9 +162,9 @@ const CourseList1 = () => {
         </Modal.Header>
         <Modal.Body>Are you sure you want to buy this course?</Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={() => setShowModal(false)}>
+          {/* <Button variant="secondary" onClick={() => setShowModal(false)}>
             Cancel
-          </Button>
+          </Button> */}
           <Button variant="primary" onClick={handlePurchase}>
             Buy Now
           </Button>

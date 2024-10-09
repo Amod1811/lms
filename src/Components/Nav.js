@@ -7,7 +7,7 @@ const Nav = () => {
       {/* Header START */}
       <header className="navbar-light navbar-sticky-on header-static">
         {/* Nav START */}
-        <nav className="navbar sticky-top navbar-expand-xl">
+        <nav className="navbar navbar-expand-xl">
           <div className="container-fluid px-3 px-xl-5">
             {/* Logo START */}
             <Link className="navbar-brand" to="/">

@@ -187,7 +187,7 @@ function App() {
 
         <Footer/>
        
-         <Nav1/>
+         {/* <Nav1/> */}
          <BackToTop/>
     </Router>
    </>

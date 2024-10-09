@@ -44,10 +44,10 @@ const CourseCategory1 = () => {
               <p className="mb-3">Grow your skill with the most reliable online courses and certifications</p>
               {/* Search */}
               <form className="bg-body rounded p-2">
-                <div className="input-group">
+               
                   <input className="form-control border-0 me-1" type="search" placeholder="Search course " />
                   <button type="button" className="btn btn-dark mb-0 rounded">Search</button>
-                </div>
+              
               </form>
             </div>
             {/* Image */}
@@ -75,83 +75,83 @@ Categories START */}
     <div className="row g-4">
       {/* Item */}
       <div className="col-sm-6 col-md-4 col-xl-3">
-        <div className="card card-body bg-success bg-opacity-10 text-center position-relative btn-transition p-4">
+        <div className="card card-body  text-center position-relative btn-transition p-4">
           {/* Image */}
-          <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-            <img src="assets/images/element/networking.webp" alt="Networking" />
-          </div>
-          {/* Title */}
-          <Link to="/courselist" className="stretched-link">
-            <h5 className="mb-2">Node.js</h5>
-          </Link>
-          <h6 className="mb-0">6 Courses</h6>
-        </div>
-      </div>
-      {/* Item */}
-      <div className="col-sm-6 col-md-4 col-xl-3">
-        <div className="card card-body bg-orange bg-opacity-10 text-center position-relative btn-transition p-4">
-          {/* Image */}
-          <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-            <img src="assets/images/element/online.svg" alt="Online Courses" />
-          </div>
-          {/* Title */}
-          <Link to="/frontendcourse" className="stretched-link">
-            <h5 className="mb-2">Express.js</h5>
-          </Link>
-          <h6 className="mb-0">6 Courses</h6>
-        </div>
-      </div>
-      {/* Item */}
-      <div className="col-sm-6 col-md-4 col-xl-3">
-        <div className="card card-body bg-danger bg-opacity-10 text-center position-relative btn-transition p-4">
-          {/* Image */}
-          <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-            <img src="assets/images/element/engineering.svg" alt="Engineering" />
-          </div>
+          <div className="col-md-12">
+                <img src="assets/images/courses/4by3/Nodejs.png" alt="card image"  className="img-border" />
+              </div>
           {/* Title */}
           <Link to="/backendcourse" className="stretched-link">
-            <h5 className="mb-2">MY SQL</h5>
+            <h5 className="mb-2 mt-3">Node.js</h5>
           </Link>
           <h6 className="mb-0">6 Courses</h6>
         </div>
       </div>
       {/* Item */}
       <div className="col-sm-6 col-md-4 col-xl-3">
-        <div className="card card-body bg-purple bg-opacity-10 text-center position-relative btn-transition p-4">
+        <div className="card card-body  text-center position-relative btn-transition p-4">
           {/* Image */}
-          <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-            <img src="assets/images/element/coding.svg" alt="Graphics Design" />
-          </div>
+          <div className="col-md-12">
+                <img src="assets/images/courses/4by3/Expressjs.png" alt="card image"  className="img-border" />
+              </div>
           {/* Title */}
-          <Link to="/graphicscourse" className="stretched-link">
-            <h5 className="mb-2">MongoDB</h5>
-          </Link>
-          <h6 className="mb-0">25 Courses</h6>
-        </div>
-      </div>
-      <div className="col-sm-6 col-md-4 col-xl-3">
-        <div className="card card-body bg-success bg-opacity-10 text-center position-relative btn-transition p-4">
-          {/* Image */}
-          <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-            <img src="assets/images/element/networking.webp" alt="Networking" />
-          </div>
-          {/* Title */}
-          <Link to="/courselist" className="stretched-link">
-            <h5 className="mb-2">pHp</h5>
+          <Link to="/backendcourse" className="stretched-link">
+            <h5 className="mb-2 mt-3">Express.js</h5>
           </Link>
           <h6 className="mb-0">6 Courses</h6>
         </div>
       </div>
       {/* Item */}
       <div className="col-sm-6 col-md-4 col-xl-3">
-        <div className="card card-body bg-orange bg-opacity-10 text-center position-relative btn-transition p-4">
+        <div className="card card-body  text-center position-relative btn-transition p-4">
           {/* Image */}
-          <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-            <img src="assets/images/element/online.svg" alt="Online Courses" />
-          </div>
+          <div className="col-md-12">
+                <img src="assets/images/courses/4by3/Mysql.png" alt="card image"  className="img-border" />
+              </div>
           {/* Title */}
-          <Link to="/frontendcourse" className="stretched-link">
-            <h5 className="mb-2">JAVA</h5>
+          <Link to="/backendcourse" className="stretched-link">
+            <h5 className="mb-2 mt-3">MY SQL</h5>
+          </Link>
+          <h6 className="mb-0">6 Courses</h6>
+        </div>
+      </div>
+      {/* Item */}
+      <div className="col-sm-6 col-md-4 col-xl-3">
+        <div className="card card-body  text-center position-relative btn-transition p-4">
+          {/* Image */}
+          <div className="col-md-12">
+                <img src="assets/images/courses/4by3/Mongo.png" alt="card image"  className="img-border" />
+              </div>
+          {/* Title */}
+          <Link to="/backendcourse" className="stretched-link">
+            <h5 className="mb-2 mt-3">MongoDB</h5>
+          </Link>
+          <h6 className="mb-0">6 Courses</h6>
+        </div>
+      </div>
+      <div className="col-sm-6 col-md-4 col-xl-3">
+        <div className="card card-body  text-center position-relative btn-transition p-4">
+          {/* Image */}
+          <div className="col-md-12">
+                <img src="assets/images/courses/4by3/PHP.png" alt="card image"  className="img-border" />
+              </div>
+          {/* Title */}
+          <Link to="/backendcourse" className="stretched-link">
+            <h5 className="mb-2 mt-3">PhP</h5>
+          </Link>
+          <h6 className="mb-0">6 Courses</h6>
+        </div>
+      </div>
+      {/* Item */}
+      <div className="col-sm-6 col-md-4 col-xl-3">
+        <div className="card card-body  text-center position-relative btn-transition p-4">
+          {/* Image */}
+          <div className="col-md-12">
+                <img src="assets/images/courses/4by3/Java.png" alt="card image"  className="img-border" />
+              </div>
+          {/* Title */}
+          <Link to="/backendcourse" className="stretched-link">
+            <h5 className="mb-2 mt-3">JAVA</h5>
           </Link>
           <h6 className="mb-0">6 Courses</h6>
         </div>

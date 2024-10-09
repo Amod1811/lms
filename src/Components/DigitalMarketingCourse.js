@@ -44,10 +44,10 @@ const CourseCategory1 = () => {
               <p className="mb-3">Grow your skill with the most reliable online courses and certifications</p>
               {/* Search */}
               <form className="bg-body rounded p-2">
-                <div className="input-group">
+               
                   <input className="form-control border-0 me-1" type="search" placeholder="Search course " />
                   <button type="button" className="btn btn-dark mb-0 rounded">Search</button>
-                </div>
+              
               </form>
             </div>
             {/* Image */}
@@ -75,61 +75,60 @@ Categories START */}
     <div className="row g-4">
       {/* Item */}
       <div className="col-sm-6 col-md-4 col-xl-3">
-        <div className="card card-body bg-success bg-opacity-10 text-center position-relative btn-transition p-4">
+        <div className="card card-body  text-center position-relative btn-transition p-4">
           {/* Image */}
-          <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-            <img src="assets/images/element/networking.webp" alt="Networking" />
-          </div>
-          {/* Title */}
-          <Link to="/courselist" className="stretched-link">
-            <h5 className="mb-2">SEO</h5>
-          </Link>
-          <h6 className="mb-0">6 Courses</h6>
-        </div>
-      </div>
-      {/* Item */}
-      <div className="col-sm-6 col-md-4 col-xl-3">
-        <div className="card card-body bg-orange bg-opacity-10 text-center position-relative btn-transition p-4">
-          {/* Image */}
-          <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-            <img src="assets/images/element/online.svg" alt="Online Courses" />
-          </div>
-          {/* Title */}
-          <Link to="/frontendcourse" className="stretched-link">
-            <h5 className="mb-2">SMM</h5>
-          </Link>
-          <h6 className="mb-0">6 Courses</h6>
-        </div>
-      </div>
-      {/* Item */}
-      <div className="col-sm-6 col-md-4 col-xl-3">
-        <div className="card card-body bg-danger bg-opacity-10 text-center position-relative btn-transition p-4">
-          {/* Image */}
-          <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-            <img src="assets/images/element/engineering.svg" alt="Engineering" />
-          </div>
+          <div className="col-md-12">
+                <img src="assets/images/courses/4by3/SEO.png" alt="card image"  className="img-border" />
+              </div>
           {/* Title */}
           <Link to="/backendcourse" className="stretched-link">
-            <h5 className="mb-2">SEM</h5>
+            <h5 className="mb-2 mt-3">SEO</h5>
           </Link>
           <h6 className="mb-0">6 Courses</h6>
         </div>
       </div>
       {/* Item */}
       <div className="col-sm-6 col-md-4 col-xl-3">
-        <div className="card card-body bg-purple bg-opacity-10 text-center position-relative btn-transition p-4">
+        <div className="card card-body  text-center position-relative btn-transition p-4">
           {/* Image */}
-          <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-            <img src="assets/images/element/coding.svg" alt="Graphics Design" />
-          </div>
+          <div className="col-md-12">
+                <img src="assets/images/courses/4by3/SMM.png" alt="card image"  className="img-border" />
+              </div>
           {/* Title */}
-          <Link to="/graphicscourse" className="stretched-link">
-            <h5 className="mb-2">Google Ads</h5>
+          <Link to="/backendcourse" className="stretched-link">
+            <h5 className="mb-2 mt-3">SMM</h5>
           </Link>
-          <h6 className="mb-0">25 Courses</h6>
+          <h6 className="mb-0">6 Courses</h6>
         </div>
       </div>
-
+      {/* Item */}
+      <div className="col-sm-6 col-md-4 col-xl-3">
+        <div className="card card-body  text-center position-relative btn-transition p-4">
+          {/* Image */}
+          <div className="col-md-12">
+                <img src="assets/images/courses/4by3/SMM.png" alt="card image"  className="img-border" />
+              </div>
+          {/* Title */}
+          <Link to="/backendcourse" className="stretched-link">
+            <h5 className="mb-2 mt-3">SEM</h5>
+          </Link>
+          <h6 className="mb-0">6 Courses</h6>
+        </div>
+      </div>
+      {/* Item */}
+      <div className="col-sm-6 col-md-4 col-xl-3">
+        <div className="card card-body  text-center position-relative btn-transition p-4">
+          {/* Image */}
+          <div className="col-md-12">
+                <img src="assets/images/courses/4by3/Googleads.png" alt="card image"  className="img-border" />
+              </div>
+          {/* Title */}
+          <Link to="/backendcourse" className="stretched-link">
+            <h5 className="mb-2 mt-3">Google Ads</h5>
+          </Link>
+          <h6 className="mb-0">6 Courses</h6>
+        </div>
+      </div>
       {/* Item */}
       {/* Additional Items... */}
       {/* Ensure to update alt attributes and link hrefs */}

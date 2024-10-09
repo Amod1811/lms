@@ -75,83 +75,83 @@ Categories START */}
     <div className="row g-4">
       {/* Item */}
       <div className="col-sm-6 col-md-4 col-xl-3">
-        <div className="card card-body bg-success bg-opacity-10 text-center position-relative btn-transition p-4">
+        <div className="card card-body  text-center position-relative btn-transition p-4">
           {/* Image */}
-          <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-            <img src="assets/images/element/networking.webp" alt="Networking" />
-          </div>
-          {/* Title */}
-          <Link to="/courselist" className="stretched-link">
-            <h5 className="mb-2">HTML</h5>
-          </Link>
-          <h6 className="mb-0">6 Courses</h6>
-        </div>
-      </div>
-      {/* Item */}
-      <div className="col-sm-6 col-md-4 col-xl-3">
-        <div className="card card-body bg-orange bg-opacity-10 text-center position-relative btn-transition p-4">
-          {/* Image */}
-          <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-            <img src="assets/images/element/online.svg" alt="Online Courses" />
-          </div>
-          {/* Title */}
-          <Link to="/frontendcourse" className="stretched-link">
-            <h5 className="mb-2">CSS</h5>
-          </Link>
-          <h6 className="mb-0">6 Courses</h6>
-        </div>
-      </div>
-      {/* Item */}
-      <div className="col-sm-6 col-md-4 col-xl-3">
-        <div className="card card-body bg-danger bg-opacity-10 text-center position-relative btn-transition p-4">
-          {/* Image */}
-          <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-            <img src="assets/images/element/engineering.svg" alt="Engineering" />
-          </div>
+          <div className="col-md-12">
+                <img src="assets/images/courses/4by3/html.png" alt="card image"  className="img-border" />
+              </div>
           {/* Title */}
           <Link to="/backendcourse" className="stretched-link">
-            <h5 className="mb-2">BootStrap</h5>
+            <h5 className="mb-2 mt-3">HTML</h5>
           </Link>
           <h6 className="mb-0">6 Courses</h6>
         </div>
       </div>
       {/* Item */}
       <div className="col-sm-6 col-md-4 col-xl-3">
-        <div className="card card-body bg-purple bg-opacity-10 text-center position-relative btn-transition p-4">
+        <div className="card card-body  text-center position-relative btn-transition p-4">
           {/* Image */}
-          <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-            <img src="assets/images/element/coding.svg" alt="Graphics Design" />
-          </div>
+          <div className="col-md-12">
+                <img src="assets/images/courses/4by3/css.png" alt="card image"  className="img-border" />
+              </div>
           {/* Title */}
-          <Link to="/graphicscourse" className="stretched-link">
-            <h5 className="mb-2">React</h5>
-          </Link>
-          <h6 className="mb-0">25 Courses</h6>
-        </div>
-      </div>
-      <div className="col-sm-6 col-md-4 col-xl-3">
-        <div className="card card-body bg-success bg-opacity-10 text-center position-relative btn-transition p-4">
-          {/* Image */}
-          <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-            <img src="assets/images/element/networking.webp" alt="Networking" />
-          </div>
-          {/* Title */}
-          <Link to="/courselist" className="stretched-link">
-            <h5 className="mb-2">JavaScript</h5>
+          <Link to="/backendcourse" className="stretched-link">
+            <h5 className="mb-2 mt-3">CSS</h5>
           </Link>
           <h6 className="mb-0">6 Courses</h6>
         </div>
       </div>
       {/* Item */}
       <div className="col-sm-6 col-md-4 col-xl-3">
-        <div className="card card-body bg-orange bg-opacity-10 text-center position-relative btn-transition p-4">
+        <div className="card card-body  text-center position-relative btn-transition p-4">
           {/* Image */}
-          <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-            <img src="assets/images/element/online.svg" alt="Online Courses" />
-          </div>
+          <div className="col-md-12">
+                <img src="assets/images/courses/4by3/Java.png" alt="card image"  className="img-border" />
+              </div>
           {/* Title */}
-          <Link to="/frontendcourse" className="stretched-link">
-            <h5 className="mb-2">JQuery</h5>
+          <Link to="/backendcourse" className="stretched-link">
+            <h5 className="mb-2 mt-3">JAVA</h5>
+          </Link>
+          <h6 className="mb-0">6 Courses</h6>
+        </div>
+      </div>
+      {/* Item */}
+      <div className="col-sm-6 col-md-4 col-xl-3">
+        <div className="card card-body  text-center position-relative btn-transition p-4">
+          {/* Image */}
+          <div className="col-md-12">
+                <img src="assets/images/courses/4by3/PHP.png" alt="card image"  className="img-border" />
+              </div>
+          {/* Title */}
+          <Link to="/backendcourse" className="stretched-link">
+            <h5 className="mb-2 mt-3">PhP</h5>
+          </Link>
+          <h6 className="mb-0">6 Courses</h6>
+        </div>
+      </div>
+      <div className="col-sm-6 col-md-4 col-xl-3">
+        <div className="card card-body  text-center position-relative btn-transition p-4">
+          {/* Image */}
+          <div className="col-md-12">
+                <img src="assets/images/courses/4by3/javascript.png" alt="card image"  className="img-border" />
+              </div>
+          {/* Title */}
+          <Link to="/backendcourse" className="stretched-link">
+            <h5 className="mb-2 mt-3">JavaScript</h5>
+          </Link>
+          <h6 className="mb-0">6 Courses</h6>
+        </div>
+      </div>
+      {/* Item */}
+      <div className="col-sm-6 col-md-4 col-xl-3">
+        <div className="card card-body  text-center position-relative btn-transition p-4">
+          {/* Image */}
+          <div className="col-md-12">
+                <img src="assets/images/courses/4by3/jquery.png" alt="card image"  className="img-border" />
+              </div>
+          {/* Title */}
+          <Link to="/backendcourse" className="stretched-link">
+            <h5 className="mb-2 mt-3">JQuery</h5>
           </Link>
           <h6 className="mb-0">6 Courses</h6>
         </div>

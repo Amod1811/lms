@@ -44,10 +44,10 @@ const CourseCategory1 = () => {
               <p className="mb-3">Grow your skill with the most reliable online courses and certifications</p>
               {/* Search */}
               <form className="bg-body rounded p-2">
-                <div className="input-group">
+               
                   <input className="form-control border-0 me-1" type="search" placeholder="Search course " />
                   <button type="button" className="btn btn-dark mb-0 rounded">Search</button>
-                </div>
+              
               </form>
             </div>
             {/* Image */}

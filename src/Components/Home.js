@@ -179,6 +179,14 @@ Main Banner START */}
             <li className="list-inline-item me-2"> <i className="bi bi-patch-check-fill h6 me-1" />Get certificate</li>
             <li className="list-inline-item"> <i className="bi bi-patch-check-fill h6 me-1" />Get membership</li>
           </ul>
+          <div className="d-flex align-items-center">
+             <form className="d-flex">
+                 <input className="form-control me-2 cust" type="search" placeholder="Search" aria-label="Search" />
+                 <button className="btn btn-outline-success btn-sea" type="submit">
+                     <i className="fas fa-search"></i>
+                 </button>
+             </form>
+           </div>
           <div className="d-sm-flex align-items-center justify-content-center justify-content-lg-start">
             {/* Button */}
             <a href="#" className="btn btn-lg btn-danger-soft me-2 mb-4 mb-sm-0">Get Started</a>

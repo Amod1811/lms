@@ -106,11 +106,11 @@ Categories START */}
         <div className="card card-body  text-center position-relative btn-transition p-4">
           {/* Image */}
           <div className="col-md-12">
-                <img src="assets/images/courses/4by3/Java.png" alt="card image"  className="img-border" />
+                <img src="assets/images/courses/4by3/Boostsrap.png" alt="card image"  className="img-border" />
               </div>
           {/* Title */}
           <Link to="/backendcourse" className="stretched-link">
-            <h5 className="mb-2 mt-3">JAVA</h5>
+            <h5 className="mb-2 mt-3">Bootstrap</h5>
           </Link>
           <h6 className="mb-0">6 Courses</h6>
         </div>
@@ -120,11 +120,11 @@ Categories START */}
         <div className="card card-body  text-center position-relative btn-transition p-4">
           {/* Image */}
           <div className="col-md-12">
-                <img src="assets/images/courses/4by3/PHP.png" alt="card image"  className="img-border" />
+                <img src="assets/images/courses/4by3/react.png" alt="card image"  className="img-border" />
               </div>
           {/* Title */}
           <Link to="/backendcourse" className="stretched-link">
-            <h5 className="mb-2 mt-3">PhP</h5>
+            <h5 className="mb-2 mt-3">React.js</h5>
           </Link>
           <h6 className="mb-0">6 Courses</h6>
         </div>

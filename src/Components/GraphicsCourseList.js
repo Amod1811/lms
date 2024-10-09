@@ -75,83 +75,83 @@ Categories START */}
     <div className="row g-4">
       {/* Item */}
       <div className="col-sm-6 col-md-4 col-xl-3">
-        <div className="card card-body bg-success bg-opacity-10 text-center position-relative btn-transition p-4">
+        <div className="card card-body  text-center position-relative btn-transition p-4">
           {/* Image */}
-          <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-            <img src="assets/images/element/networking.webp" alt="Networking" />
-          </div>
-          {/* Title */}
-          <Link to="/courselist" className="stretched-link">
-            <h5 className="mb-2">Render Forest</h5>
-          </Link>
-          <h6 className="mb-0">6 Courses</h6>
-        </div>
-      </div>
-      {/* Item */}
-      <div className="col-sm-6 col-md-4 col-xl-3">
-        <div className="card card-body bg-orange bg-opacity-10 text-center position-relative btn-transition p-4">
-          {/* Image */}
-          <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-            <img src="assets/images/element/online.svg" alt="Online Courses" />
-          </div>
-          {/* Title */}
-          <Link to="/frontendcourse" className="stretched-link">
-            <h5 className="mb-2">Figma</h5>
-          </Link>
-          <h6 className="mb-0">6 Courses</h6>
-        </div>
-      </div>
-      {/* Item */}
-      <div className="col-sm-6 col-md-4 col-xl-3">
-        <div className="card card-body bg-danger bg-opacity-10 text-center position-relative btn-transition p-4">
-          {/* Image */}
-          <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-            <img src="assets/images/element/engineering.svg" alt="Engineering" />
-          </div>
+          <div className="col-md-12">
+                <img src="assets/images/courses/4by3/canva.png" alt="card image"  className="img-border" />
+              </div>
           {/* Title */}
           <Link to="/backendcourse" className="stretched-link">
-            <h5 className="mb-2">Canva</h5>
+            <h5 className="mb-2 mt-3">Canva</h5>
           </Link>
           <h6 className="mb-0">6 Courses</h6>
         </div>
       </div>
       {/* Item */}
       <div className="col-sm-6 col-md-4 col-xl-3">
-        <div className="card card-body bg-purple bg-opacity-10 text-center position-relative btn-transition p-4">
+        <div className="card card-body  text-center position-relative btn-transition p-4">
           {/* Image */}
-          <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-            <img src="assets/images/element/coding.svg" alt="Graphics Design" />
-          </div>
+          <div className="col-md-12">
+                <img src="assets/images/courses/4by3/Postermy.png" alt="card image"  className="img-border" />
+              </div>
           {/* Title */}
-          <Link to="/graphicscourse" className="stretched-link">
-            <h5 className="mb-2">Poster My-Wall</h5>
-          </Link>
-          <h6 className="mb-0">25 Courses</h6>
-        </div>
-      </div>
-      <div className="col-sm-6 col-md-4 col-xl-3">
-        <div className="card card-body bg-success bg-opacity-10 text-center position-relative btn-transition p-4">
-          {/* Image */}
-          <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-            <img src="assets/images/element/networking.webp" alt="Networking" />
-          </div>
-          {/* Title */}
-          <Link to="/courselist" className="stretched-link">
-            <h5 className="mb-2">Adobe Express</h5>
+          <Link to="/backendcourse" className="stretched-link">
+            <h5 className="mb-2 mt-3">Poster MyWall</h5>
           </Link>
           <h6 className="mb-0">6 Courses</h6>
         </div>
       </div>
       {/* Item */}
       <div className="col-sm-6 col-md-4 col-xl-3">
-        <div className="card card-body bg-orange bg-opacity-10 text-center position-relative btn-transition p-4">
+        <div className="card card-body  text-center position-relative btn-transition p-4">
           {/* Image */}
-          <div className="icon-xl bg-body mx-auto rounded-circle mb-3">
-            <img src="assets/images/element/online.svg" alt="Online Courses" />
-          </div>
+          <div className="col-md-12">
+                <img src="assets/images/courses/4by3/Figma.png" alt="card image"  className="img-border" />
+              </div>
           {/* Title */}
-          <Link to="/frontendcourse" className="stretched-link">
-            <h5 className="mb-2">Kine Master</h5>
+          <Link to="/backendcourse" className="stretched-link">
+            <h5 className="mb-2 mt-3">Figma</h5>
+          </Link>
+          <h6 className="mb-0">6 Courses</h6>
+        </div>
+      </div>
+      {/* Item */}
+      <div className="col-sm-6 col-md-4 col-xl-3">
+        <div className="card card-body  text-center position-relative btn-transition p-4">
+          {/* Image */}
+          <div className="col-md-12">
+                <img src="assets/images/courses/4by3/Renderforest.png" alt="card image"  className="img-border" />
+              </div>
+          {/* Title */}
+          <Link to="/backendcourse" className="stretched-link">
+            <h5 className="mb-2 mt-3">Render Forest</h5>
+          </Link>
+          <h6 className="mb-0">6 Courses</h6>
+        </div>
+      </div>
+      <div className="col-sm-6 col-md-4 col-xl-3">
+        <div className="card card-body  text-center position-relative btn-transition p-4">
+          {/* Image */}
+          <div className="col-md-12">
+                <img src="assets/images/courses/4by3/Figma.png" alt="card image"  className="img-border" />
+              </div>
+          {/* Title */}
+          <Link to="/backendcourse" className="stretched-link">
+            <h5 className="mb-2 mt-3">Adobe Express</h5>
+          </Link>
+          <h6 className="mb-0">6 Courses</h6>
+        </div>
+      </div>
+      {/* Item */}
+      <div className="col-sm-6 col-md-4 col-xl-3">
+        <div className="card card-body  text-center position-relative btn-transition p-4">
+          {/* Image */}
+          <div className="col-md-12">
+                <img src="assets/images/courses/4by3/Figma.png" alt="card image"  className="img-border" />
+              </div>
+          {/* Title */}
+          <Link to="/backendcourse" className="stretched-link">
+            <h5 className="mb-2 mt-3">Kine-master</h5>
           </Link>
           <h6 className="mb-0">6 Courses</h6>
         </div>

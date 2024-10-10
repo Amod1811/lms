@@ -1,22 +1,11 @@
-import React,{useState} from 'react';
+import React from 'react';
 
 const Sign_in = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-
-  // Function to handle form submission
-  const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent the default form submission behavior
-    // You can add your login logic here, for example, API calls
-    console.log('Email:', email);
-    console.log('Password:', password);
-  };
   return (
     <div>
       <br />
       <br />
       <br />
-      {/* **************** MAIN CONTENT START **************** */}
       <main>
         <section className="p-0 d-flex align-items-center position-relative overflow-hidden">
           <div className="container-fluid">
@@ -62,65 +51,61 @@ const Sign_in = () => {
                     <h1 className="fs-2">Login into LMS!</h1>
                     <p className="lead mb-4">Nice to see you! Please log in with your account.</p>
                     {/* Form START */}
-                    <form onSubmit={handleSubmit}>
-      {/* Email */}
-      <div className="mb-4">
-        <label htmlFor="exampleInputEmail1" className="form-label">Email address *</label>
-        <div className="input-group input-group-lg">
-          <span className="input-group-text bg-light rounded-start border-0 text-secondary px-3">
-            <i className="bi bi-envelope-fill" />
-          </span>
-          <input
-            type="email"
-            className="form-control border-0 bg-light rounded-end ps-1"
-            placeholder="E-mail"
-            id="exampleInputEmail1"
-            value={email} // Bind the state variable
-            onChange={(e) => setEmail(e.target.value)} // Update state on change
-            required // Added required for better form behavior
-          />
-        </div>
-      </div>
-      {/* Password */}
-      <div className="mb-4">
-        <label htmlFor="inputPassword5" className="form-label">Password *</label>
-        <div className="input-group input-group-lg">
-          <span className="input-group-text bg-light rounded-start border-0 text-secondary px-3">
-            <i className="fas fa-lock" />
-          </span>
-          <input
-            type="password"
-            className="form-control border-0 bg-light rounded-end ps-1"
-            placeholder="password"
-            id="inputPassword5"
-            value={password} // Bind the state variable
-            onChange={(e) => setPassword(e.target.value)} // Update state on change
-            required // Added required for better form behavior
-          />
-        </div>
-        <div id="passwordHelpBlock" className="form-text">
-          Your password must be 8 characters at least
-        </div>
-      </div>
-      {/* Check box */}
-      <div className="mb-4 d-flex justify-content-between">
-        <div className="form-check">
-          <input type="checkbox" className="form-check-input" id="exampleCheck1" />
-          <label className="form-check-label" htmlFor="exampleCheck1">Remember me</label>
-        </div>
-        <div className="text-primary-hover">
-          <a href="forgot-password.html" className="text-secondary">
-            <u>Forgot password?</u>
-          </a>
-        </div>
-      </div>
-      {/* Button */}
-      <div className="align-items-center mt-0">
-        <div className="d-grid">
-          <button className="btn btn-primary mb-0" type="submit">Login</button> {/* Changed to type="submit" */}
-        </div>
-      </div>
-    </form>
+                    <form>
+                      {/* Email */}
+                      <div className="mb-4">
+                        <label htmlFor="exampleInputEmail1" className="form-label">Email address *</label>
+                        <div className="input-group input-group-lg">
+                          <span className="input-group-text bg-light rounded-start border-0 text-secondary px-3">
+                            <i className="bi bi-envelope-fill" />
+                          </span>
+                          <input
+                            type="email"
+                            className="form-control border-0 bg-light rounded-end ps-1"
+                            placeholder="E-mail"
+                            id="exampleInputEmail1"
+                            style={{ zIndex: 10 }} // Ensure the input is on top
+                          />
+                        </div>
+                      </div>
+                      {/* Password */}
+                      <div className="mb-4">
+                        <label htmlFor="inputPassword5" className="form-label">Password *</label>
+                        <div className="input-group input-group-lg">
+                          <span className="input-group-text bg-light rounded-start border-0 text-secondary px-3">
+                            <i className="fas fa-lock" />
+                          </span>
+                          <input
+                            type="password"
+                            className="form-control border-0 bg-light rounded-end ps-1"
+                            placeholder="password"
+                            id="inputPassword5"
+                            style={{ zIndex: 10 }} // Ensure the input is on top
+                          />
+                        </div>
+                        <div id="passwordHelpBlock" className="form-text">
+                          Your password must be 8 characters at least
+                        </div>
+                      </div>
+                      {/* Check box */}
+                      <div className="mb-4 d-flex justify-content-between">
+                        <div className="form-check">
+                          <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                          <label className="form-check-label" htmlFor="exampleCheck1">Remember me</label>
+                        </div>
+                        <div className="text-primary-hover">
+                          <a href="forgot-password.html" className="text-secondary">
+                            <u>Forgot password?</u>
+                          </a>
+                        </div>
+                      </div>
+                      {/* Button */}
+                      <div className="align-items-center mt-0">
+                        <div className="d-grid">
+                          <button className="btn btn-primary mb-0" type="submit">Login</button> {/* Changed to type="submit" */}
+                        </div>
+                      </div>
+                    </form>
                     {/* Form END */}
                     {/* Social buttons and divider */}
                     <div className="row">
@@ -147,13 +132,12 @@ const Sign_in = () => {
                       <span>Don't have an account? <a href="sign-up.html">Signup here</a></span>
                     </div>
                   </div>
-                </div> {/* Row END */}
+                </div>{/* Row END */}
               </div>
-            </div> {/* Row END */}
+            </div>{/* Row END */}
           </div>
         </section>
       </main>
-      {/* **************** MAIN CONTENT END **************** */}
     </div>
   );
 };

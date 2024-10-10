@@ -1,15 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { IoMdCart } from "react-icons/io";
 import { Link } from 'react-router-dom';
 import { FaCircleUser } from "react-icons/fa6";
 
-const Nav = () => {
+const Nav1 = () => {
   const [cartItems, setCartItems] = useState(0); // Cart items count
   const [isDropdownOpen, setDropdownOpen] = useState(false); // For profile dropdown
 
   const toggleDropdown = () => {
     setDropdownOpen(!isDropdownOpen);
   };
+
+  useEffect(() => {
+    // Function to collapse navbar on scroll
+    const handleScroll = () => {
+      const navbarCollapse = document.getElementById('navbarCollapse');
+      if (navbarCollapse.classList.contains('show')) {
+        navbarCollapse.classList.remove('show'); // Collapse the navbar
+      }
+    };
+
+    // Attach the event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <div>
@@ -47,7 +65,28 @@ const Nav = () => {
 
                 {/* Nav item 2 Courses Dropdown */}
                 <li className="nav-item dropdown">
-                  <Link className="nav-link" to="/Course">Courses</Link>
+                  <Link className="nav-link dropdown-toggle" to="/Course" id="courseDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</Link>
+                  <ul className="dropdown-menu" aria-labelledby="courseDropdown">
+                    <li className="dropdown-submenu">
+                      <Link className="dropdown-item" to="/course">Networking</Link>
+                    </li>
+                    <hr />
+                    <li className="dropdown-submenu">
+                      <Link className="dropdown-item" to="/frontendcourse">Front-end</Link>
+                    </li>
+                    <hr />
+                    <li className="dropdown-submenu">
+                      <Link className="dropdown-item" to="/backendcourse">Back-end</Link>
+                    </li>
+                    <hr />
+                    <li className="dropdown-submenu">
+                      <Link className="dropdown-item" to="/digitalmarketing">Digital Marketing</Link>
+                    </li>
+                    <hr />
+                    <li className="dropdown-submenu">
+                      <Link className="dropdown-item" to="/graphicscourse">Graphics Designing</Link>
+                    </li>
+                  </ul>
                 </li>
 
                 {/* Nav item 3 Packages */}
@@ -76,15 +115,6 @@ const Nav = () => {
                       </div>
                     </Link>
                   </div>
-                  
-
-
-                  {/* <div className="position-relative">
-                    <IoMdCart size={28} />
-                    <div className="bg-red-600 text-white w-5 h-5 rounded-full p-1 flex items-center justify-center position-absolute" style={{ top: "-10px", right: "-10px" }}>
-                      <span>{cartItems}</span>
-                    </div>
-                  </div> */}
 
                   {/* User Profile Icon */}
                   <div className="dropdown ms-3">
@@ -98,10 +128,10 @@ const Nav = () => {
                           <p className="small mb-0">khushi@example.com</p>
                         </li>
                         <div className="dropdown-divider"></div>
-                        <li><Link className="dropdown-item" to= "/studenteditprofile">Edit Profile</Link></li>
-                        <li><Link className="dropdown-item" to= "/studentsetting">Account Settings</Link></li>
-                        <li><Link className="dropdown-item" to= "#">Help</Link></li>
-                        <li><Link className="dropdown-item bg-danger-soft-hover" to= "/signout">Sign Out</Link></li>
+                        <li><Link className="dropdown-item" to="/studenteditprofile">Edit Profile</Link></li>
+                        <li><Link className="dropdown-item" to="/studentsetting">Account Settings</Link></li>
+                        <li><Link className="dropdown-item" to="#">Help</Link></li>
+                        <li><Link className="dropdown-item bg-danger-soft-hover" to="/signout">Sign Out</Link></li>
                       </ul>
                     )}
                   </div>
@@ -119,4 +149,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Nav1;

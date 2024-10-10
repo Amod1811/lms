@@ -101,60 +101,68 @@ const CourseList1 = () => {
         }
       `}</style>
 
-      <section className="pt-5">
-        <div className="container">
-          <div className="row g-4 justify-content-center">
-            {courses.map((course, index) => (
-              <div className="col-lg-10 col-xxl-6" key={course.id}>
-                <div
-                  className={`card rounded overflow-hidden shadow ${
-                    isAllPurchased || index < 3 ? '' : 'blur-content' // Unblur first three courses and purchased courses or if all courses are unblurred
-                  }`}
-                  onClick={() => index >= 3 && !purchasedCourses.includes(course.id) && handleShowModal(course.id)} // Courses beyond the first three can be purchased
-                >
-                  <div className="row g-0">
-                    <div className="col-md-4">
-                    <video src={course.imgSrc} controls width="100%" height="auto">
-                      
-                    </video>
-                    </div>
-                    <div className="col-md-8">
-                      <div className="card-body">
-                        <div className="d-flex justify-content-between mb-2">
-                          <h5 className="card-title mb-0">{course.title}</h5>
-                          <a href="#"><i className="fas fa-heart text-danger" /></a>
-                        </div>
-                        <ul className="list-inline mb-1">
-                          <li className="list-inline-item h6 fw-light mb-1 mb-sm-0">
-                            <i className="far fa-clock text-danger me-2 mt-3" />
-                            {courseInfo[course.id]?.duration}
-                          </li>
-                          <li className="list-inline-item h6 fw-light mb-1 mb-sm-0">
-                            <i className="fas fa-table text-orange me-2 mt-3" />
-                            {courseInfo[course.id]?.lectures}
-                          </li>
-                          <li className="list-inline-item h6 fw-light">
-                            <i className="fas fa-signal text-success me-2 mt-3" />
-                            {courseInfo[course.id]?.level}
-                          </li>
-                        </ul>
-                        <ul className="list-inline mb-0">
-                          <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                          <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                          <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                          <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
-                          <li className="list-inline-item me-0 small"><i className="fas fa-star-half-alt text-warning" /></li>
-                          <li className="list-inline-item ms-2 h6 fw-light">4.5/5.0</li>
-                        </ul>
-                      </div>
-                    </div>
+<section className="pt-5">
+  <div className="container">
+    <div className="row g-4 justify-content-center">
+      {courses.map((course, index) => (
+        <div className="col-lg-10 col-xxl-6" key={course.id}>
+          <div
+            className={`card rounded overflow-hidden shadow ${
+              isAllPurchased || index < 3 ? '' : 'blur-content'
+            }`}
+            onClick={() => index >= 3 && !purchasedCourses.includes(course.id) && handleShowModal(course.id)}
+          >
+            <div className="row g-0">
+              <div className="col-md-4">
+                <video src={course.imgSrc} controls width="100%" height="auto" />
+              </div>
+              <div className="col-md-8">
+                <div className="card-body">
+                  <div className="d-flex justify-content-between mb-2">
+                    <h5 className="card-title mb-0">{course.title}</h5>
+                    <a href="#"><i className="fas fa-heart text-danger" /></a>
                   </div>
+                  <ul className="list-inline mb-1">
+                    <li className="list-inline-item h6 fw-light mb-1 mb-sm-0">
+                      <i className="far fa-clock text-danger me-2 mt-3" />
+                      {courseInfo[course.id]?.duration}
+                    </li>
+                    <li className="list-inline-item h6 fw-light mb-1 mb-sm-0">
+                      <i className="fas fa-table text-orange me-2 mt-3" />
+                      {courseInfo[course.id]?.lectures}
+                    </li>
+                    <li className="list-inline-item h6 fw-light">
+                      <i className="fas fa-signal text-success me-2 mt-3" />
+                      {courseInfo[course.id]?.level}
+                    </li>
+                  </ul>
+                  <ul className="list-inline mb-0">
+                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
+                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
+                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
+                    <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
+                    <li className="list-inline-item me-0 small"><i className="fas fa-star-half-alt text-warning" /></li>
+                    <li className="list-inline-item ms-2 h6 fw-light">4.5/5.0</li>
+                  </ul>
                 </div>
               </div>
-            ))}
+            </div>
           </div>
         </div>
-      </section>
+      ))}
+     <div className="sticky-bottom bg-white p-2" style={{ zIndex: 1000 }}>
+      <div className="d-flex justify-content-end">
+        <Button variant="primary" onClick={handlePurchase} style={{ marginRight: '10px' }}>
+          Buy Now
+        </Button>
+        <Button variant="info" onClick={handleAddToCart}>
+          Add to Cart
+        </Button>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
 
       <Modal show={showModal} onHide={() => setShowModal(false)}>
         <Modal.Header closeButton>

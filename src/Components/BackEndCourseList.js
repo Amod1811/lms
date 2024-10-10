@@ -81,7 +81,7 @@ Categories START */}
                 <img src="assets/images/courses/4by3/Nodejs.png" alt="card image"  className="img-border" />
               </div>
           {/* Title */}
-          <Link to="/backendcourse" className="stretched-link">
+          <Link to="/courselist" className="stretched-link">
             <h5 className="mb-2 mt-3">Node.js</h5>
           </Link>
           <h6 className="mb-0">6 Courses</h6>
@@ -95,7 +95,7 @@ Categories START */}
                 <img src="assets/images/courses/4by3/Expressjs.png" alt="card image"  className="img-border" />
               </div>
           {/* Title */}
-          <Link to="/backendcourse" className="stretched-link">
+          <Link to="/courselist" className="stretched-link">
             <h5 className="mb-2 mt-3">Express.js</h5>
           </Link>
           <h6 className="mb-0">6 Courses</h6>
@@ -109,7 +109,7 @@ Categories START */}
                 <img src="assets/images/courses/4by3/Mysql.png" alt="card image"  className="img-border" />
               </div>
           {/* Title */}
-          <Link to="/backendcourse" className="stretched-link">
+          <Link to="/courselist" className="stretched-link">
             <h5 className="mb-2 mt-3">MY SQL</h5>
           </Link>
           <h6 className="mb-0">6 Courses</h6>
@@ -123,7 +123,7 @@ Categories START */}
                 <img src="assets/images/courses/4by3/Mongo.png" alt="card image"  className="img-border" />
               </div>
           {/* Title */}
-          <Link to="/backendcourse" className="stretched-link">
+          <Link to="/courselist" className="stretched-link">
             <h5 className="mb-2 mt-3">MongoDB</h5>
           </Link>
           <h6 className="mb-0">6 Courses</h6>
@@ -136,7 +136,7 @@ Categories START */}
                 <img src="assets/images/courses/4by3/PHP.png" alt="card image"  className="img-border" />
               </div>
           {/* Title */}
-          <Link to="/backendcourse" className="stretched-link">
+          <Link to="/courselist" className="stretched-link">
             <h5 className="mb-2 mt-3">PhP</h5>
           </Link>
           <h6 className="mb-0">6 Courses</h6>
@@ -150,7 +150,7 @@ Categories START */}
                 <img src="assets/images/courses/4by3/Java.png" alt="card image"  className="img-border" />
               </div>
           {/* Title */}
-          <Link to="/backendcourse" className="stretched-link">
+          <Link to="/courselist" className="stretched-link">
             <h5 className="mb-2 mt-3">JAVA</h5>
           </Link>
           <h6 className="mb-0">6 Courses</h6>

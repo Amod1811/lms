@@ -81,7 +81,7 @@ Categories START */}
                 <img src="assets/images/courses/4by3/canva.png" alt="card image"  className="img-border" />
               </div>
           {/* Title */}
-          <Link to="/backendcourse" className="stretched-link">
+          <Link to="/courselist" className="stretched-link">
             <h5 className="mb-2 mt-3">Canva</h5>
           </Link>
           <h6 className="mb-0">6 Courses</h6>
@@ -95,7 +95,7 @@ Categories START */}
                 <img src="assets/images/courses/4by3/Postermy.png" alt="card image"  className="img-border" />
               </div>
           {/* Title */}
-          <Link to="/backendcourse" className="stretched-link">
+          <Link to="/courselist" className="stretched-link">
             <h5 className="mb-2 mt-3">Poster MyWall</h5>
           </Link>
           <h6 className="mb-0">6 Courses</h6>
@@ -109,7 +109,7 @@ Categories START */}
                 <img src="assets/images/courses/4by3/Figma.png" alt="card image"  className="img-border" />
               </div>
           {/* Title */}
-          <Link to="/backendcourse" className="stretched-link">
+          <Link to="/courselist" className="stretched-link">
             <h5 className="mb-2 mt-3">Figma</h5>
           </Link>
           <h6 className="mb-0">6 Courses</h6>
@@ -123,7 +123,7 @@ Categories START */}
                 <img src="assets/images/courses/4by3/Renderforest.png" alt="card image"  className="img-border" />
               </div>
           {/* Title */}
-          <Link to="/backendcourse" className="stretched-link">
+          <Link to="/courselist" className="stretched-link">
             <h5 className="mb-2 mt-3">Render Forest</h5>
           </Link>
           <h6 className="mb-0">6 Courses</h6>
@@ -136,7 +136,7 @@ Categories START */}
                 <img src="assets/images/courses/4by3/Figma.png" alt="card image"  className="img-border" />
               </div>
           {/* Title */}
-          <Link to="/backendcourse" className="stretched-link">
+          <Link to="/courselist" className="stretched-link">
             <h5 className="mb-2 mt-3">Adobe Express</h5>
           </Link>
           <h6 className="mb-0">6 Courses</h6>
@@ -150,7 +150,7 @@ Categories START */}
                 <img src="assets/images/courses/4by3/Figma.png" alt="card image"  className="img-border" />
               </div>
           {/* Title */}
-          <Link to="/backendcourse" className="stretched-link">
+          <Link to="/courselist" className="stretched-link">
             <h5 className="mb-2 mt-3">Kine-master</h5>
           </Link>
           <h6 className="mb-0">6 Courses</h6>

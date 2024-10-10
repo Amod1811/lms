@@ -48,25 +48,25 @@ const Sign_UP = () => {
                 {/* Email */}
                 <div className="mb-4">
                   <label htmlFor="exampleInputEmail1" className="form-label">Email address *</label>
-                  <div className="input-group input-group-lg">
-                    <span className="input-group-text bg-light rounded-start border-0 text-secondary px-3"><i className="bi bi-envelope-fill" /></span>
+                  <div>
+                    {/* <span className="input-group-text bg-light rounded-start border-0 text-secondary px-3"><i className="bi bi-envelope-fill" /></span> */}
                     <input type="email" className="form-control border-0 bg-light rounded-end ps-1" placeholder="E-mail" id="exampleInputEmail1" />
                   </div>
                 </div>
                 {/* Password */}
                 <div className="mb-4">
                   <label htmlFor="inputPassword5" className="form-label">Password *</label>
-                  <div className="input-group input-group-lg">
-                    <span className="input-group-text bg-light rounded-start border-0 text-secondary px-3"><i className="fas fa-lock" /></span>
+                  <div>
+                    {/* <span className="input-group-text bg-light rounded-start border-0 text-secondary px-3"><i className="fas fa-lock" /></span> */}
                     <input type="password" className="form-control border-0 bg-light rounded-end ps-1" placeholder="*********" id="inputPassword5" />
                   </div>
                 </div>
                 {/* Confirm Password */}
                 <div className="mb-4">
                   <label htmlFor="inputPassword6" className="form-label">Confirm Password *</label>
-                  <div className="input-group input-group-lg">
-                    <span className="input-group-text bg-light rounded-start border-0 text-secondary px-3"><i className="fas fa-lock" /></span>
-                    <input type="password" className="form-control border-0 bg-light rounded-end ps-1" placeholder="*********" id="inputPassword6" />
+                  <div >
+                    {/* <span className="input-group-text bg-light rounded-start border-0 text-secondary px-3"><i className="fas fa-lock" /></span> */}
+                    <input type="password" className="form-control border-0 bg-light rounded-end ps-1" placeholder="******" id="inputPassword6" />
                   </div>
                 </div>
                 {/* Check box */}

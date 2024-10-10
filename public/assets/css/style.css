@@ -22989,6 +22989,20 @@ p {
       width: 100%; /* Make info take full width */
   }
 }
+@media (max-width: 1200px) {
+  .video-item {
+      flex-direction: column;
+      align-items: flex-start; /* Align items to start */
+  }
+  video {
+      margin-right: 0; /* Remove margin for mobile */
+      margin-bottom: 10px; /* Add space below the video */
+      width: 100%; /* Make video full width */
+  }
+  .info {
+      width: 100%; /* Make info take full width */
+  }
+}
 /* mini video stop */
 /* Video Player Css Stop */
 
@@ -23038,3 +23052,31 @@ p {
 }
 
 /* Home Search End*/
+
+/* Light Mode */
+.light {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+/* Dark Mode */
+.dark {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+}
+
+/* Black & White Mode */
+.bw {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --filter: grayscale(100%);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+img {
+  filter: var(--filter, none);
+}

@@ -23002,5 +23002,27 @@ p {
     width : 50px;
     
 }
+/* Media query for screens smaller than 768px (tablets and smaller devices) */
+@media screen and (max-width: 768px) {
+  .cust {
+      width: 300px;
+      max-width: 100%;
+  }
+  
+  .btn-sea {
+      width: 40px;
+  }
+}
+
+/* Media query for screens smaller than 480px (mobile devices) */
+@media screen and (max-width: 480px) {
+  .cust {
+      width: 100%;
+  }
+  
+  .btn-sea {
+      width: 30px;
+  }
+}
 
 /* Home Search End*/

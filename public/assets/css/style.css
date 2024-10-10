@@ -2594,7 +2594,7 @@ progress {
 }
 
 .form-control {
-  display: block;
+  display: inline-block;
   width: 100%;
   padding: 0.5rem 1rem;
   font-size: 13px;
@@ -10871,6 +10871,7 @@ textarea.form-control-lg {
 
 .bg-body {
   --bs-bg-opacity: 1;
+  border: 2px solid black;
   background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
 }
 
@@ -17671,7 +17672,7 @@ textarea.form-control-lg {
   outline: 0;
   white-space: nowrap;
   margin-bottom: 6px;
-  width: 60%;
+ 
 }
 .img-border {
   border: 2px solid navy; /* Black border */

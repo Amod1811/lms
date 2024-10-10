@@ -1,7 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Nav = () => {
+
+  useEffect(() => {
+    // Function to collapse navbar on scroll
+    const handleScroll = () => {
+      const navbarCollapse = document.getElementById('navbarCollapse');
+      if (navbarCollapse.classList.contains('show')) {
+        navbarCollapse.classList.remove('show');  // Collapse the navbar
+      }
+    };
+
+    // Attach the event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div>
       {/* Header START */}
@@ -37,14 +56,13 @@ const Nav = () => {
               <ul className="navbar-nav navbar-nav-scroll me-auto">
                 {/* Nav item 1 Home */}
                 <li className="nav-item">
-                  <Link className="nav-link " to="/">Home</Link>
+                  <Link className="nav-link" to="/">Home</Link>
                 </li>
 
                 {/* Nav item 2 Courses Dropdown */}
                 <li className="nav-item dropdown">
                   <Link className="nav-link dropdown-toggle" to="/Course" id="courseDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</Link>
                   <ul className="dropdown-menu" aria-labelledby="courseDropdown">
-                    {/* Dropdown submenu */}
                     <li className="dropdown-submenu">
                       <Link className="dropdown-item" to="/course">Networking</Link>
                     </li>
@@ -89,15 +107,7 @@ const Nav = () => {
                 </li>
               </ul>
 
-              {/* Search bar and sign in/signup links */}
-              {/* <div className="d-flex align-items-center" >
-                <form className="d-flex">
-                  <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                  <button className="btn btn-outline-success" type="submit">
-                    <i className="fas fa-search"></i>
-                  </button>
-                </form>
-              </div> */}
+              {/* Sign In/Sign Up Links */}
               <ul className="navbar-nav sign ms-3">
                   <li className="nav-item">
                     <Link className="nav-link" to="/signout">Login</Link>
@@ -105,7 +115,7 @@ const Nav = () => {
                   <li className="nav-item">
                     <Link className="nav-link" to="/signUp">SignUp</Link>
                   </li>
-                </ul>
+              </ul>
             </div>
             {/* Main navbar END */}
           </div>

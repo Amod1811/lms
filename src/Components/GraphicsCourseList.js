@@ -184,7 +184,7 @@ Action box START */}
               <div className="col-sm-8 position-relative">
                 <h3 className="mb-1">Earn a Certificate</h3>
                 <p className="mb-3 h5 fw-light lead">Get the right professional certificate program for you.</p>
-                <a href="#" className="btn btn-primary mb-0">View Programs</a>
+                <a href="#" className="btn btn-primary mb-0"> Programs</a>
               </div>
             </div>
           </div>

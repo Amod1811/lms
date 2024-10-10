@@ -23003,6 +23003,17 @@ p {
     width : 50px;
     
 }
+
+@media screen and (max-width: 1200px) {
+  .cust {
+      width: 300px;
+      max-width: 70%;
+  }
+  
+  .btn-sea {
+      width: 50px;
+  }
+}
 /* Media query for screens smaller than 768px (tablets and smaller devices) */
 @media screen and (max-width: 768px) {
   .cust {
@@ -23011,7 +23022,7 @@ p {
   }
   
   .btn-sea {
-      width: 40px;
+      width: 50px;
   }
 }
 
@@ -23022,7 +23033,7 @@ p {
   }
   
   .btn-sea {
-      width: 30px;
+      width: 50px;
   }
 }
 

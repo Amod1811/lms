@@ -6,7 +6,7 @@ import AdminTopNavBar from './AdminTopNavBar';
 function Counter({ end, duration }) {
   const [count, setCount] = useState(0);
 
-  useEffect(() => {
+  useEffect(() => { 
     let start = 0;
     // Check if the end value is greater than 0
     if (end > 0) {

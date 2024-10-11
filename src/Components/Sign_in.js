@@ -1,4 +1,7 @@
-import React from 'react'
+
+import React from 'react';
+
+
 
 const Sign_in = () => {
   return (
@@ -112,6 +115,7 @@ const Sign_in = () => {
           </div> {/* Row END */}
         </div>
       </div> {/* Row END */}
+
     </div>
   </section>
 </main>
